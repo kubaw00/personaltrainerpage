@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       <section className="mx-5 md:mx-6 py-16  max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl space-y-20 mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
+        <div className="max-w-5xl space-y-20 mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12 ">
           <div className="flex  justify-center space-x-2 text-gray-900">
             <IoStarSharp />
             <IoStarSharp />
@@ -231,7 +231,10 @@ export default function Home() {
             classNameInView="animate-fade-up opacity-100"
             classNameNotInView="opacity-0"
           >
-            <div className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+            <div
+              className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+              tabIndex={0}
+            >
               <h3 className="font-bold text-lg md:text-xl text-white mb-2">
                 Czy muszę mieć doświadczenie, żeby zacząć?
               </h3>
@@ -246,7 +249,10 @@ export default function Home() {
             classNameInView="animate-fade-up opacity-100"
             classNameNotInView="opacity-0"
           >
-            <div className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+            <div
+              className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+              tabIndex={0}
+            >
               <h3 className="font-bold text-lg md:text-xl text-white mb-2">
                 Ile razy w tygodniu muszę trenować?
               </h3>
@@ -271,7 +277,10 @@ export default function Home() {
             classNameInView="animate-fade-up opacity-100"
             classNameNotInView="opacity-0"
           >
-            <div className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+            <div
+              className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+              tabIndex={0}
+            >
               <h3 className="font-bold text-lg md:text-xl text-white mb-2">
                 Czy dostosowujesz plan, jeśli coś mi nie pasuje?
               </h3>
@@ -287,7 +296,10 @@ export default function Home() {
             classNameInView="animate-fade-up opacity-100"
             classNameNotInView="opacity-0"
           >
-            <div className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+            <div
+              className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+              tabIndex={0}
+            >
               <h3 className="font-bold text-lg md:text-xl text-white mb-2">
                 Co jeśli mam kontuzje lub ograniczenia zdrowotne?
               </h3>
@@ -305,7 +317,10 @@ export default function Home() {
             classNameInView="animate-fade-up opacity-100"
             classNameNotInView="opacity-0"
           >
-            <div className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+            <div
+              className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+              tabIndex={0}
+            >
               <h3 className="font-bold text-lg md:text-xl text-white mb-2">
                 Czy mogę trenować, jeśli mam napięty grafik?
               </h3>
@@ -320,7 +335,10 @@ export default function Home() {
             classNameInView="animate-fade-up opacity-100"
             classNameNotInView="opacity-0"
           >
-            <div className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+            <div
+              className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+              tabIndex={0}
+            >
               <h3 className="font-bold text-lg md:text-xl text-white mb-2">
                 Jak szybko zobaczę efekty?
               </h3>
@@ -335,7 +353,10 @@ export default function Home() {
             classNameInView="animate-fade-up opacity-100"
             classNameNotInView="opacity-0"
           >
-            <div className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
+            <div
+              className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+              tabIndex={0}
+            >
               <h3 className="font-bold text-lg md:text-xl text-white mb-2">
                 Czy muszę stosować ścisłą dietę?
               </h3>
