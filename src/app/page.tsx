@@ -34,11 +34,11 @@ export default function Home() {
           </div>
 
           <div className="flex  z-51 flex-col mt-120  md:m-2  md:justify-center  px-10 backdrop-blur-xs md:text-black md:backdrop-blur-none ">
-            <h1 className="text-white  text-5xl animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:text-3xl lg:text-5xl lg:leading-15  md:font-bold ">
+            <h1 className="text-gray-200  text-5xl animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:text-3xl lg:text-5xl lg:leading-15  md:font-bold ">
               Treningi personalne w Krakowie
             </h1>
 
-            <h2 className="text-white animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear text-base sm:text-lg lg:text-xl md:font-medium md:text-base ">
+            <h2 className="text-gray-200 animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear text-base sm:text-lg lg:text-xl md:font-medium md:text-base ">
               Miło, że tu trafiłeś. Nazywam się Łukasz Moczkodan. Jestem
               certyfikowanym Trenerem Personalnym z 3 letnim doświadczeniem,
               natomiast siłownia to moje hobby od prawie 10 lat
@@ -49,10 +49,10 @@ export default function Home() {
 
       <section className="flex flex-col max-w-6xl md:mx-6 w-full text-white container mx-auto lg:flex-row  bg-gray-900 text-lg text-montserrat transition-transform duration-700">
         <div className="items-center   space-y-6 self-center p-8 md:p-10">
-          <h2 className=" text-3xl font-bold text-center ">
+          <h2 className=" text-3xl text-gray-200 font-bold text-center ">
             Czym się wyróżniam?
           </h2>
-          <p className=" leading-relaxed lg:text-xl">
+          <p className=" leading-relaxed text-gray-200 lg:text-xl">
             Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
             budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
             część układanki - najważniejsze jest to, jak się czujesz na co
@@ -78,7 +78,7 @@ export default function Home() {
         id="trainings"
         className="md:mx-6 flex flex-col relative overflow-hidden bg-gray-900 py-10 md:py-20 px-4 sm:px-6 lg:px-8"
       >
-        <h2 className="text-center text-4xl font-bold tracking-tight text-white mb-12 md:mb-16 animate-fade-up">
+        <h2 className="text-4xl font-bold tracking-tight text-gray-200 mb-12 md:mb-16 animate-fade-up text-center">
           Co oferuję?
         </h2>
 
@@ -96,7 +96,7 @@ export default function Home() {
                 <h3 className="text-2xl font-extrabold text-amber-400 mb-3">
                   Indywidualny Trening Personalny
                 </h3>
-                <p className="text-gray-300 leading-relaxed text-lg">
+                <p className="text-gray-200 leading-relaxed text-lg">
                   w profesjonalnym studiu treningowym
                 </p>
               </div>
@@ -108,7 +108,7 @@ export default function Home() {
                 <h3 className="text-2xl font-extrabold break-words text-amber-400 mb-3">
                   Spersonalizowany Plan Treningowys
                 </h3>
-                <p className="text-gray-300 leading-relaxed text-lg">
+                <p className="text-gray-200 leading-relaxed text-lg">
                   tak byś miał efekty a także zachował energię na inne
                   aktywności
                 </p>
@@ -121,7 +121,7 @@ export default function Home() {
                 <h3 className="text-2xl font-extrabold text-amber-400 mb-3">
                   Elastyczny Plan Dietetyczny
                 </h3>
-                <p className="text-gray-300 leading-relaxed text-lg">
+                <p className="text-gray-200 leading-relaxed text-lg">
                   dostosowany do Twoich potrzeb. Nie będziesz musiał się zmuszać
                   do jedzenia a jednocześnie nie będziesz chciał się przejadać.
                 </p>
@@ -224,7 +224,7 @@ export default function Home() {
 
       {/* FAQ SECTION */}
       <section id="questions" className="w-full max-w-3xl mx-auto mb-16 px-4">
-        <h2 className="text-3xl font-bold text-white text-center mb-10">
+        <h2 className="text-3xl font-bold text-gray-200 text-center mb-10">
           Najczęstsze pytania (FAQ)
         </h2>
         <div className="space-y-6">
@@ -236,7 +236,7 @@ export default function Home() {
               className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
               tabIndex={0}
             >
-              <h3 className="font-bold text-lg md:text-xl text-white mb-2">
+              <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
                 Czy muszę mieć doświadczenie, żeby zacząć?
               </h3>
               <p className="text-gray-200">
@@ -254,7 +254,7 @@ export default function Home() {
               className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
               tabIndex={0}
             >
-              <h3 className="font-bold text-lg md:text-xl text-white mb-2">
+              <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
                 Ile razy w tygodniu muszę trenować?
               </h3>
               <p className="text-gray-200">
@@ -282,7 +282,7 @@ export default function Home() {
               className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
               tabIndex={0}
             >
-              <h3 className="font-bold text-lg md:text-xl text-white mb-2">
+              <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
                 Czy dostosowujesz plan, jeśli coś mi nie pasuje?
               </h3>
               <p className="text-gray-200">
@@ -301,7 +301,7 @@ export default function Home() {
               className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
               tabIndex={0}
             >
-              <h3 className="font-bold text-lg md:text-xl text-white mb-2">
+              <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
                 Co jeśli mam kontuzje lub ograniczenia zdrowotne?
               </h3>
               <p className="text-gray-200">
@@ -322,7 +322,7 @@ export default function Home() {
               className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
               tabIndex={0}
             >
-              <h3 className="font-bold text-lg md:text-xl text-white mb-2">
+              <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
                 Czy mogę trenować, jeśli mam napięty grafik?
               </h3>
               <p className="text-gray-200">
@@ -340,7 +340,7 @@ export default function Home() {
               className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
               tabIndex={0}
             >
-              <h3 className="font-bold text-lg md:text-xl text-white mb-2">
+              <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
                 Jak szybko zobaczę efekty?
               </h3>
               <p className="text-gray-200">
@@ -358,7 +358,7 @@ export default function Home() {
               className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
               tabIndex={0}
             >
-              <h3 className="font-bold text-lg md:text-xl text-white mb-2">
+              <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
                 Czy muszę stosować ścisłą dietę?
               </h3>
               <p className="text-gray-200">
@@ -376,7 +376,7 @@ export default function Home() {
         id="contact"
         className=" w-full px-6 max-w-[800px] md:w-[600px] md:mx-6 sm:px-6 lg:px-8"
       >
-        <h2 className="text-center text-white font-bold text-2xl mb-10">
+        <h2 className="text-center text-gray-200 font-bold text-2xl mb-10">
           Formularz kontaktowy
         </h2>
         <ContactForm />
