@@ -173,8 +173,9 @@ export default function Home() {
             </h2>
             <div className=" flex justify-around gap-5 items-center  text-gray-800">
               <p className="  font-normal h- max-w-[200px]">
-                Studio treningowe - Medical Training Studio Iwona Odrowąża 26,
-                Kraków
+                Studio treningowe - Medical Training Studio
+                <br />
+                Iwona Odrowąża 26, Kraków
               </p>
 
               <button className="flex h-[50px] justify-center hover:">
