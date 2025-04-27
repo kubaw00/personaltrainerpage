@@ -53,12 +53,15 @@ export default function Home() {
             Czym się wyróżniam?
           </h2>
           <p className=" leading-relaxed lg:text-xl">
-            Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Pomagam budować
-            dobre samopoczucie – takie prawdziwe, od środka. Trening ze mną to
-            nie presja, tylko moment dla siebie, w którym ciało i głowa grają do
-            jednej bramki. Stawiam na atmosferę, w której czujesz się swobodnie,
-            bezpiecznie i możesz naprawdę zadbać o siebie – fizycznie i
-            psychicznie. Bo forma ma służyć Tobie, a nie odwrotnie.
+            Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
+            budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
+            część układanki - najważniejsze jest to, jak się czujesz na co
+            dzień, jak postrzegasz siebie i jak wpływa to na Twoje życie. Na co
+            dzień pracuję z osobami o różnorodnych celach — pomagam w redukcji
+            tkanki tłuszczowej, budowie masy mięśniowej, poprawie sprawności,
+            przygotowaniu do testów sprawnościowych czy powrocie do formy po
+            urazach. Niezależnie od Twojego punktu wyjścia, znajdziemy najlepsze
+            rozwiązanie dla Ciebie.
           </p>
         </div>
 
