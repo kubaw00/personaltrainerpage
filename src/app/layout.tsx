@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={` ${montserrat.variable} antialiased`}>
         <Toaster
           position="top-right"
-          toastOptions={{ duration: 5000, className: "toast-slide-up" }}
+          toastOptions={{ duration: 2000, className: "toast-slide-up" }}
         />
         {children}
       </body>
