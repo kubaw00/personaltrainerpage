@@ -24,7 +24,7 @@ export default function Home() {
         >
           <div className="absolute md:hidden inset-0 z-0 bg-black opacity-40 md:opacity-0"></div>
 
-          <div className="relative w-full h-auto md:h-[500px] md:w-[400px] lg:h-[700px] lg:w-[500px]   flex-shrink-0">
+          <div className="relative w-full h-auto md:h-[500px] md:w-[400px] lg:h-[700px] lg:w-[500px] shrink-0">
             <Image
               src="/profilowe.jpg"
               alt="profilowe"
@@ -76,7 +76,7 @@ export default function Home() {
 
       <section
         id="trainings"
-        className="md:mx-6 flex flex-col relative overflow-hidden bg-gray-900 py-10 md:py-20 px-4 sm:px-6 lg:px-8"
+        className="md:mx-6 max-w-6xl flex flex-col relative overflow-hidden bg-gray-900 py-10 md:py-20 px-4 sm:px-6 lg:px-8"
       >
         <h2 className="text-4xl font-bold tracking-tight text-gray-200 mb-12 md:mb-16 animate-fade-up text-center">
           Co oferuję?
@@ -127,6 +127,79 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="photos" className="">
+        <div className="mx-auto my-10 flex items-center justify-center">
+          <div className="w-full   flex flex-col gap-4  sm:w-[800px] sm:h-[600px] sm:grid sm:grid-cols-2 sm:grid-rows-2">
+            {/* 1 */}
+            <AnimationOnScroll
+              classNameInView="animate-fade-left opacity-100"
+              classNameNotInView="opacity-0"
+            >
+              <div className="rounded-xl overflow-hidden shadow-lg group w-full h-auto sm:w-[390px] sm:h-[290px] ">
+                <Image
+                  src="/1_Easy-Resize.com (1).jpg"
+                  alt="kolarz1"
+                  width={390}
+                  height={590}
+                  className="object-cover w-full  transition-all duration-300 brightness-[.7] group-hover:brightness-110 group-active:brightness-125"
+                  priority
+                />
+              </div>
+            </AnimationOnScroll>
+            {/* 2 */}
+            <AnimationOnScroll
+              classNameInView="animate-fade-right opacity-100"
+              classNameNotInView="opacity-0"
+            >
+              <div className="overflow-hidden rounded-xl shadow-lg group w-full h-auto sm:w-[390px] sm:h-[290px]">
+                <Image
+                  src="/481682548_17873561865280084_5729706280772083147_n_Easy-Resize.com (1).jpg"
+                  alt="kolarz2"
+                  width={390}
+                  height={290}
+                  className="object-cover w-full  transition-all duration-300 brightness-[.7] group-hover:brightness-110 group-active:brightness-125"
+                  priority
+                  style={{ aspectRatio: "4/3" }}
+                />
+              </div>
+            </AnimationOnScroll>
+            {/* 3 */}
+            <AnimationOnScroll
+              classNameInView="animate-fade-right opacity-100 sm:animate-fade-left"
+              classNameNotInView="opacity-0"
+            >
+              <div className="rounded-xl overflow-hidden shadow-lg group w-full h-auto sm:w-[390px] sm:h-[290px] ">
+                <Image
+                  src="/DSC00829_Easy-Resize.com.jpg"
+                  alt="kolarz3"
+                  width={390}
+                  height={290}
+                  className="object-cover w-full  transition-all duration-300 brightness-[.7] group-hover:brightness-110 group-active:brightness-125"
+                  priority
+                />
+              </div>
+            </AnimationOnScroll>
+            {/* 4 */}
+            <AnimationOnScroll
+              classNameInView="animate-fade-left opacity-100 sm:animate-fade-right"
+              classNameNotInView="opacity-0"
+            >
+              <div className="overflow-hidden rounded-xl shadow-lg group w-full h-auto sm:w-[390px] sm:h-[290px]">
+                <Image
+                  src="/image00042_Easy-Resize.com (1).jpg"
+                  alt="kolarz4"
+                  width={390}
+                  height={290}
+                  className="object-cover w-full h-full transition-all duration-300 brightness-[.7] group-hover:brightness-110 group-active:brightness-125"
+                  style={{ aspectRatio: "4/3" }}
+                  priority
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
       </section>
