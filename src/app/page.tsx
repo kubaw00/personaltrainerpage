@@ -177,66 +177,36 @@ export default function Home() {
       </AnimationOnScroll>
 
       <section
-        className="flex  flex-col  md:flex-row  z-20 max-w-6xl md:mx-6  text-white container mx-auto lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700 my-4 rounded-2xl shadow-2xl overflow-hidden"
+        className="  md:flex-row  z-20 max-w-6xl md:mx-6  text-white container mx-auto lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700 my-4 rounded-2xl shadow-2xl overflow-hidden"
         style={{
           boxShadow: "0px 0px 124px 100px rgba(224, 160, 5, 0.95)",
         }}
       >
-        <div className="items-center space-y-6 self-center p-8 lg:p-5 flex-1">
-          <h2 className="text-4xl m-5 font-extrabold text-center mb-12 text-white">
-            CZYM SIĘ <span style={{ color: "#fcb045" }}>WYRÓŻNIAM?</span>
-          </h2>
-          <div
-            style={{
-              position: "relative",
+        <h2 className="text-4xl m-10 font-extrabold text-center mb-12 text-white">
+          CZYM SIĘ <span style={{ color: "#fcb045" }}>WYRÓŻNIAM?</span>
+        </h2>
 
-              padding: "2px",
-              marginBottom: "2rem",
-              display: "inline-block",
-              maxWidth: "100%",
-            }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                background: "rgba(0,0,0,0.85)",
-                borderRadius: "18px",
-                zIndex: 1,
-              }}
-              aria-hidden="true"
+        <div className="flex flex-col md:flex-row md:justify-between w-full">
+          <p className="leading-relaxed p-10 text-gray-200 lg:text-xl w-full md:w-1/2 flex-shrink-0">
+            Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
+            budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
+            część układanki - najważniejsze jest to, jak się czujesz na co
+            dzień, jak postrzegasz siebie i jak wpływa to na Twoje życie. Na co
+            dzień pracuję z osobami o różnorodnych celach — pomagam w redukcji
+            tkanki tłuszczowej, budowie masy mięśniowej, poprawie sprawności,
+            przygotowaniu do testów sprawnościowych czy powrocie do formy po
+            urazach. Niezależnie od Twojego punktu wyjścia, znajdziemy najlepsze
+            rozwiązanie dla Ciebie.
+          </p>
+          <div className="relative grow my-auto justify-center w-full h-[500px]">
+            <Image
+              alt="photo1"
+              src="/Messenger_creation_A125B378-5B7A-4B5D-9CF4-33A85B91208E_Easy-Resize.com.jpg"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover object-top w-full h-full rounded-none md:rounded-tl-2xl "
             />
-            <p
-              className="leading-relaxed text-gray-200 lg:text-xl"
-              style={{
-                position: "relative",
-                zIndex: 2,
-                borderRadius: "18px",
-                padding: "2rem",
-                margin: 0,
-                background: "transparent",
-              }}
-            >
-              Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
-              budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
-              część układanki - najważniejsze jest to, jak się czujesz na co
-              dzień, jak postrzegasz siebie i jak wpływa to na Twoje życie. Na
-              co dzień pracuję z osobami o różnorodnych celach — pomagam w
-              redukcji tkanki tłuszczowej, budowie masy mięśniowej, poprawie
-              sprawności, przygotowaniu do testów sprawnościowych czy powrocie
-              do formy po urazach. Niezależnie od Twojego punktu wyjścia,
-              znajdziemy najlepsze rozwiązanie dla Ciebie.
-            </p>
           </div>
-        </div>
-        <div className="relative my-auto justify-center w-full h-[500px] md:h-[500px] md:w-[500px] ">
-          <Image
-            alt="photo1"
-            src="/Messenger_creation_A125B378-5B7A-4B5D-9CF4-33A85B91208E_Easy-Resize.com.jpg"
-            fill
-            sizes="100vw"
-            className="object-cover object-top w-full h-full rounded-none md:rounded-tl-2xl md:rounded-bl-2xl"
-          />
         </div>
       </section>
 
@@ -669,7 +639,160 @@ export default function Home() {
       </section>
       {/* END FAQ SECTION */}
 
-      {/* SOCIAL SECTION */}
+      <section className="w-full md:px-10  bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80  py-10 px-4    md:max-w-3xl lg:max-w-5xl  mx-auto my-10 bg-black/90 rounded-2xl shadow-2xl p-6 md:p-12 flex flex-col gap-12">
+        <div className="flex justify-center space-x-2 text-amber-400 text-2xl">
+          {[...Array(3)].map((_, i) => (
+            <svg
+              key={i}
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              height="1em"
+              width="1em"
+              className="inline-block"
+            >
+              <path d="M496 203.3H312.36L256 32l-56.36 171.3H16l150.21 105.4-58.5 171.3L256 373.84 404.29 480l-58.61-171.3z"></path>
+            </svg>
+          ))}
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-2xl text-center font-bold text-amber-400">
+            3-miesięczna przemiana sylwetki
+          </h2>
+          <p className="text-gray-200 leading-relaxed">
+            W 90 dni poprowadzę Cię przez kompleksową zmianę, w skład której
+            wchodzą: treningi precyzyjnie dobrane do Twojego celu, możliwości i
+            preferencji, plan żywieniowy będący wsparciem w osiąganiu Twoich
+            celów - bez ciężaru i zbędnych wyrzeczeń, systematyczna analiza
+            postępów i dostosowywanie planu do Twoich aktualnych potrzeb,
+            wsparcie mentalne - bo zmiana sylwetki zaczyna się od zmiany sposobu
+            myślenia, motywacja i narzędzia, które pomogą Ci wytrwać i cieszyć
+            się drogą, a nie tylko celem. Nie ważne, czy Twoim marzeniem jest
+            lepsza sylwetka, większa siła, sprawniejsze ciało czy po prostu
+            codzienne lepsze samopoczucie - tutaj masz wszystko, czego
+            potrzebujesz, żeby to osiągnąć.
+          </p>
+        </div>
+        <div className="flex justify-center space-x-2 text-amber-400 text-2xl">
+          {[...Array(3)].map((_, i) => (
+            <svg
+              key={i}
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              height="1em"
+              width="1em"
+              className="inline-block"
+            >
+              <path d="M496 203.3H312.36L256 32l-56.36 171.3H16l150.21 105.4-58.5 171.3L256 373.84 404.29 480l-58.61-171.3z"></path>
+            </svg>
+          ))}
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-2xl text-center font-bold text-amber-400">
+            Gdzie przeprowadzam Treningi?
+          </h2>
+          <div className="flex flex-col md:flex-row justify-center gap-5 items-center text-gray-200">
+            <p className="font-bold max-w-[250px] text-center">
+              Studio treningowe - Medical Training Studio
+              <br />
+              Iwona Odrowąża 26, Kraków
+            </p>
+            <a
+              href="https://www.google.com/maps/dir//Medical+Training+Studio,+Iwona+Odrow%C4%85%C5%BCa+26,+30-009+Krak%C3%B3w/@50.0591081,19.9264005,13.46z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47165bab8a527da7:0x42ecff449136800d!2m2!1d19.9326814!2d50.0774607!3e0?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 border border-amber-400 rounded-full px-6 py-2 bg-transparent text-amber-400 hover:bg-amber-400 hover:text-black transition-colors w-fit mt-2"
+            >
+              <svg
+                viewBox="0 0 384 512"
+                fill="currentColor"
+                className="text-lg"
+                height="1em"
+                width="1em"
+              >
+                <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+              </svg>
+              Prowadź
+            </a>
+          </div>
+        </div>
+        <div className="flex justify-center space-x-2 text-amber-400 text-2xl">
+          {[...Array(3)].map((_, i) => (
+            <svg
+              key={i}
+              viewBox="0 0 512 512"
+              fill="currentColor"
+              height="1em"
+              width="1em"
+              className="inline-block"
+            >
+              <path d="M496 203.3H312.36L256 32l-56.36 171.3H16l150.21 105.4-58.5 171.3L256 373.84 404.29 480l-58.61-171.3z"></path>
+            </svg>
+          ))}
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-2xl text-center font-bold text-amber-400">
+            Jaki jest koszt Treningu Personalnego?
+          </h2>
+          <p className="text-gray-200 leading-relaxed">
+            To zależy kilku czynników, takich jak stopień zaawansowania i
+            długość współpracy. Cennik ustalam osobiście z podopiecznym i jest
+            to koszt od <span className="font-semibold">100 zł/h</span> w górę.
+          </p>
+        </div>
+        <div className="h-96 w-full rounded-2xl overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.674074145789!2d19.9626814!3d50.0774607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab8a527da7%3A0x42ecff449136800d!2sIwona%20Odrow%C4%85%C5%BCa%2026%2C%2030-009%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1714140000000!5m2!1spl!2spl"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Mapa - Medical Training Studio"
+          ></iframe>
+        </div>
+      </section>
+
+      <section className="w-full flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl shadow-2xl my-10 py-10 px-4 md:px-10 max-w-5xl mx-auto gap-8">
+        <div className="relative w-full md:w-1/2 h-[350px] md:h-[400px] rounded-2xl overflow-hidden flex-shrink-0">
+          <Image
+            src="/image00018_Easy-Resize.com.jpg"
+            alt="Trener personalny - zdjęcie sekcji przed formularzem"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover object-center rounded-2xl"
+            priority={false}
+          />
+        </div>
+        <div className="flex-1 flex flex-col justify-center items-start gap-4 max-w-xl">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-amber-400 mb-2">
+            Zapraszam do kontaktu!
+          </h2>
+          <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
+            Jeśli masz pytania dotyczące współpracy, treningów lub diety –
+            napisz śmiało! Odpowiem na każdą wiadomość i rozwieję Twoje
+            wątpliwości. Zależy mi na indywidualnym podejściu i pełnym
+            zrozumieniu Twoich potrzeb. Wspólnie ustalimy najlepszą drogę do
+            osiągnięcia Twoich celów.
+          </p>
+          <ul className="list-disc pl-6 text-gray-300 text-base md:text-lg">
+            <li>Odpowiadam zwykle w ciągu 24h</li>
+            <li>Wszystkie dane są poufne</li>
+            <li>Możesz napisać bez zobowiązań</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        className="w-full px-6 max-w-[800px] md:w-[600px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
+      >
+        <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
+          FORMULARZ <span style={{ color: "#fcb045" }}>KONTAKTOWY</span>
+        </h2>
+        <ContactForm />
+      </section>
+
       <section className="w-full max-w-none bg-black/80 py-24 px-0 flex flex-col items-center relative overflow-x-visible overflow-y-visible">
         <div className="absolute inset-0 w-full h-full bg-black/80 -z-10" />
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-4">
@@ -785,16 +908,6 @@ export default function Home() {
             </span>
           </Link>
         </div>
-      </section>
-
-      <section
-        id="contact"
-        className="w-full px-6 max-w-[800px] md:w-[600px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
-      >
-        <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-          FORMULARZ <span style={{ color: "#fcb045" }}>KONTAKTOWY</span>
-        </h2>
-        <ContactForm />
       </section>
 
       <footer className="w-full bg-[#f5f6f7] py-10 px-4 mt-10">
