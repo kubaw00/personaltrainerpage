@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Nav from "@/components/Navigation";
+import { FaqAccordion } from "@/components/Accordion";
 
 import {
   FaInstagram,
@@ -20,7 +21,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   MdOutlineSportsGymnastics,
   MdPublishedWithChanges,
@@ -40,79 +41,6 @@ const sliderImages = [
   "/Messenger_creation_AE1B44C4-A954-4C11-B08A-B43258509316_Easy-Resize.com_Easy-Resize.com.jpg",
   "/Messenger_creation_F39F95DB-3554-41B8-9B41-32B8922C8825_Easy-Resize.com.jpg",
 ];
-
-export function Swiper3dGallery() {
-  return (
-    <Swiper
-      effect={"coverflow"}
-      grabCursor={true}
-      centeredSlides={true}
-      slidesPerView={"auto"}
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      pagination={true}
-      modules={[EffectCoverflow, Pagination]}
-      className="mySwiper w-full max-w-4xl mx-auto"
-    >
-      {sliderImages.map((src, idx) => (
-        <SwiperSlide
-          key={idx}
-          className="!w-72 !h-96 flex items-center justify-center"
-        >
-          <div className="relative w-72 h-96 rounded-2xl overflow-hidden">
-            <Image
-              src={src}
-              alt={`slider-img-${idx}`}
-              fill
-              className="object-cover rounded-2xl"
-              sizes="(max-width: 768px) 90vw, 300px"
-              priority={idx === 0}
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  );
-}
-
-function FaqAccordion({
-  faqs,
-}: {
-  faqs: { question: string; answer: string }[];
-}) {
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
-  return (
-    <div className="md:hidden flex flex-col gap-4">
-      {faqs.map((faq, idx) => (
-        <div
-          key={idx}
-          className="bg-[#181818] rounded-xl shadow-lg cursor-pointer"
-        >
-          <button
-            className="w-full text-left p-4 font-bold text-gray-200 focus:outline-none flex justify-between items-center cursor-pointer"
-            onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-            aria-expanded={openIdx === idx}
-          >
-            {faq.question}
-            <span className="ml-2 text-amber-400">
-              {openIdx === idx ? "-" : "+"}
-            </span>
-          </button>
-          {openIdx === idx && (
-            <div className="p-4  pt-0 text-gray-200 animate-fade-in cursor-pointer">
-              {faq.answer}
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-}
 
 export default function Home() {
   useEffect(() => {
