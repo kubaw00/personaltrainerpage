@@ -19,7 +19,7 @@ export function FaqAccordion({
             aria-expanded={openIdx === idx}
           >
             {faq.question}
-            <span className="ml-2 text-[#22A7EA]">
+            <span className="ml-2 text-[#DC252A]">
               {openIdx === idx ? "-" : "+"}
             </span>
           </button>

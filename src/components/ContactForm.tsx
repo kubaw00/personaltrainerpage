@@ -23,9 +23,9 @@ function SubmitButton() {
       disabled={pending}
       className={`w-full py-2 px-4 rounded-md font-bold transition duration-300 border-2
         bg-transparent
-        border-[#22A7EA] text-[#22A7EA]
-        hover:bg-[#22A7EA] hover:text-black hover:border-black
-        active:bg-[#22A7EA] active:text-black active:border-black
+        border-white text-white
+        hover:bg-white hover:text-black hover:border-black
+        active:bg-white active:text-black active:border-black
         ${
           pending
             ? "border-gray-400 text-gray-400 cursor-not-allowed"
@@ -61,15 +61,15 @@ export default function ContactForm() {
           name="name"
           required
           placeholder=" "
-          className="w-full rounded-md bg-[#181818] border border-[#22A7EA] p-5 pr-12 focus:ring-2 focus:ring-[#22A7EA] focus:outline-none peer"
+          className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
         />
         <label
           htmlFor="name"
-          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#22A7EA] bg-transparent"
+          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
         >
           Imię
         </label>
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-[#22A7EA] pointer-events-none">
+        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
           <FaUser />
         </span>
       </div>
@@ -81,15 +81,15 @@ export default function ContactForm() {
           name="email"
           required
           placeholder=" "
-          className="w-full rounded-md bg-[#181818] border border-[#22A7EA] p-5 pr-12 focus:ring-2 focus:ring-[#22A7EA] focus:outline-none peer"
+          className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
         />
         <label
           htmlFor="email"
-          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#22A7EA] bg-transparent"
+          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
         >
           Email
         </label>
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-[#22A7EA] pointer-events-none">
+        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
           <MdAlternateEmail />
         </span>
       </div>
@@ -101,15 +101,15 @@ export default function ContactForm() {
           name="phone"
           required
           placeholder=" "
-          className="w-full rounded-md bg-[#181818] border border-[#22A7EA]  p-5 pr-12 focus:ring-2 focus:ring-[#22A7EA] focus:outline-none peer"
+          className="w-full rounded-md bg-[#181818] border border-white  p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
         />
         <label
           htmlFor="phone"
-          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#22A7EA] bg-transparent"
+          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
         >
           Telefon
         </label>
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-[#22A7EA] pointer-events-none">
+        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
           <FaPhone />
         </span>
       </div>
@@ -121,15 +121,15 @@ export default function ContactForm() {
           required
           rows={4}
           placeholder=" "
-          className="w-full p-5 rounded-md bg-[#181818] border border-[#22A7EA] pr-12 focus:ring-2 focus:ring-[#22A7EA] focus:outline-none peer resize-none"
+          className="w-full p-5 rounded-md bg-[#181818] border border-white pr-12 focus:ring-2 focus:ring-white focus:outline-none peer resize-none"
         />
         <label
           htmlFor="message"
-          className="absolute left-5 top-6 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#22A7EA] bg-transparent"
+          className="absolute left-5 top-6 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
         >
           Wiadomość
         </label>
-        <span className="absolute right-4 top-6 flex items-center h-6  border-[#22A7EA] text-[#22A7EA] pointer-events-none">
+        <span className="absolute right-4 top-6 flex items-center h-6  border-white text-white pointer-events-none">
           <FaEnvelope />
         </span>
       </div>

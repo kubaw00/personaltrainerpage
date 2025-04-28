@@ -27,7 +27,7 @@ export default function Nav() {
         borderImage: !scrolled
           ? "linear-gradient(to right, #000, #22A7EA 90%) 1"
           : undefined,
-        background: scrolled ? "#0c101c" : undefined,
+        background: scrolled ? "#000000" : undefined,
       }}
     >
       <div className="container h-auto max-w-6xl mx-auto text-white flex justify-between items-center">

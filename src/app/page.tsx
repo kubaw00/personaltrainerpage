@@ -109,24 +109,24 @@ export default function Home() {
           className="w-full relative transition-opacity duration-1000 bg-black min-h-screen"
           style={{
             background:
-              "linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(0, 0, 71, 1) 62%, rgba(0, 212, 255, 1) 100%)",
+              "linear-gradient(90deg,rgba(0, 0, 16, 1) 0%, rgba(0, 0, 71, 1) 62%, rgba(0, 212, 255, 1) 100%)",
             position: "relative",
             overflow: "hidden",
           }}
         >
-          <div className="absolute  inset-0 w-full h-full  pointer-events-none select-none z-0">
-            <div className="absolute inset-0 bg-black opacity-50 z-10" />
+          <div className="absolute  inset-0 w-full h-full  lg:max-w-[1000px] pointer-events-none select-none z-0">
+            <div className="absolute inset-0 bg-black opacity-0 z-10" />
             <Image
-              src="/freepik_br_f8f4216b-6eaf-4ba3-96dd-20e1bf830131.png"
+              src="/Adobe Express - file.png"
               alt="background"
               fill
-              className="object-cover m  opacity-80 z-0"
+              className="object-cover opacity-60  z-0"
               priority
             />
           </div>
           <div className="z-20 flex flex-col mt-[500px] md:mt-[400px]  w-full md:w-1/2  px-6 py-16 md:py-0 md:pl-16">
             <h1 className="text-gray-200 text-5xl font-extrabold  md:text-6xl  lg:text-7xl animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6  lg:leading-15 md:font-bold">
-              ŁUKASZ <span className="text-[#22A7EA]">MOCZKODAN</span>
+              ŁUKASZ <span className="text-[#DC252A]">MOCZKODAN</span>
             </h1>
             <h2 className="text-gray-200 animate-fade-left animate-duration-[500ms]  animate-delay-400 animate-ease-linear text-balance sm:text-lg  md:font-lg md:text-xl lg:text-2xl">
               Pomagam osobom w kształtowaniu swojej sylwetki za pomącą treningu
@@ -140,13 +140,13 @@ export default function Home() {
       </AnimationOnScroll>
 
       <section
-        className="  md:flex-row  z-20 max-w-6xl md:mx-6  text-white container mx-auto lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700 my-4 rounded-2xl shadow-2xl overflow-hidden"
+        className=" md:flex-row  z-20 max-w-6xl md:mx-2  text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
         style={{
-          boxShadow: "0px 0px 124px 100px rgba(0, 212, 255, 1)",
+          boxShadow: "0px -30px 100px 60px #DC252A",
         }}
       >
         <h2 className="text-4xl m-10 font-extrabold text-center mb-12 text-white">
-          CZYM SIĘ <span style={{ color: "#22A7EA" }}>WYRÓŻNIAM?</span>
+          CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
         </h2>
 
         <div className="flex flex-col md:flex-row md:justify-between w-full">
@@ -178,7 +178,7 @@ export default function Home() {
         className="md:mx-6 mt-30 max-w-6xl flex flex-col relative overflow-hidden bg-black py-10 md:py-20 px-4 sm:px-6 lg:px-8"
       >
         <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-          CO <span style={{ color: "rgba(0, 212, 255, 1)" }}>OFERUJĘ?</span>
+          CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
         </h2>
 
         <div className="relative max-w-6xl mx-auto bg-black rounded-2xl shadow-2xl overflow-hidden">
@@ -195,7 +195,7 @@ export default function Home() {
           {/* Kafelki z usługami */}
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-6 p-6 md:p-10">
             {/* Karta 1 */}
-            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#22A7EA]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.1s] shadow-xl overflow-hidden relative">
+            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#DC252A]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.1s] shadow-xl overflow-hidden relative">
               <Image
                 src="/alexandra-tran-fS3tGOkp0xY-unsplash.jpg"
                 alt="trening personalny"
@@ -203,7 +203,7 @@ export default function Home() {
                 className="object-cover object-center absolute inset-0 w-full h-full opacity-30 group-hover:scale-105 transition-transform duration-500 z-0"
               />
               <div className="space-y-4 relative z-10">
-                <h3 className="text-2xl font-extrabold text-[#22A7EA] mb-3 drop-shadow-lg">
+                <h3 className="text-2xl font-extrabold text-white mb-3 drop-shadow-lg">
                   Indywidualny Trening Personalny
                 </h3>
                 <p className="text-gray-200 leading-relaxed text-lg drop-shadow">
@@ -212,7 +212,7 @@ export default function Home() {
               </div>
             </div>
             {/* Karta 2 */}
-            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#22A7EA]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.3s] shadow-xl overflow-hidden relative">
+            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#DC252A]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.3s] shadow-xl overflow-hidden relative">
               <Image
                 src="/cyril-saulnier-TsVN31Dzyv4-unsplash.jpg"
                 alt="plan treningowy"
@@ -220,7 +220,7 @@ export default function Home() {
                 className="object-cover  object-center absolute inset-0 w-full h-full opacity-30 group-hover:scale-105 transition-transform duration-500 z-0"
               />
               <div className="space-y-4 relative z-10">
-                <h3 className="text-2xl font-extrabold break-words text-[#22A7EA] mb-3 drop-shadow-lg">
+                <h3 className="text-2xl font-extrabold break-words text-white mb-3 drop-shadow-lg">
                   Spersonalizowany Plan Treningowy
                 </h3>
                 <p className="text-gray-200 leading-relaxed text-lg drop-shadow">
@@ -230,7 +230,7 @@ export default function Home() {
               </div>
             </div>
             {/* Karta 3 */}
-            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#22A7EA]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.5s] shadow-xl overflow-hidden relative">
+            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#DC252A]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.5s] shadow-xl overflow-hidden relative">
               <Image
                 src="/erica-steeves-PfQh55R0ZtE-unsplash.jpg"
                 alt="plan dietetyczny"
@@ -238,7 +238,7 @@ export default function Home() {
                 className="object-cover object-center absolute inset-0 w-full h-full opacity-30 group-hover:scale-105 transition-transform duration-500 z-0"
               />
               <div className="space-y-4 relative z-10">
-                <h3 className="text-2xl font-extrabold text-[#22A7EA] mb-3 drop-shadow-lg">
+                <h3 className="text-2xl font-extrabold text-white mb-3 drop-shadow-lg">
                   Elastyczny Plan Dietetyczny
                 </h3>
                 <p className="text-gray-200 leading-relaxed text-lg drop-shadow">
@@ -253,7 +253,14 @@ export default function Home() {
 
       <section className="w-full py-16 px-2 md:px-0 bg-black">
         <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-          CO ZE MNĄ <span style={{ color: "#22A7EA" }}>OSIĄGNIESZ?</span>
+          CO ZE MNĄ{" "}
+          <span
+            style={{
+              color: "#DC252A",
+            }}
+          >
+            OSIĄGNIESZ?
+          </span>
         </h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/* 1 */}
@@ -276,7 +283,7 @@ export default function Home() {
           {/* 2 */}
           <div
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
-            style={{ background: "#22A7EA", color: "#000" }}
+            style={{ background: "#FFFFFF", color: "#000" }}
           >
             <span className="mb-4 text-5xl animate-pulse">
               <MdOutlineSportsGymnastics />
@@ -293,7 +300,7 @@ export default function Home() {
           {/* 3 */}
           <div
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
-            style={{ background: "#000", color: "#fff" }}
+            style={{ background: "#000", color: "#FFFFFF" }}
           >
             <span className="mb-4 text-5xl animate-pulse">
               <FaBrain />
@@ -309,7 +316,7 @@ export default function Home() {
           {/* 4 */}
           <div
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
-            style={{ background: "#22A7EA", color: "#000" }}
+            style={{ background: "#FFFFFF", color: "#000" }}
           >
             <span className="mb-4 text-5xl animate-pulse">
               <CiBatteryFull />
@@ -342,7 +349,7 @@ export default function Home() {
           {/* 6 */}
           <div
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
-            style={{ background: "#22A7EA", color: "#000" }}
+            style={{ background: "#FFFFFF", color: "#000" }}
           >
             <span className="mb-4 text-5xl animate-pulse">
               <CgArrowsExpandUpRight />
@@ -361,7 +368,7 @@ export default function Home() {
       </section>
 
       <h2 className="text-4xl m-5 font-extrabold text-center mb-12 text-white">
-        JAK WYGLĄDAJĄ <span style={{ color: "#22A7EA" }}>NASZE TRENINGI?</span>
+        JAK WYGLĄDAJĄ <span style={{ color: "#DC252A" }}>NASZE TRENINGI?</span>
       </h2>
 
       {/* SWIPER 3D SLIDER - FULL WIDTH, NAD FAQ */}
@@ -412,7 +419,7 @@ export default function Home() {
         className="w-full mt-15 max-w-3xl mx-auto mb-16 px-4 "
       >
         <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-          NAJCZĘSTSZE <span style={{ color: "#22A7EA" }}>PYTANIA</span>
+          NAJCZĘSTSZE <span style={{ color: "#DC252A" }}>PYTANIA </span>
         </h2>
         {/* Accordion for mobile, normal view for md+ */}
         <FaqAccordion
@@ -603,10 +610,10 @@ export default function Home() {
       {/* END FAQ SECTION */}
 
       <section
-        style={{ boxShadow: "0px -30px 60px 40px rgba(0, 212, 255, 1)" }}
+        style={{ boxShadow: "0px -20px 60px 40px #DC252A" }}
         className="w-full my-25 md:px-10  bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80  py-10 px-4    md:max-w-3xl lg:max-w-5xl  mx-auto my-10 bg-black/90 rounded-2xl shadow-2xl p-6 md:p-12 flex flex-col gap-12"
       >
-        <div className="flex justify-center space-x-2 text-[#22A7EA] text-2xl">
+        <div className="flex justify-center space-x-2 text-[#DC252A] text-2xl">
           {[...Array(3)].map((_, i) => (
             <svg
               key={i}
@@ -621,7 +628,7 @@ export default function Home() {
           ))}
         </div>
         <div className="space-y-4">
-          <h2 className="text-2xl text-center font-bold text-[#22A7EA]">
+          <h2 className="text-2xl text-center font-bold text-white">
             3-miesięczna przemiana sylwetki
           </h2>
           <p className="text-gray-200 leading-relaxed">
@@ -638,7 +645,7 @@ export default function Home() {
             potrzebujesz, żeby to osiągnąć.
           </p>
         </div>
-        <div className="flex justify-center space-x-2 text-[#22A7EA] text-2xl">
+        <div className="flex justify-center space-x-2 text-[#DC252A] text-2xl">
           {[...Array(3)].map((_, i) => (
             <svg
               key={i}
@@ -653,7 +660,7 @@ export default function Home() {
           ))}
         </div>
         <div className="space-y-4">
-          <h2 className="text-2xl text-center font-bold text-[#22A7EA]">
+          <h2 className="text-2xl text-center font-bold text-white">
             Gdzie przeprowadzam Treningi?
           </h2>
           <div className="flex flex-col md:flex-row justify-center gap-5 items-center text-gray-200">
@@ -666,7 +673,7 @@ export default function Home() {
               href="https://www.google.com/maps/dir//Medical+Training+Studio,+Iwona+Odrow%C4%85%C5%BCa+26,+30-009+Krak%C3%B3w/@50.0591081,19.9264005,13.46z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47165bab8a527da7:0x42ecff449136800d!2m2!1d19.9326814!2d50.0774607!3e0?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 border border-[#22A7EA] rounded-full px-6 py-2 bg-transparent text-[#22A7EA] hover:bg-[#22A7EA] hover:text-black transition-colors w-fit mt-2"
+              className="flex items-center gap-2 border border-[#DC252A] rounded-full px-6 py-2 bg-transparent text-[#DC252A] hover:bg-[#DC252A] hover:text-black transition-colors w-fit mt-2"
             >
               <svg
                 viewBox="0 0 384 512"
@@ -681,7 +688,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="flex justify-center space-x-2 text-[#22A7EA] text-2xl">
+        <div className="flex justify-center space-x-2 text-[#DC252A] text-2xl">
           {[...Array(3)].map((_, i) => (
             <svg
               key={i}
@@ -696,7 +703,7 @@ export default function Home() {
           ))}
         </div>
         <div className="space-y-4">
-          <h2 className="text-2xl text-center font-bold text-[#22A7EA]">
+          <h2 className="text-2xl text-center font-bold text-white">
             Jaki jest koszt Treningu Personalnego?
           </h2>
           <p className="text-gray-200 leading-relaxed">
@@ -720,7 +727,7 @@ export default function Home() {
       </section>
 
       <section
-        style={{ boxShadow: "0px 20px 50px 30px rgba(0, 212, 255, 1)" }}
+        style={{ boxShadow: "0px 10px 50px 30px #DC252A" }}
         className="w-full mb-25 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl shadow-2xl my-10 py-10 px-4 md:px-10 max-w-5xl mx-auto gap-8"
       >
         <div className="relative w-full md:w-1/2 h-[350px] md:h-[400px] rounded-2xl overflow-hidden flex-shrink-0">
@@ -734,7 +741,7 @@ export default function Home() {
           />
         </div>
         <div className="flex-1 flex flex-col justify-center items-start gap-4 max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#22A7EA] mb-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
             Zapraszam do kontaktu!
           </h2>
           <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
@@ -757,7 +764,7 @@ export default function Home() {
         className="w-full mt-18 px-6 max-w-[800px] md:w-[600px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
       >
         <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-          FORMULARZ <span style={{ color: "#22A7EA" }}>KONTAKTOWY</span>
+          FORMULARZ <span style={{ color: "#DC252A" }}>KONTAKTOWY</span>
         </h2>
         <ContactForm />
       </section>
@@ -770,7 +777,7 @@ export default function Home() {
             className="bg-clip-text text-transparent"
             style={{
               backgroundImage:
-                "linear-gradient(90deg,rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)",
+                " radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%)",
             }}
           >
             SPOŁECZNOŚCIOWYCH
@@ -809,7 +816,7 @@ export default function Home() {
           >
             <div
               className="bg-white rounded-full w-28 h-28 flex items-center justify-center mb-6 relative overflow-hidden"
-              style={{ boxShadow: "inset 0 0 0 2px #000" }}
+              style={{ boxShadow: "inset 0 0 0 2px #DC252A" }}
             >
               <span
                 className="absolute inset-0 z-0 pointer-events-none"
@@ -856,7 +863,7 @@ export default function Home() {
           >
             <div
               className="bg-white rounded-full w-28 h-28 flex items-center justify-center mb-6 relative overflow-hidden"
-              style={{ boxShadow: "inset 0 0 0 2px #000" }}
+              style={{ boxShadow: "inset 0 0 0 2px #DC252A" }}
             >
               <span
                 className="absolute inset-0 z-0 pointer-events-none"
@@ -880,84 +887,90 @@ export default function Home() {
       </section>
 
       <footer
-        style={{ boxShadow: "0px 0px 80px 40px rgba(0, 212, 255, 1)" }}
+        style={{ boxShadow: "0px 0px 80px 40px #000000" }}
         className="w-full mt-30 bg-[#f5f6f7] py-10 px-4 mt-10"
       >
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           {/* Logo i nazwa */}
-          <div className="font-extrabold text-3xl md:text-4xl tracking-wider text-center mb-8 text-black">
-            ŁUKASZ <span className="text-[#22A7EA]">MOCZKODAN</span>
+          <div className="glitch-wrapper w-full flex items-center justify-center text-center bg-transparent mb-8">
+            <div
+              className="glitch font-extrabold text-3xl md:text-4xl tracking-wider text-center"
+              data-glitch="ŁUKASZ MOCZKODAN"
+              style={{ color: "#000000" }}
+            >
+              ŁUKASZ <span className="text-[#000000]">MOCZKODAN</span>
+            </div>
           </div>
           {/* Nawigacja sekcji */}
           <nav className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 mb-8">
             <button
-              className="font-extrabold text-black text-base tracking-widest hover:text-[#ff1744] active:text-[#ff1744] transition-colors cursor-pointer"
+              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
               onClick={() => scrollToSection("#about")}
               onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
               onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
             >
               O MNIE
             </button>
             <button
-              className="font-extrabold text-black text-base tracking-widest hover:text-[#ff1744] active:text-[#ff1744] transition-colors cursor-pointer"
+              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
               onClick={() => scrollToSection("#trainings")}
               onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
               onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
             >
               TRENINGI PERSONALNE
             </button>
             <button
-              className="font-extrabold text-black text-base tracking-widest hover:text-[#ff1744] active:text-[#ff1744] transition-colors cursor-pointer"
+              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
               onClick={() => scrollToSection("#questions")}
               onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
               onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
             >
               NAJCZĘSTSZE PYTANIA (FAQ)
             </button>
             <button
-              className="font-extrabold text-black text-base tracking-widest hover:text-[#ff1744] active:text-[#ff1744] transition-colors cursor-pointer"
+              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
               onClick={() => scrollToSection("#contact")}
               onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
               onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#ff1744]")
+                e.currentTarget.classList.add("text-[#DC252A]")
               }
               onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#ff1744]")
+                e.currentTarget.classList.remove("text-[#000000]")
               }
             >
               KONTAKT
@@ -971,7 +984,7 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <FaFacebook className="text-black text-2xl hover:text-[#ff1744] transition-colors" />
+              <FaFacebook className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
             <Link
               href="https://instagram.com/"
@@ -979,10 +992,10 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <FaInstagram className="text-black text-2xl hover:text-[#ff1744] transition-colors" />
+              <FaInstagram className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
             <Link href="tel:555900999" aria-label="Telefon">
-              <FaPhone className="text-black text-2xl hover:text-[#ff1744] transition-colors" />
+              <FaPhone className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
           </div>
         </div>
@@ -990,18 +1003,165 @@ export default function Home() {
       <style jsx global>{`
         .custom-swiper-nav .swiper-button-next,
         .custom-swiper-nav .swiper-button-prev {
-          color: #22a7ea;
-          --swiper-navigation-color: #22a7ea;
+          color: #dc252a;
+          --swiper-navigation-color: #dc252a;
           filter: drop-shadow(0 2px 6px #0008);
         }
         .custom-swiper-nav .swiper-pagination-bullet {
-          background: #22a7ea;
+          background: #dc252a;
           opacity: 0.5;
         }
         .custom-swiper-nav .swiper-pagination-bullet-active {
-          background: #22a7ea;
+          background: #dc252a;
           opacity: 1;
           box-shadow: 0 0 0 2px #fff2;
+        }
+        .glitch-wrapper {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: transparent;
+        }
+        .glitch {
+          position: relative;
+          font-size: 2.2rem;
+          font-weight: 700;
+          line-height: 1.2;
+          letter-spacing: 5px;
+          animation: shift 4s ease-in-out infinite alternate;
+          z-index: 1;
+        }
+        .glitch:before {
+          content: attr(data-glitch);
+          position: absolute;
+          top: 0;
+          left: -2px;
+          text-shadow: -1px 0 #00ffff;
+          width: 100%;
+          color: #dc252a;
+          background: transparent;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-before 3s infinite linear alternate-reverse;
+        }
+        .glitch:after {
+          content: attr(data-glitch);
+          position: absolute;
+          top: 0;
+          left: 2px;
+          text-shadow: 1px 0 #dc252a;
+          width: 100%;
+          color: #dc252a;
+          background: transparent;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-after 2s infinite linear alternate-reverse;
+        }
+        @keyframes noise-before {
+          0% {
+            clip: rect(10px, 9999px, 20px, 0);
+          }
+          10% {
+            clip: rect(30px, 9999px, 40px, 0);
+          }
+          20% {
+            clip: rect(50px, 9999px, 60px, 0);
+          }
+          30% {
+            clip: rect(70px, 9999px, 80px, 0);
+          }
+          40% {
+            clip: rect(90px, 9999px, 100px, 0);
+          }
+          50% {
+            clip: rect(110px, 9999px, 120px, 0);
+          }
+          60% {
+            clip: rect(130px, 9999px, 140px, 0);
+          }
+          70% {
+            clip: rect(150px, 9999px, 160px, 0);
+          }
+          80% {
+            clip: rect(170px, 9999px, 180px, 0);
+          }
+          90% {
+            clip: rect(190px, 9999px, 200px, 0);
+          }
+          100% {
+            clip: rect(210px, 9999px, 220px, 0);
+          }
+        }
+        @keyframes noise-after {
+          0% {
+            clip: rect(20px, 9999px, 30px, 0);
+          }
+          10% {
+            clip: rect(40px, 9999px, 50px, 0);
+          }
+          20% {
+            clip: rect(60px, 9999px, 70px, 0);
+          }
+          30% {
+            clip: rect(80px, 9999px, 90px, 0);
+          }
+          40% {
+            clip: rect(100px, 9999px, 110px, 0);
+          }
+          50% {
+            clip: rect(120px, 9999px, 130px, 0);
+          }
+          60% {
+            clip: rect(140px, 9999px, 150px, 0);
+          }
+          70% {
+            clip: rect(160px, 9999px, 170px, 0);
+          }
+          80% {
+            clip: rect(180px, 9999px, 190px, 0);
+          }
+          90% {
+            clip: rect(200px, 9999px, 210px, 0);
+          }
+          100% {
+            clip: rect(220px, 9999px, 230px, 0);
+          }
+        }
+        @keyframes shift {
+          0%,
+          40%,
+          44%,
+          58%,
+          61%,
+          65%,
+          69%,
+          73%,
+          100% {
+            transform: skewX(0deg);
+          }
+          41% {
+            transform: skewX(10deg);
+          }
+          42% {
+            transform: skewX(-10deg);
+          }
+          59% {
+            transform: skewX(40deg) skewY(10deg);
+          }
+          60% {
+            transform: skewX(-40deg) skewY(-10deg);
+          }
+          63% {
+            transform: skewX(10deg) skewY(-5deg);
+          }
+          70% {
+            transform: skewX(-50deg) skewY(-20deg);
+          }
+          71% {
+            transform: skewX(10deg) skewY(-10deg);
+          }
         }
       `}</style>
     </div>

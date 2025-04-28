@@ -56,14 +56,14 @@ export default function HamburgerButton() {
       {isOpenMenu && (
         <>
           <div
-            className=" md:hidden fixed inset-0 backdrop-blur-lg   transition-opacity "
+            className=" md:hidden fixed inset-0 backdrop-blur-xl  bg-[rgba(70,70,70,0.69)]  transition-opacity "
             onClick={() => setIsOpenMenu(false)}
           ></div>
           <div
             className="md:hidden animate-fade-right animate-once animate-duration-400 animate-ease-in-out fixed top-0 left-0 h-full w-4/5 shadow-lg transition-all duration-500"
             style={{
               transform: isOpenMenu ? "translateX(0)" : "translateX(-100%)",
-              background: `radial-gradient(27% 29% at right, #0000 83%,#392800 85% 99%,#0000 101%) calc(10px/2) 10px,
+              background: `radial-gradient(27% 29% at right, #0000 83%,#39800 85% 99%,#0000 101%) calc(10px/2) 10px,
                 radial-gradient(27% 29% at left, #0000 83%,#392800 85% 99%,#0000 101%) calc(10px/-2) 10px,
                 radial-gradient(29% 27% at top, #0000 83%,#392800 85% 99%,#0000 101%) 0 calc(10px/2),
                 radial-gradient(29% 27% at bottom, #0000 83%,#392800 85% 99%,#0000 101%) 0 calc(10px/-2),
@@ -90,16 +90,32 @@ export default function HamburgerButton() {
                   text: "Umów się na trening",
                   href: "#contact",
                   className:
-                    "text-[#22A7EA] font-bold animate-bounce animate-duration-700",
+                    "relative font-bold uppercase text-white px-6 py-2 bg-[#0221a5] skew-x-[-15deg] shadow-lg transition-all duration-200 hover:bg-[#22A7EA] active:bg-[#22A7EA] hover:text-white active:text-white border-none overflow-hidden group",
+                  isSpecial: true,
                 },
               ].map((item, index) => (
                 <li key={index} className="w-full pointer-events-auto">
                   <Link
                     href={item.href}
                     scroll={false}
-                    className={`block py-3 transition-colors duration-200 ${
-                      item.className || ""
-                    } hover:font-extrabold`}
+                    className={
+                      item.isSpecial
+                        ? `${item.className}`
+                        : `block py-3 transition-transform duration-150 hover:-translate-y-1 active:-translate-y-1 ${
+                            item.className || ""
+                          } hover:font-extrabold`
+                    }
+                    style={
+                      item.isSpecial
+                        ? {
+                            display: "inline-block",
+                            borderRadius: 0,
+                            fontWeight: 700,
+                            fontSize: "1.1rem",
+                            boxShadow: "0 2px 12px 0 #22A7EA",
+                          }
+                        : {}
+                    }
                     onClick={() => {
                       setIsOpenMenu(false);
                       scrollToSection(item.href);
@@ -118,7 +134,13 @@ export default function HamburgerButton() {
                       e.currentTarget.classList.remove("font-bold")
                     }
                   >
-                    <span className="text-xl uppercase font-bold">
+                    <span
+                      className={
+                        item.isSpecial
+                          ? "skew-x-[15deg] block transition-transform duration-150 hover:translate-y-0.5 active:translate-y-0.5"
+                          : "text-xl uppercase font-bold transition-transform duration-150 hover:translate-y-0.5 active:translate-y-0.5"
+                      }
+                    >
                       {item.text}
                     </span>
                   </Link>
