@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AnimationOnScroll from "./Observer";
 
 export function FaqAccordion({
   faqs,
@@ -9,26 +10,29 @@ export function FaqAccordion({
   return (
     <div className="md:hidden flex flex-col gap-4">
       {faqs.map((faq, idx) => (
-        <div
-          key={idx}
-          className="bg-[#181818] rounded-xl shadow-lg cursor-pointer"
+        <AnimationOnScroll
+          key={idx} // Moved key here
+          classNameInView="animate-fade-left opacity-100"
+          classNameNotInView="opacity-0"
         >
-          <button
-            className="w-full text-left p-4 font-bold text-gray-200 focus:outline-none flex justify-between items-center cursor-pointer"
-            onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-            aria-expanded={openIdx === idx}
-          >
-            {faq.question}
-            <span className="ml-2 text-[#DC252A]">
-              {openIdx === idx ? "-" : "+"}
-            </span>
-          </button>
-          {openIdx === idx && (
-            <div className="p-4  pt-0 text-gray-200 animate-fade-in cursor-pointer">
-              {faq.answer}
-            </div>
-          )}
-        </div>
+          <div className="bg-[#181818] rounded-xl shadow-lg cursor-pointer">
+            <button
+              className="w-full text-left p-4 font-bold text-gray-200 focus:outline-none flex justify-between items-center cursor-pointer"
+              onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
+              aria-expanded={openIdx === idx}
+            >
+              {faq.question}
+              <span className="ml-2 text-[#DC252A]">
+                {openIdx === idx ? "-" : "+"}
+              </span>
+            </button>
+            {openIdx === idx && (
+              <div className="p-4 pt-0 text-gray-200 animate-fade-in cursor-pointer">
+                {faq.answer}
+              </div>
+            )}
+          </div>
+        </AnimationOnScroll>
       ))}
     </div>
   );

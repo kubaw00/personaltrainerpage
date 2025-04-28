@@ -268,7 +268,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#000", color: "#fff" }}
           >
-            <span className="mb-4 text-5xl animate-bounce">
+            <span className="mb-4 text-5xl animate-bounce ">
               <FaHeartbeat />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -285,7 +285,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-bounce">
+            <span className="mb-4 text-5xl animate-bounce animate-delay-200">
               <MdOutlineSportsGymnastics />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -302,7 +302,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#000", color: "#FFFFFF" }}
           >
-            <span className="mb-4 text-5xl animate-bounce">
+            <span className="mb-4 text-5xl animate-bounce animate-delay-400">
               <FaBrain />
             </span>
             <h3 className="font-bold text-xl mb-2">Równowaga dla umysłu</h3>
@@ -318,7 +318,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-bounce">
+            <span className="mb-4 text-5xl animate-bounce animate-delay-600">
               <CiBatteryFull />
             </span>
             <h3 className="font-bold text-xl mb-2">Energia w każdym ruchu</h3>
@@ -334,7 +334,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#000", color: "#fff" }}
           >
-            <span className="mb-4 text-5xl animate-bounce">
+            <span className="mb-4 text-5xl animate-bounce animate-delay-800">
               <MdPublishedWithChanges />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -351,7 +351,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-bounce">
+            <span className="mb-4 text-5xl animate-bounce animate-delay-1000">
               <CgArrowsExpandUpRight />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -760,7 +760,7 @@ export default function Home() {
         id="contact"
         className="w-full mt-18 px-6 max-w-[800px] md:w-[600px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
       >
-        <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
+        <h2 className="text-4xl  font-bold text-center mb-12 text-white">
           FORMULARZ <span style={{ color: "#DC252A" }}>KONTAKTOWY</span>
         </h2>
         <ContactForm />
