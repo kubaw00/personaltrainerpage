@@ -268,7 +268,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#000", color: "#fff" }}
           >
-            <span className="mb-4 text-5xl animate-pulse">
+            <span className="mb-4 text-5xl animate-bounce">
               <FaHeartbeat />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -285,7 +285,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-pulse">
+            <span className="mb-4 text-5xl animate-bounce">
               <MdOutlineSportsGymnastics />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -302,7 +302,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#000", color: "#FFFFFF" }}
           >
-            <span className="mb-4 text-5xl animate-pulse">
+            <span className="mb-4 text-5xl animate-bounce">
               <FaBrain />
             </span>
             <h3 className="font-bold text-xl mb-2">Równowaga dla umysłu</h3>
@@ -318,7 +318,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-pulse">
+            <span className="mb-4 text-5xl animate-bounce">
               <CiBatteryFull />
             </span>
             <h3 className="font-bold text-xl mb-2">Energia w każdym ruchu</h3>
@@ -334,7 +334,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#000", color: "#fff" }}
           >
-            <span className="mb-4 text-5xl animate-pulse">
+            <span className="mb-4 text-5xl animate-bounce">
               <MdPublishedWithChanges />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -351,7 +351,7 @@ export default function Home() {
             className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-pulse">
+            <span className="mb-4 text-5xl animate-bounce">
               <CgArrowsExpandUpRight />
             </span>
             <h3 className="font-bold text-xl mb-2">
@@ -609,10 +609,7 @@ export default function Home() {
       </section>
       {/* END FAQ SECTION */}
 
-      <section
-        style={{ boxShadow: "0px -20px 60px 40px #DC252A" }}
-        className="w-full my-25 md:px-10  bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80  py-10 px-4    md:max-w-3xl lg:max-w-5xl  mx-auto my-10 bg-black/90 rounded-2xl shadow-2xl p-6 md:p-12 flex flex-col gap-12"
-      >
+      <section className="w-full my-25 md:px-10  bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80  py-10 px-4    md:max-w-3xl lg:max-w-5xl  mx-auto my-10 bg-black/90 rounded-2xl shadow-2xl p-6 md:p-12 flex flex-col gap-12">
         <div className="flex justify-center space-x-2 text-[#DC252A] text-2xl">
           {[...Array(3)].map((_, i) => (
             <svg
@@ -628,7 +625,7 @@ export default function Home() {
           ))}
         </div>
         <div className="space-y-4">
-          <h2 className="text-2xl text-center font-bold text-white">
+          <h2 className="text-2xl uppercase text-center font-bold text-white">
             3-miesięczna przemiana sylwetki
           </h2>
           <p className="text-gray-200 leading-relaxed">
@@ -660,7 +657,7 @@ export default function Home() {
           ))}
         </div>
         <div className="space-y-4">
-          <h2 className="text-2xl text-center font-bold text-white">
+          <h2 className="text-2xl uppercase text-center font-bold text-white">
             Gdzie przeprowadzam Treningi?
           </h2>
           <div className="flex flex-col md:flex-row justify-center gap-5 items-center text-gray-200">
@@ -703,7 +700,7 @@ export default function Home() {
           ))}
         </div>
         <div className="space-y-4">
-          <h2 className="text-2xl text-center font-bold text-white">
+          <h2 className="text-2xl uppercase text-center font-bold text-white">
             Jaki jest koszt Treningu Personalnego?
           </h2>
           <p className="text-gray-200 leading-relaxed">
@@ -769,7 +766,7 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      <section className="w-full max-w-none bg-black/80 py-10 px-0 flex flex-col items-center relative overflow-x-visible overflow-y-visible">
+      <section className="w-full my-15 max-w-none bg-black/80  px-0 flex flex-col items-center relative overflow-x-visible overflow-y-visible">
         <div className="absolute inset-0 w-full h-full bg-black/80 -z-10" />
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-4">
           <span className="text-white">ZNAJDŹ MNIE NA PROFILACH </span>
