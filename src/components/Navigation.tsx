@@ -6,7 +6,7 @@ import { scrollToSection } from "@/utils/scrollToSection";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function Navigation() {
+export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

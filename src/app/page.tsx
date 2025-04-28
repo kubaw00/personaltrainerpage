@@ -1,7 +1,7 @@
 "use client";
 
-import Navigation from "../components/Navigation";
 import Image from "next/image";
+import Nav from "@/components/Navigation";
 
 import {
   FaInstagram,
@@ -15,11 +15,7 @@ import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import { scrollToSection } from "@/utils/scrollToSection";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  EffectCoverflow,
-  Navigation as SwiperNavigation,
-  Pagination,
-} from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
@@ -32,6 +28,57 @@ import {
 
 import { CiBatteryFull } from "react-icons/ci";
 import { CgArrowsExpandUpRight } from "react-icons/cg";
+
+const sliderImages = [
+  "/1_Easy-Resize.com (1)_Easy-Resize.com.jpg",
+  "/2_Easy-Resize.com (4)_Easy-Resize.com.jpg",
+  "/481682548_17873561865280084_5729706280772083147_n_Easy-Resize.com (1)_Easy-Resize.com.jpg",
+  "/DSC00829_Easy-Resize.com_Easy-Resize.com.jpg",
+  "/image00006_Easy-Resize.com.jpg",
+  "/image00031_Easy-Resize.com_Easy-Resize.com.jpg",
+  "/image00043_Easy-Resize.com_Easy-Resize.com.jpg",
+  "/Messenger_creation_AE1B44C4-A954-4C11-B08A-B43258509316_Easy-Resize.com_Easy-Resize.com.jpg",
+  "/Messenger_creation_F39F95DB-3554-41B8-9B41-32B8922C8825_Easy-Resize.com.jpg",
+];
+
+export function Swiper3dGallery() {
+  return (
+    <Swiper
+      effect={"coverflow"}
+      grabCursor={true}
+      centeredSlides={true}
+      slidesPerView={"auto"}
+      coverflowEffect={{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      }}
+      pagination={true}
+      modules={[EffectCoverflow, Pagination]}
+      className="mySwiper w-full max-w-4xl mx-auto"
+    >
+      {sliderImages.map((src, idx) => (
+        <SwiperSlide
+          key={idx}
+          className="!w-72 !h-96 flex items-center justify-center"
+        >
+          <div className="relative w-72 h-96 rounded-2xl overflow-hidden">
+            <Image
+              src={src}
+              alt={`slider-img-${idx}`}
+              fill
+              className="object-cover rounded-2xl"
+              sizes="(max-width: 768px) 90vw, 300px"
+              priority={idx === 0}
+            />
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+}
 
 function FaqAccordion({
   faqs,
@@ -68,18 +115,6 @@ function FaqAccordion({
 }
 
 export default function Home() {
-  const sliderImages = [
-    "/1_Easy-Resize.com (1)_Easy-Resize.com.jpg",
-    "/2_Easy-Resize.com (4)_Easy-Resize.com.jpg",
-    "/481682548_17873561865280084_5729706280772083147_n_Easy-Resize.com (1)_Easy-Resize.com.jpg",
-    "/DSC00829_Easy-Resize.com_Easy-Resize.com.jpg",
-    "/image00006_Easy-Resize.com.jpg",
-    "/image00031_Easy-Resize.com_Easy-Resize.com.jpg",
-    "/image00043_Easy-Resize.com_Easy-Resize.com.jpg",
-    "/Messenger_creation_AE1B44C4-A954-4C11-B08A-B43258509316_Easy-Resize.com_Easy-Resize.com.jpg",
-    "/Messenger_creation_F39F95DB-3554-41B8-9B41-32B8922C8825_Easy-Resize.com.jpg",
-  ];
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       setTimeout(() => {
@@ -134,7 +169,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen bg-black">
       <div className="w-full fixed top-0 left-0 z-50 ">
-        <Navigation />
+        <Nav />
       </div>
 
       <AnimationOnScroll
@@ -424,7 +459,7 @@ export default function Home() {
         }}
         navigation
         pagination={{ clickable: true }}
-        modules={[EffectCoverflow, SwiperNavigation, Pagination]}
+        modules={[EffectCoverflow, Navigation, Pagination]}
         className="w-full my-5 lg:!max-w-none lg:!px-0 lg:!mx-0 custom-swiper-nav"
       >
         {sliderImages.map((src, idx) => (
