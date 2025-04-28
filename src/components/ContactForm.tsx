@@ -5,6 +5,8 @@ import { sendEmail } from "@/actions/sendEmail";
 import { useActionState } from "react";
 import toast from "react-hot-toast";
 import { useEffect } from "react";
+import { FaUser, FaPhone, FaEnvelope } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
 
 const initialState = {
   message: "",
@@ -19,11 +21,17 @@ function SubmitButton() {
       type="submit"
       aria-disabled={pending}
       disabled={pending}
-      className={`w-full py-2 px-4 rounded-md transition duration-300 ${
-        pending
-          ? "bg-gray-500 text-gray-300 cursor-not-allowed"
-          : "bg-amber-500 text-white hover:bg-amber-600 cursor-pointer"
-      }`}
+      className={`w-full py-2 px-4 rounded-md font-bold transition duration-300 border-2
+        bg-transparent
+        border-amber-400 text-amber-400
+        hover:bg-amber-400 hover:text-black hover:border-black
+        active:bg-amber-400 active:text-black active:border-black
+        ${
+          pending
+            ? "border-gray-400 text-gray-400 cursor-not-allowed"
+            : "cursor-pointer"
+        }
+      `}
     >
       {pending ? "Wysyłanie..." : "Wyślij wiadomość"}
     </button>
@@ -46,60 +54,84 @@ export default function ContactForm() {
 
   return (
     <form action={formAction} className="w-full mx-auto space-y-4 text-white">
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium mb-1">
-          Imię
-        </label>
+      <div className="relative">
         <input
           type="text"
           id="name"
           name="name"
           required
-          placeholder="Imię..."
-          className="w-full rounded-md bg-gray-800 border border-gray-700 p-5 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+          placeholder=" "
+          className="w-full rounded-md bg-gray-800 border border-gray-700 p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
         />
+        <label
+          htmlFor="name"
+          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-amber-400 bg-transparent"
+        >
+          Imię
+        </label>
+        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-amber-600 pointer-events-none">
+          <FaUser />
+        </span>
       </div>
 
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium mb-1">
-          Email
-        </label>
+      <div className="relative">
         <input
           type="email"
           id="email"
           name="email"
           required
-          placeholder=" np. twojmail@gmail.com"
-          className="w-full rounded-md bg-gray-800 border border-gray-700 p-5 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+          placeholder=" "
+          className="w-full rounded-md bg-gray-800 border border-gray-700 p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
         />
+        <label
+          htmlFor="email"
+          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-amber-400 bg-transparent"
+        >
+          Email
+        </label>
+        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-amber-600 pointer-events-none">
+          <MdAlternateEmail />
+        </span>
       </div>
 
-      <div>
-        <label htmlFor="phone" className="block text-sm font-medium mb-1">
-          Telefon
-        </label>
+      <div className="relative">
         <input
           type="tel"
           id="phone"
           name="phone"
           required
-          placeholder="Numer telefonu"
-          className="w-full rounded-md bg-gray-800 border border-gray-700  p-5 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+          placeholder=" "
+          className="w-full rounded-md bg-gray-800 border border-gray-700  p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
         />
+        <label
+          htmlFor="phone"
+          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-amber-400 bg-transparent"
+        >
+          Telefon
+        </label>
+        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-amber-600 pointer-events-none">
+          <FaPhone />
+        </span>
       </div>
 
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-1">
-          Wiadomość
-        </label>
+      <div className="relative">
         <textarea
           id="message"
           name="message"
           required
           rows={4}
-          placeholder="Cel treningowy oraz preferowane godziny treningu"
-          className="w-full p-5 rounded-md bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+          placeholder=" "
+          className="w-full p-5 rounded-md bg-gray-800 border border-gray-700 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer resize-none"
         />
+        <label
+          htmlFor="message"
+          className="absolute left-5 top-6 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-amber-400 bg-transparent"
+        >
+          Wiadomość
+        </label>
+        <span className="absolute right-4 top-6 flex items-center h-6 text-amber-600 pointer-events-none">
+          <FaEnvelope />
+        </span>
       </div>
 
       <SubmitButton />
