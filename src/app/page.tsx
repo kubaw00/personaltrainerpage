@@ -461,7 +461,7 @@ export default function Home() {
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
                 tabIndex={0}
               >
                 <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
