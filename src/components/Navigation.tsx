@@ -25,7 +25,7 @@ export default function Nav() {
       style={{
         borderBottom: "1px solid",
         borderImage: !scrolled
-          ? "linear-gradient(to right, #000, #bfa000 90%) 1"
+          ? "linear-gradient(to right, #000, #22A7EA 90%) 1"
           : undefined,
         background: scrolled ? "#0c101c" : undefined,
       }}
@@ -56,7 +56,7 @@ export default function Nav() {
               <Link
                 href={item.href}
                 scroll={false}
-                className="group relative inline-flex items-center justify-center md:mr-4 text-white text-base font-bold tracking-wide transition-all duration-200 hover:text-amber-400 active:text-amber-400 cursor-pointer"
+                className="group relative inline-flex items-center justify-center md:mr-4 text-white text-base font-bold tracking-wide transition-all duration-200 hover:text-[#22A7EA] active:[#22A7EA] cursor-pointer"
                 aria-label={item.text}
                 onClick={(e) => {
                   e.preventDefault();
@@ -78,8 +78,8 @@ export default function Nav() {
                 <span className="px-2 uppercase">{item.text}</span>
 
                 {/* kreska */}
-                <span className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-amber-400 transition-all duration-300 group-hover:w-1/2 group-hover:left-0 animate-fade-in"></span>
-                <span className="absolute bottom-0 right-1/2 h-[2px] w-0 bg-amber-400 transition-all duration-300 group-hover:w-1/2 group-hover:right-0 animate-fade-in"></span>
+                <span className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-[#22A7EA] transition-all duration-300 group-hover:w-1/2 group-hover:left-0 animate-fade-in"></span>
+                <span className="absolute bottom-0 right-1/2 h-[2px] w-0 bg-[#22A7EA] transition-all duration-300 group-hover:w-1/2 group-hover:right-0 animate-fade-in"></span>
               </Link>
             </li>
           ))}

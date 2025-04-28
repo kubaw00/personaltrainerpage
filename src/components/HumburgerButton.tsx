@@ -90,7 +90,7 @@ export default function HamburgerButton() {
                   text: "Umów się na trening",
                   href: "#contact",
                   className:
-                    "text-[#fcb045] font-bold animate-bounce animate-duration-700",
+                    "text-[#22A7EA] font-bold animate-bounce animate-duration-700",
                 },
               ].map((item, index) => (
                 <li key={index} className="w-full pointer-events-auto">
@@ -99,7 +99,7 @@ export default function HamburgerButton() {
                     scroll={false}
                     className={`block py-3 transition-colors duration-200 ${
                       item.className || ""
-                    } hover:text-[#fcb045]`}
+                    } hover:font-extrabold`}
                     onClick={() => {
                       setIsOpenMenu(false);
                       scrollToSection(item.href);
