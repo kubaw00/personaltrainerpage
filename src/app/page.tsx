@@ -91,7 +91,7 @@ function FaqAccordion({
       {faqs.map((faq, idx) => (
         <div
           key={idx}
-          className="bg-gray-800 rounded-xl shadow-lg cursor-pointer"
+          className="bg-[#181818] rounded-xl shadow-lg cursor-pointer"
         >
           <button
             className="w-full text-left p-4 font-bold text-gray-200 focus:outline-none flex justify-between items-center cursor-pointer"
@@ -104,7 +104,7 @@ function FaqAccordion({
             </span>
           </button>
           {openIdx === idx && (
-            <div className="p-4 pt-0 text-gray-200 animate-fade-in cursor-pointer">
+            <div className="p-4  pt-0 text-gray-200 animate-fade-in cursor-pointer">
               {faq.answer}
             </div>
           )}
@@ -481,7 +481,7 @@ export default function Home() {
       {/* FAQ SECTION */}
       <section
         id="questions"
-        className="w-full mt-15 max-w-3xl mx-auto mb-16 px-4"
+        className="w-full mt-15 max-w-3xl mx-auto mb-16 px-4 "
       >
         <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
           NAJCZĘSTSZE <span style={{ color: "#fcb045" }}>PYTANIA</span>

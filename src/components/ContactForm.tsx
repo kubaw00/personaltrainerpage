@@ -61,7 +61,7 @@ export default function ContactForm() {
           name="name"
           required
           placeholder=" "
-          className="w-full rounded-md bg-gray-800 border border-gray-700 p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
+          className="w-full rounded-md bg-[#181818] border border-amber-400 p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
         />
         <label
           htmlFor="name"
@@ -81,7 +81,7 @@ export default function ContactForm() {
           name="email"
           required
           placeholder=" "
-          className="w-full rounded-md bg-gray-800 border border-gray-700 p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
+          className="w-full rounded-md bg-[#181818] border border-amber-400 p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
         />
         <label
           htmlFor="email"
@@ -101,7 +101,7 @@ export default function ContactForm() {
           name="phone"
           required
           placeholder=" "
-          className="w-full rounded-md bg-gray-800 border border-gray-700  p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
+          className="w-full rounded-md bg-[#181818] border border-amber-400  p-5 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer"
         />
         <label
           htmlFor="phone"
@@ -121,7 +121,7 @@ export default function ContactForm() {
           required
           rows={4}
           placeholder=" "
-          className="w-full p-5 rounded-md bg-gray-800 border border-gray-700 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer resize-none"
+          className="w-full p-5 rounded-md bg-[#181818] border border-amber-400 pr-12 focus:ring-2 focus:ring-amber-500 focus:outline-none peer resize-none"
         />
         <label
           htmlFor="message"
