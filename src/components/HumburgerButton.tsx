@@ -56,11 +56,14 @@ export default function HamburgerButton() {
       {isOpenMenu && (
         <>
           <div
-            className=" md:hidden fixed inset-0 backdrop-blur-xl   transition-opacity "
+            className=" md:hidden fixed inset-0 backdrop-blur-xl transition-opacity transition-blur"
             onClick={() => setIsOpenMenu(false)}
           ></div>
           <div
-            className="md:hidden bg-black animate-fade-right animate-once animate-duration-400 animate-ease-in-out fixed top-0 left-0 h-full w-4/5 shadow-lg transition-all duration-500"
+            className={
+              "md:hidden bg-black fixed top-0 left-0 h-full w-4/5 shadow-lg transition-all duration-500" +
+              (isOpenMenu ? " animate-slide-in-left" : "")
+            }
             style={{
               transform: isOpenMenu ? "translateX(0)" : "translateX(-100%)",
 
@@ -146,6 +149,24 @@ export default function HamburgerButton() {
           </div>
         </>
       )}
+      <style jsx global>{`
+        @keyframes slide-in-left {
+          from {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        .animate-slide-in-left {
+          animation: slide-in-left 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+        }
+        .transition-blur {
+          transition: filter 200ms;
+        }
+      `}</style>
     </>
   );
 }

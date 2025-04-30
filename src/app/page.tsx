@@ -125,7 +125,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="z-20 flex flex-col mt-[500px] md:mt-[400px]  w-full md:w-1/2  px-6 py-16 md:py-0 md:pl-16">
+          <div className="z-20 flex flex-col mt-[450px] md:mt-[400px]  w-full md:w-1/2  px-6 py-16 md:py-0 md:pl-16">
             <h1 className="text-gray-200 text-5xl font-extrabold  md:text-6xl  lg:text-7xl animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6  lg:leading-15 md:font-bold">
               ŁUKASZ <span className="text-[#DC252A]">MOCZKODAN</span>
             </h1>
