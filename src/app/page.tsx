@@ -29,6 +29,7 @@ import {
 
 import { CiBatteryFull } from "react-icons/ci";
 import { CgArrowsExpandUpRight } from "react-icons/cg";
+import GlitchText from "@/components/GlitchText";
 
 const sliderImages = [
   "/1_Easy-Resize.com (1)_Easy-Resize.com.jpg",
@@ -885,93 +886,44 @@ export default function Home() {
 
       <footer
         style={{ boxShadow: "0px 0px 80px 40px #000000" }}
-        className="w-full mt-30 bg-[#f5f6f7] py-10 px-4 mt-10"
+        className="w-full mt-10 bg-[#f5f6f7] py-15 px-4"
       >
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           {/* Logo i nazwa */}
-          <div className="glitch-wrapper w-full flex items-center justify-center text-center bg-transparent mb-8">
-            <div
-              className="glitch font-extrabold text-3xl md:text-4xl tracking-wider text-center"
-              data-glitch="ŁUKASZ MOCZKODAN"
-              style={{ color: "#000000" }}
-            >
-              ŁUKASZ <span className="text-[#000000]">MOCZKODAN</span>
-            </div>
-          </div>
+
+          <GlitchText />
+
           {/* Nawigacja sekcji */}
           <nav className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 mb-8">
-            <button
-              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
-              onClick={() => scrollToSection("#about")}
-              onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-              onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-            >
-              O MNIE
-            </button>
-            <button
-              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
-              onClick={() => scrollToSection("#trainings")}
-              onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-              onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-            >
-              TRENINGI PERSONALNE
-            </button>
-            <button
-              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
-              onClick={() => scrollToSection("#questions")}
-              onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-              onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-            >
-              NAJCZĘSTSZE PYTANIA (FAQ)
-            </button>
-            <button
-              className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
-              onClick={() => scrollToSection("#contact")}
-              onTouchStart={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onTouchEnd={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-              onMouseDown={(e) =>
-                e.currentTarget.classList.add("text-[#DC252A]")
-              }
-              onMouseUp={(e) =>
-                e.currentTarget.classList.remove("text-[#000000]")
-              }
-            >
-              KONTAKT
-            </button>
+            {[
+              { label: "O MNIE", section: "#about" },
+              { label: "TRENINGI PERSONALNE", section: "#trainings" },
+              { label: "NAJCZĘSTSZE PYTANIA (FAQ)", section: "#questions" },
+              { label: "KONTAKT", section: "#contact" },
+            ].map(({ label, section }) => (
+              <button
+                key={section}
+                className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
+                onClick={() => scrollToSection(section)}
+                onMouseDown={(e) =>
+                  e.currentTarget.classList.add("text-[#DC252A]")
+                }
+                onMouseUp={(e) =>
+                  e.currentTarget.classList.remove("text-[#DC252A]")
+                }
+                onMouseLeave={(e) =>
+                  e.currentTarget.classList.remove("text-[#DC252A]")
+                }
+                onTouchStart={(e) =>
+                  e.currentTarget.classList.add("text-[#DC252A]")
+                }
+                onTouchEnd={(e) =>
+                  e.currentTarget.classList.remove("text-[#DC252A]")
+                }
+              >
+                {label}
+              </button>
+            ))}
           </nav>
           {/* Ikony social media */}
           <div className="flex gap-8 items-center justify-center w-full mb-2">
@@ -997,7 +949,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-      <style jsx global>{`
+      {/* <style jsx global>{`
         .custom-swiper-nav .swiper-button-next,
         .custom-swiper-nav .swiper-button-prev {
           color: #dc252a;
@@ -1160,7 +1112,7 @@ export default function Home() {
             transform: skewX(10deg) skewY(-10deg);
           }
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

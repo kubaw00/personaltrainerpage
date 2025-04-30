@@ -56,18 +56,14 @@ export default function HamburgerButton() {
       {isOpenMenu && (
         <>
           <div
-            className=" md:hidden fixed inset-0 backdrop-blur-xl  bg-[rgba(70,70,70,0.69)]  transition-opacity "
+            className=" md:hidden fixed inset-0 backdrop-blur-xl   transition-opacity "
             onClick={() => setIsOpenMenu(false)}
           ></div>
           <div
-            className="md:hidden animate-fade-right animate-once animate-duration-400 animate-ease-in-out fixed top-0 left-0 h-full w-4/5 shadow-lg transition-all duration-500"
+            className="md:hidden bg-black animate-fade-right animate-once animate-duration-400 animate-ease-in-out fixed top-0 left-0 h-full w-4/5 shadow-lg transition-all duration-500"
             style={{
               transform: isOpenMenu ? "translateX(0)" : "translateX(-100%)",
-              background: `radial-gradient(27% 29% at right, #0000 83%,#39800 85% 99%,#0000 101%) calc(10px/2) 10px,
-                radial-gradient(27% 29% at left, #0000 83%,#392800 85% 99%,#0000 101%) calc(10px/-2) 10px,
-                radial-gradient(29% 27% at top, #0000 83%,#392800 85% 99%,#0000 101%) 0 calc(10px/2),
-                radial-gradient(29% 27% at bottom, #0000 83%,#392800 85% 99%,#0000 101%) 0 calc(10px/-2),
-                #000000`,
+
               backgroundSize: "20px 20px",
             }}
             aria-hidden={!isOpenMenu}

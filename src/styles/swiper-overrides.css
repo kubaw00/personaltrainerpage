@@ -1,0 +1,17 @@
+.custom-swiper-nav .swiper-button-next,
+.custom-swiper-nav .swiper-button-prev {
+  color: #dc252a;
+  --swiper-navigation-color: #dc252a;
+  filter: drop-shadow(0 2px 6px #0008);
+}
+
+.custom-swiper-nav .swiper-pagination-bullet {
+  background: #dc252a;
+  opacity: 0.5;
+}
+
+.custom-swiper-nav .swiper-pagination-bullet-active {
+  background: #dc252a;
+  opacity: 1;
+  box-shadow: 0 0 0 2px #fff2;
+}

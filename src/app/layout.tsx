@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-
 import "./globals.css";
+import "@/styles/animations.css";
+import "@/styles/swiper-overrides.css";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
