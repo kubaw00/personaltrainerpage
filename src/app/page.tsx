@@ -718,9 +718,8 @@ export default function Home() {
             <li>Możesz napisać bez zobowiązań</li>
           </ul>
           <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
-            Czas działać! Nie musisz być idealnie gotowy, aby zmienić swoje
-            życie w 3 miesiące. Skontaktuj się ze mną za pomocą poniższego
-            formularza!
+            Czas działać! Nie musisz być idealnie gotowy. Zmień swoje życie w 3
+            miesiące. Skontaktuj się ze mną za pomocą poniższego formularza!
           </p>
         </div>
       </section>
