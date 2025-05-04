@@ -7,25 +7,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 500);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <nav
       className="w-full h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5 border-b-0 transition-transform duration-500 ${
        "
       style={{
         borderBottom: "1px solid",
-        borderImage: !scrolled
-          ? "linear-gradient(to right, transparent, #DC252A 90%) 1"
-          : undefined,
+        borderImage: "linear-gradient(to right, transparent, #DC252A 90%) 1",
+
         background: "#FFFFFF",
       }}
     >

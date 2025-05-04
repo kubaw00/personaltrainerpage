@@ -29,7 +29,6 @@ import {
 
 import { CiBatteryFull } from "react-icons/ci";
 import { CgArrowsExpandUpRight } from "react-icons/cg";
-import GlitchText from "@/components/GlitchText";
 
 const sliderImages = [
   "/1_Easy-Resize.com (1)_Easy-Resize.com.jpg",
@@ -169,7 +168,7 @@ export default function Home() {
 
       <section
         id="trainings"
-        className="mt-15 w-full max-w-6xl mx-auto my-12   flex flex-col relative overflow-hidden bg-black py-10 md:py-15 px-4 sm:px-6 lg:px-8"
+        className="mt-20 py-10 px-4 w-full max-w-6xl mx-auto mb-12   flex flex-col relative overflow-hidden bg-black  md:py-15  "
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-20 text-white">
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
@@ -434,7 +433,7 @@ export default function Home() {
       {/* FAQ SECTION */}
       <section
         id="questions"
-        className="w-full mt-20 max-w-3xl mx-auto mb-16 px-4 "
+        className="w-full py-10 md:mt-20 md:pt-10 max-w-3xl mx-auto mb-16 px-4 "
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
           NAJCZĘSTSZE <span style={{ color: "#DC252A" }}>PYTANIA </span>
@@ -728,9 +727,9 @@ export default function Home() {
 
       <section
         id="contact"
-        className="w-full mt-18 px-6 max-w-[800px] md:w-[600px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
+        className="w-full mt-20 py-10  px-6 max-w-[800px] md:w-[700px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
       >
-        <h2 className="text-4xl  font-bold text-center mb-12 text-white">
+        <h2 className="text-4xl md:text-5xl w-full  font-bold text-center mb-12 text-white">
           FORMULARZ <span style={{ color: "#DC252A" }}>KONTAKTOWY</span>
         </h2>
         <ContactForm />
