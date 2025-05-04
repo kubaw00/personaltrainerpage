@@ -178,7 +178,7 @@ export default function Home() {
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
         </h2>
 
-        <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+        <div className=" border-2 border-[#DC252A] bg-black/70 bg-blend-darken bg-[url('/sven-mieke-n0IVZWQKBuA-unsplash.jpg')] bg-cover bg-center  rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
             <h3 className="text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
               3-miesięczna przemiana sylwetki
@@ -713,7 +713,7 @@ export default function Home() {
         role="region"
         aria-label="Lokalizacja treningów"
       >
-        <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+        <div className=" bg-black/80 bg-blend-darken bg-[url('/sven-vahaja-1hZjJh-mGeA-unsplash.jpg')] bg-cover bg-center border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
             <h3 className="text-3xl md:text-4xl  lg:text-5xl font-extrabold text-[#DC252A] mb-10 text-center uppercase tracking-wider">
               Gdzie przeprowadzam Treningi?
@@ -1025,7 +1025,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-sm text-center font-light text-grey-300">
-          Copyright © Łukasz Moczkodan 2024, created by Jakub Widurek
+          Copyright © Łukasz Moczkodan 2025, created by Jakub Widurek
         </p>
       </footer>
     </div>
