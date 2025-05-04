@@ -4,7 +4,6 @@ import Image from "next/image";
 import HamburgerButton from "./HumburgerButton";
 import { scrollToSection } from "@/utils/scrollToSection";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function Nav() {
   return (
