@@ -33,7 +33,7 @@ export default function HamburgerButton() {
               isOpenMenu ? "rotate-45 top-1/2 -translate-y-1/2" : "top-0"
             }`}
           >
-            <span className="absolute left-0 bg-white w-full h-full"></span>
+            <span className="absolute left-0 bg-black w-full h-full"></span>
           </div>
 
           <div
@@ -41,15 +41,15 @@ export default function HamburgerButton() {
               isOpenMenu ? "translate-x-1/2 opacity-0" : " "
             }`}
           >
-            <span className="absolute left-0 bg-white w-full h-full"></span>
+            <span className="absolute left-0  bg-black w-full h-full"></span>
           </div>
 
           <div
-            className={`relative bg-white w-full h-[5%] transition-all duration-400 ${
+            className={`relative  bg-black w-full h-[5%] transition-all duration-400 ${
               isOpenMenu ? "-rotate-45 -top-1/2 translate-y-1/2 " : "bottom-0"
             }`}
           >
-            <span className="absolute left-0 bg-white w-full h-full"></span>
+            <span className="absolute left-0  bg-black w-full h-full"></span>
           </div>
         </div>
       </button>
@@ -89,7 +89,7 @@ export default function HamburgerButton() {
                   text: "Umów się na trening",
                   href: "#contact",
                   className:
-                    "relative font-bold uppercase text-white px-6 py-2 bg-[#0221a5] skew-x-[-15deg] shadow-lg transition-all duration-200 hover:bg-[#22A7EA] active:bg-[#22A7EA] hover:text-white active:text-white border-none overflow-hidden group",
+                    "relative font-bold uppercase text-white px-6 py-2 bg-[#DC152A] skew-x-[-15deg] shadow-lg transition-all duration-200 hover:bg-[#8F0000] active:bg-[#8F0000] hover:text-white active:text-white border-none overflow-hidden group",
                   isSpecial: true,
                 },
               ].map((item, index) => (
@@ -111,7 +111,7 @@ export default function HamburgerButton() {
                             borderRadius: 0,
                             fontWeight: 700,
                             fontSize: "1.1rem",
-                            boxShadow: "0 2px 12px 0 #22A7EA",
+                            boxShadow: "0 2px 12px 0 #DC252A",
                           }
                         : {}
                     }

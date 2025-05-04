@@ -107,7 +107,7 @@ export default function Home() {
       >
         <section
           id="about"
-          className="w-full mt-[90px] md:mt-[120px] relative transition-opacity duration-1000 bg-black h-screen"
+          className="w-full overflow-hidden mt-[90px] md:mt-[120px] relative transition-opacity duration-1000 bg-black h-screen"
         >
           <div className="z-20 hidden lg:absolute lg:block top-[40%] right-[-400px]  xl:right-[-10%] lg:top-[15%]">
             <Image alt="arrow" src="/arrow.png" height={300} width={900} />
@@ -169,103 +169,105 @@ export default function Home() {
 
       <section
         id="trainings"
-        className="md:mx-6 mt-15 max-w-6xl flex flex-col relative overflow-hidden bg-black py-10 md:py-15 px-4 sm:px-6 lg:px-8"
+        className="mt-15 w-full max-w-6xl mx-auto my-12   flex flex-col relative overflow-hidden bg-black py-10 md:py-15 px-4 sm:px-6 lg:px-8"
       >
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-20 text-white">
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
         </h2>
 
-        <div className="w-full max-w-4xl mx-auto my-12 relative">
-          <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-4deg] relative overflow-hidden">
-            <div className="skew-y-[3deg]">
-              <h3 className="text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
-                3-miesięczna przemiana sylwetki
-              </h3>
-              <p className="my-15 text-gray-200 text-lg md:text-xl text-center mb-8 max-w-2xl mx-auto">
-                W 90 dni poprowadzę Cię przez kompleksową zmianę, w skład której
-                wchodzą:
-              </p>
-              <ul className="space-y-4 max-w-2xl mx-auto mb-8">
-                <li className="flex items-start gap-3 text-lg md:text-xl ">
-                  <span className="mt-1 ">✅</span>
-                  <span className="text-gray-100">
-                    treningi precyzyjnie dobrane do Twojego celu, możliwości i
-                    preferencji
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                  <span className="mt-1">✅</span>
-                  <span className="text-gray-100">
-                    plan żywieniowy będący wsparciem w osiąganiu Twoich celów —
-                    bez ciężaru i zbędnych wyrzeczeń
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                  <span className="mt-1">✅</span>
-                  <span className="text-gray-100">
-                    systematyczna analiza postępów i dostosowywanie planu do
-                    Twoich aktualnych potrzeb
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                  <span className="mt-1">✅</span>
-                  <span className="text-gray-100">
-                    wsparcie mentalne — bo zmiana sylwetki zaczyna się od zmiany
-                    sposobu myślenia
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                  <span className="mt-1">✅</span>
-                  <span className="text-gray-100">
-                    motywacja i narzędzia, które pomogą Ci wytrwać i cieszyć się
-                    drogą, a nie tylko celem
-                  </span>
-                </li>
-              </ul>
-              <p className="text-gray-200 text-lg md:text-xl text-center max-w-2xl mx-auto">
-                Nie ważne, czy Twoim marzeniem jest lepsza sylwetka, większa
-                siła, sprawniejsze ciało czy po prostu codzienne lepsze
-                samopoczucie — tutaj masz wszystko, czego potrzebujesz, żeby to
-                osiągnąć.
-              </p>
+        <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+          <div className="skew-y-[3deg]">
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
+              3-miesięczna przemiana sylwetki
+            </h3>
+            <p className="my-15 text-gray-200 text-lg md:text-xl text-center mb-8 max-w-2xl mx-auto">
+              W 90 dni poprowadzę Cię przez kompleksową zmianę, w skład której
+              wchodzą:
+            </p>
+            <ul className="space-y-4 max-w-2xl mx-auto mb-8">
+              <li className="flex items-start gap-3 text-lg md:text-xl ">
+                <span className="mt-1 ">✅</span>
+                <span className="text-gray-100">
+                  treningi precyzyjnie dobrane do Twojego celu, możliwości i
+                  preferencji
+                </span>
+              </li>
+              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                <span className="mt-1">✅</span>
+                <span className="text-gray-100">
+                  plan żywieniowy będący wsparciem w osiąganiu Twoich celów —
+                  bez ciężaru i zbędnych wyrzeczeń
+                </span>
+              </li>
+              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                <span className="mt-1">✅</span>
+                <span className="text-gray-100">
+                  systematyczna analiza postępów i dostosowywanie planu do
+                  Twoich aktualnych potrzeb
+                </span>
+              </li>
+              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                <span className="mt-1">✅</span>
+                <span className="text-gray-100">
+                  wsparcie mentalne — bo zmiana sylwetki zaczyna się od zmiany
+                  sposobu myślenia
+                </span>
+              </li>
+              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                <span className="mt-1">✅</span>
+                <span className="text-gray-100">
+                  motywacja i narzędzia, które pomogą Ci wytrwać i cieszyć się
+                  drogą, a nie tylko celem
+                </span>
+              </li>
+            </ul>
+            <p className="text-gray-200 text-lg md:text-xl text-center max-w-2xl mx-auto">
+              Nie ważne, czy Twoim marzeniem jest lepsza sylwetka, większa siła,
+              sprawniejsze ciało czy po prostu codzienne lepsze samopoczucie —
+              tutaj masz wszystko, czego potrzebujesz, żeby to osiągnąć.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <AnimationOnScroll
+        classNameInView="animate-fade-up w-full opacity-100"
+        classNameNotInView="opacity-0"
+      >
+        <section
+          className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2  text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
+          style={{
+            boxShadow: "0px -30px 100px 60px #DC252A",
+          }}
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl m-10 font-extrabold text-center mb-12 text-white">
+            CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
+          </h2>
+
+          <div className="flex flex-col md:flex-row md:justify-between w-full">
+            <p className="leading-relaxed p-10 text-gray-200 lg:text-xl w-full md:w-1/2 flex-shrink-0">
+              Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
+              budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
+              część układanki - najważniejsze jest to, jak się czujesz na co
+              dzień, jak postrzegasz siebie i jak wpływa to na Twoje życie. Na
+              co dzień pracuję z osobami o różnorodnych celach — pomagam w
+              redukcji tkanki tłuszczowej, budowie masy mięśniowej, poprawie
+              sprawności, przygotowaniu do testów sprawnościowych czy powrocie
+              do formy po urazach. Niezależnie od Twojego punktu wyjścia,
+              znajdziemy najlepsze rozwiązanie dla Ciebie.
+            </p>
+            <div className="relative grow my-auto justify-center w-full h-[500px]">
+              <Image
+                alt="photo1"
+                src="/Messenger_creation_A125B378-5B7A-4B5D-9CF4-33A85B91208E_Easy-Resize.com.jpg"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-top w-full h-full rounded-none md:rounded-tl-2xl "
+              />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section
-        className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2  text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
-        style={{
-          boxShadow: "0px -30px 100px 60px #DC252A",
-        }}
-      >
-        <h2 className="text-4xl md:text-5xl lg:text-6xl m-10 font-extrabold text-center mb-12 text-white">
-          CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
-        </h2>
-
-        <div className="flex flex-col md:flex-row md:justify-between w-full">
-          <p className="leading-relaxed p-10 text-gray-200 lg:text-xl w-full md:w-1/2 flex-shrink-0">
-            Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
-            budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
-            część układanki - najważniejsze jest to, jak się czujesz na co
-            dzień, jak postrzegasz siebie i jak wpływa to na Twoje życie. Na co
-            dzień pracuję z osobami o różnorodnych celach — pomagam w redukcji
-            tkanki tłuszczowej, budowie masy mięśniowej, poprawie sprawności,
-            przygotowaniu do testów sprawnościowych czy powrocie do formy po
-            urazach. Niezależnie od Twojego punktu wyjścia, znajdziemy najlepsze
-            rozwiązanie dla Ciebie.
-          </p>
-          <div className="relative grow my-auto justify-center w-full h-[500px]">
-            <Image
-              alt="photo1"
-              src="/Messenger_creation_A125B378-5B7A-4B5D-9CF4-33A85B91208E_Easy-Resize.com.jpg"
-              fill
-              sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover object-top w-full h-full rounded-none md:rounded-tl-2xl "
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      </AnimationOnScroll>
 
       <section className="w-full mt-25 py-16 px-2 md:px-0 bg-black">
         <h2 className="text-4xl mb-20 md:text-5xl lg:text-6xl font-extrabold text-center  text-white">
@@ -434,7 +436,7 @@ export default function Home() {
         id="questions"
         className="w-full mt-20 max-w-3xl mx-auto mb-16 px-4 "
       >
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-center mb-12 text-white">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
           NAJCZĘSTSZE <span style={{ color: "#DC252A" }}>PYTANIA </span>
         </h2>
         {/* Accordion for mobile, normal view for md+ */}
@@ -734,7 +736,7 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      <section className="w-full my-15 max-w-none bg-black/80  px-0 flex flex-col items-center relative overflow-x-visible overflow-y-visible">
+      <section className="w-full my-15 max-w-none bg-black/80  px-2 flex flex-col items-center relative overflow-x-visible overflow-y-visible">
         <div className="absolute inset-0 w-full h-full bg-black/80 -z-10" />
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-4">
           <span className="text-white">ZNAJDŹ MNIE NA PROFILACH </span>
@@ -858,7 +860,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           {/* Logo i nazwa */}
 
-          <GlitchText />
+          <div
+            className=" font-bold p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
+            data-glitch="ŁUKASZ MOCZKODAN"
+            style={{ color: "#000000" }}
+          >
+            ŁUKASZ <span className="text-[#000000]">MOCZKODAN</span>
+          </div>
 
           {/* Nawigacja sekcji */}
           <nav className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 mb-8">
@@ -916,170 +924,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-      {/* <style jsx global>{`
-        .custom-swiper-nav .swiper-button-next,
-        .custom-swiper-nav .swiper-button-prev {
-          color: #dc252a;
-          --swiper-navigation-color: #dc252a;
-          filter: drop-shadow(0 2px 6px #0008);
-        }
-        .custom-swiper-nav .swiper-pagination-bullet {
-          background: #dc252a;
-          opacity: 0.5;
-        }
-        .custom-swiper-nav .swiper-pagination-bullet-active {
-          background: #dc252a;
-          opacity: 1;
-          box-shadow: 0 0 0 2px #fff2;
-        }
-        .glitch-wrapper {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          background: transparent;
-        }
-        .glitch {
-          position: relative;
-          font-size: 2.2rem;
-          font-weight: 700;
-          line-height: 1.2;
-          letter-spacing: 5px;
-          animation: shift 4s ease-in-out infinite alternate;
-          z-index: 1;
-        }
-        .glitch:before {
-          content: attr(data-glitch);
-          position: absolute;
-          top: 0;
-          left: -2px;
-          text-shadow: -1px 0 #00ffff;
-          width: 100%;
-          color: #dc252a;
-          background: transparent;
-          overflow: hidden;
-          clip: rect(0, 900px, 0, 0);
-          animation: noise-before 3s infinite linear alternate-reverse;
-        }
-        .glitch:after {
-          content: attr(data-glitch);
-          position: absolute;
-          top: 0;
-          left: 2px;
-          text-shadow: 1px 0 #dc252a;
-          width: 100%;
-          color: #dc252a;
-          background: transparent;
-          overflow: hidden;
-          clip: rect(0, 900px, 0, 0);
-          animation: noise-after 2s infinite linear alternate-reverse;
-        }
-        @keyframes noise-before {
-          0% {
-            clip: rect(10px, 9999px, 20px, 0);
-          }
-          10% {
-            clip: rect(30px, 9999px, 40px, 0);
-          }
-          20% {
-            clip: rect(50px, 9999px, 60px, 0);
-          }
-          30% {
-            clip: rect(70px, 9999px, 80px, 0);
-          }
-          40% {
-            clip: rect(90px, 9999px, 100px, 0);
-          }
-          50% {
-            clip: rect(110px, 9999px, 120px, 0);
-          }
-          60% {
-            clip: rect(130px, 9999px, 140px, 0);
-          }
-          70% {
-            clip: rect(150px, 9999px, 160px, 0);
-          }
-          80% {
-            clip: rect(170px, 9999px, 180px, 0);
-          }
-          90% {
-            clip: rect(190px, 9999px, 200px, 0);
-          }
-          100% {
-            clip: rect(210px, 9999px, 220px, 0);
-          }
-        }
-        @keyframes noise-after {
-          0% {
-            clip: rect(20px, 9999px, 30px, 0);
-          }
-          10% {
-            clip: rect(40px, 9999px, 50px, 0);
-          }
-          20% {
-            clip: rect(60px, 9999px, 70px, 0);
-          }
-          30% {
-            clip: rect(80px, 9999px, 90px, 0);
-          }
-          40% {
-            clip: rect(100px, 9999px, 110px, 0);
-          }
-          50% {
-            clip: rect(120px, 9999px, 130px, 0);
-          }
-          60% {
-            clip: rect(140px, 9999px, 150px, 0);
-          }
-          70% {
-            clip: rect(160px, 9999px, 170px, 0);
-          }
-          80% {
-            clip: rect(180px, 9999px, 190px, 0);
-          }
-          90% {
-            clip: rect(200px, 9999px, 210px, 0);
-          }
-          100% {
-            clip: rect(220px, 9999px, 230px, 0);
-          }
-        }
-        @keyframes shift {
-          0%,
-          40%,
-          44%,
-          58%,
-          61%,
-          65%,
-          69%,
-          73%,
-          100% {
-            transform: skewX(0deg);
-          }
-          41% {
-            transform: skewX(10deg);
-          }
-          42% {
-            transform: skewX(-10deg);
-          }
-          59% {
-            transform: skewX(40deg) skewY(10deg);
-          }
-          60% {
-            transform: skewX(-40deg) skewY(-10deg);
-          }
-          63% {
-            transform: skewX(10deg) skewY(-5deg);
-          }
-          70% {
-            transform: skewX(-50deg) skewY(-20deg);
-          }
-          71% {
-            transform: skewX(10deg) skewY(-10deg);
-          }
-        }
-      `}</style> */}
     </div>
   );
 }

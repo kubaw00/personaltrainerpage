@@ -19,29 +19,27 @@ export default function Nav() {
 
   return (
     <nav
-      className={`w-full h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5 border-b-0 transition-transform duration-500 ${
-        scrolled ? "bg-[#ffffff]" : "bg-[#1B1B25]/10"
-      }`}
+      className="w-full h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5 border-b-0 transition-transform duration-500 ${
+       "
       style={{
         borderBottom: "1px solid",
         borderImage: !scrolled
           ? "linear-gradient(to right, transparent, #DC252A 90%) 1"
           : undefined,
-        background: scrolled ? "#000000" : undefined,
+        background: "#FFFFFF",
       }}
     >
-      <div className="container h-auto max-w-6xl mx-auto text-white flex justify-between items-center">
+      <div className="container h-auto max-w-6xl mx-auto text-black flex justify-between items-center">
         <Image
           src="/logo.png"
           alt="Logo"
-          width={70}
-          height={70}
-          style={{ width: "auto", height: "auto" }}
-          className="object-contain ml-3 bg-white"
+          width={100}
+          height={100}
+          className="object-cover ml-3 "
         />
         <div className="hidden ml-4 w-100px sm:flex flex-col sm:items-center justify-center md:items-start">
-          <h2 className="text-lg">ŁUKASZ MOCZKODAN </h2>
-          <p className="text-[10px]">TRENER PERSONALNY</p>
+          <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
+          <p className="text-[12px] font-medium">TRENER PERSONALNY</p>
         </div>
 
         <HamburgerButton />
@@ -56,7 +54,7 @@ export default function Nav() {
               <Link
                 href={item.href}
                 scroll={false}
-                className="group relative inline-flex items-center justify-center md:mr-4 text-white text-base font-bold tracking-wide transition-all duration-200 hover:text-[#DC252A] active:[#DC252A] cursor-pointer"
+                className="group relative inline-flex items-center justify-center md:mr-4 text-black text-base font-bold tracking-wide transition-all duration-200 hover:text-[#DC252A] active:[#DC252A] cursor-pointer"
                 aria-label={item.text}
                 onClick={(e) => {
                   e.preventDefault();
