@@ -230,11 +230,11 @@ export default function Home() {
       </section>
 
       <AnimationOnScroll
-        classNameInView="animate-fade-up w-full opacity-100"
+        classNameInView="animate-fade-up  opacity-100"
         classNameNotInView="opacity-0"
       >
         <section
-          className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2  text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
+          className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2 mx-auto text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
           style={{
             boxShadow: "0px -30px 100px 60px #DC252A",
           }}
