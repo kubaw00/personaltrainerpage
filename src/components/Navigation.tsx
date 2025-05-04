@@ -20,12 +20,12 @@ export default function Nav() {
   return (
     <nav
       className={`w-full h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5 border-b-0 transition-transform duration-500 ${
-        scrolled ? "bg-[#0c101c]" : "bg-[#1B1B25]/10"
+        scrolled ? "bg-[#ffffff]" : "bg-[#1B1B25]/10"
       }`}
       style={{
         borderBottom: "1px solid",
         borderImage: !scrolled
-          ? "linear-gradient(to right, #000, #22A7EA 90%) 1"
+          ? "linear-gradient(to right, transparent, #DC252A 90%) 1"
           : undefined,
         background: scrolled ? "#000000" : undefined,
       }}
@@ -34,10 +34,10 @@ export default function Nav() {
         <Image
           src="/logo.png"
           alt="Logo"
-          width={49}
-          height={49}
+          width={70}
+          height={70}
           style={{ width: "auto", height: "auto" }}
-          className="object-contain ml-3"
+          className="object-contain ml-3 bg-white"
         />
         <div className="hidden ml-4 w-100px sm:flex flex-col sm:items-center justify-center md:items-start">
           <h2 className="text-lg">ŁUKASZ MOCZKODAN </h2>

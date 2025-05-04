@@ -107,46 +107,139 @@ export default function Home() {
       >
         <section
           id="about"
-          className="w-full relative transition-opacity duration-1000 bg-black min-h-screen"
-          style={{
-            background:
-              "linear-gradient(90deg,rgba(0, 0, 16, 1) 0%, rgba(0, 0, 71, 1) 62%, rgba(0, 212, 255, 1) 100%)",
-            position: "relative",
-            overflow: "hidden",
-          }}
+          className="w-full mt-[90px] md:mt-[120px] relative transition-opacity duration-1000 bg-black h-screen"
         >
-          <div className="absolute  inset-0 w-full h-full  lg:max-w-[1000px] pointer-events-none select-none z-0">
-            <div className="absolute inset-0 bg-black opacity-0 z-10" />
+          <div className="z-20 hidden lg:absolute lg:block top-[40%] right-[-400px]  xl:right-[-10%] lg:top-[15%]">
+            <Image alt="arrow" src="/arrow.png" height={300} width={900} />
+          </div>
+          <div className="z-20 hidden lg:absolute lg:block lg:left-[-45%] xl:left-[-30%] lg:bottom-[10%]">
+            <Image alt="arrow" src="/arrow.png" height={300} width={900} />
+          </div>
+          <div
+            className="absolute h-screen inset-0 z-0"
+            style={{
+              background:
+                "repeating-conic-gradient(from 45deg, #171717 0% 25%, #000000 0% 50%)",
+              backgroundSize: "25px 25px",
+              backgroundColor: "#000000",
+              WebkitMaskImage:
+                "linear-gradient(to top, white 10%, transparent 60%)",
+              maskImage: "linear-gradient(to top, white 10%, transparent 60%)",
+              pointerEvents: "none",
+            }}
+          />
+          <div className="relative  max-w-[740px] aspect-square  overflow-hidden pointer-events-none select-none">
             <Image
-              src="/Adobe Express - file.png"
+              src="/profilowe.jpg"
               alt="background"
               fill
-              className="object-cover opacity-60  z-0"
+              className="object-cover rounded-br-full"
               priority
             />
           </div>
-          <div className="z-20 flex flex-col mt-[450px] md:mt-[400px]  w-full md:w-1/2  px-6 py-16 md:py-0 md:pl-16">
-            <h1 className="text-gray-200 text-5xl font-extrabold  md:text-6xl  lg:text-7xl animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6  lg:leading-15 md:font-bold">
-              ŁUKASZ <span className="text-[#DC252A]">MOCZKODAN</span>
+          <div className="z-30  absolute top-[400px] md:left-10 md:top-100 lg:left-1/3 lg:top-1/3 flex flex-col w-4/5  md:w-1/2 px-1 py-16 md:py-0 md:pl-16">
+            <h1 className="text-[#DC252A] text-6xl md:text-8xl  font-extrabold lg:text-[120px] lg:leading-[1.05] lg:tracking-tighter animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
+              ŁUKASZ MOCZKODAN
             </h1>
-            <h2 className="text-gray-200 animate-fade-left animate-duration-[500ms]  animate-delay-400 animate-ease-linear text-balance sm:text-lg  md:font-lg md:text-xl lg:text-2xl">
-              Pomagam osobom w kształtowaniu swojej sylwetki za pomącą treningu
-              i zbilansowanej diety
-              <br />
-              Szczególnie do współpracy zachęcam osoby początkujące i traktujące
-              aktywność fizyczną rekreacyjnie.
-            </h2>
+            <div className="relative">
+              <h2 className="text-gray-200 p-2  animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear text-balance text-xl md:font-lg md:text-xl lg:text-3xl">
+                &quot;Pomagam normalnym ludziom osiągać nienormalnie dobre
+                efekty – bez stresu i liczenia kalorii&quot;
+              </h2>
+              <span
+                className="absolute left-0 top-0 w-full h-[3px] block"
+                style={{
+                  background: "#DC252A",
+                  transform: "skewY(-2deg)",
+                  transformOrigin: "left",
+                }}
+              />
+              <span
+                className="absolute left-0 bottom-0 w-full h-[3px] block"
+                style={{
+                  background: "#DC252A",
+                  transform: "skewY(-1deg)",
+                  transformOrigin: "left",
+                }}
+              />
+            </div>
           </div>
         </section>
       </AnimationOnScroll>
 
       <section
-        className=" md:flex-row  z-20 max-w-6xl md:mx-2  text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
+        id="trainings"
+        className="md:mx-6 mt-30 max-w-6xl flex flex-col relative overflow-hidden bg-black py-10 md:py-20 px-4 sm:px-6 lg:px-8"
+      >
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
+          CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
+        </h2>
+
+        <div className="w-full max-w-4xl mx-auto my-12 relative">
+          <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-4deg] relative overflow-hidden">
+            <div className="skew-y-[3deg]">
+              <h3 className="text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
+                3-miesięczna przemiana sylwetki
+              </h3>
+              <p className="my-15 text-gray-200 text-lg md:text-xl text-center mb-8 max-w-2xl mx-auto">
+                W 90 dni poprowadzę Cię przez kompleksową zmianę, w skład której
+                wchodzą:
+              </p>
+              <ul className="space-y-4 max-w-2xl mx-auto mb-8">
+                <li className="flex items-start gap-3 text-lg md:text-xl ">
+                  <span className="mt-1 ">✅</span>
+                  <span className="text-gray-100">
+                    treningi precyzyjnie dobrane do Twojego celu, możliwości i
+                    preferencji
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                  <span className="mt-1">✅</span>
+                  <span className="text-gray-100">
+                    plan żywieniowy będący wsparciem w osiąganiu Twoich celów —
+                    bez ciężaru i zbędnych wyrzeczeń
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                  <span className="mt-1">✅</span>
+                  <span className="text-gray-100">
+                    systematyczna analiza postępów i dostosowywanie planu do
+                    Twoich aktualnych potrzeb
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                  <span className="mt-1">✅</span>
+                  <span className="text-gray-100">
+                    wsparcie mentalne — bo zmiana sylwetki zaczyna się od zmiany
+                    sposobu myślenia
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+                  <span className="mt-1">✅</span>
+                  <span className="text-gray-100">
+                    motywacja i narzędzia, które pomogą Ci wytrwać i cieszyć się
+                    drogą, a nie tylko celem
+                  </span>
+                </li>
+              </ul>
+              <p className="text-gray-200 text-lg md:text-xl text-center max-w-2xl mx-auto">
+                Nie ważne, czy Twoim marzeniem jest lepsza sylwetka, większa
+                siła, sprawniejsze ciało czy po prostu codzienne lepsze
+                samopoczucie — tutaj masz wszystko, czego potrzebujesz, żeby to
+                osiągnąć.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2  text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
         style={{
           boxShadow: "0px -30px 100px 60px #DC252A",
         }}
       >
-        <h2 className="text-4xl m-10 font-extrabold text-center mb-12 text-white">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl m-10 font-extrabold text-center mb-12 text-white">
           CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
         </h2>
 
@@ -174,86 +267,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="trainings"
-        className="md:mx-6 mt-30 max-w-6xl flex flex-col relative overflow-hidden bg-black py-10 md:py-20 px-4 sm:px-6 lg:px-8"
-      >
-        <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-          CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
-        </h2>
-
-        <div className="relative max-w-6xl mx-auto bg-black rounded-2xl shadow-2xl overflow-hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none select-none">
-            <div className="absolute left-0 top-0 w-full h-full" />
-            <Image
-              src="/victor-freitas-JbI04nYfaJk-unsplash.jpg"
-              alt="trening-bg"
-              fill
-              className="object-cover opacity-20"
-              priority
-            />
-          </div>
-          {/* Kafelki z usługami */}
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-6 p-6 md:p-10">
-            {/* Karta 1 */}
-            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#DC252A]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.1s] shadow-xl overflow-hidden relative">
-              <Image
-                src="/alexandra-tran-fS3tGOkp0xY-unsplash.jpg"
-                alt="trening personalny"
-                fill
-                className="object-cover object-center absolute inset-0 w-full h-full opacity-30 group-hover:scale-105 transition-transform duration-500 z-0"
-              />
-              <div className="space-y-4 relative z-10">
-                <h3 className="text-2xl font-extrabold text-white mb-3 drop-shadow-lg">
-                  Indywidualny Trening Personalny
-                </h3>
-                <p className="text-gray-200 leading-relaxed text-lg drop-shadow">
-                  w profesjonalnym studiu treningowym
-                </p>
-              </div>
-            </div>
-            {/* Karta 2 */}
-            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#DC252A]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.3s] shadow-xl overflow-hidden relative">
-              <Image
-                src="/cyril-saulnier-TsVN31Dzyv4-unsplash.jpg"
-                alt="plan treningowy"
-                fill
-                className="object-cover  object-center absolute inset-0 w-full h-full opacity-30 group-hover:scale-105 transition-transform duration-500 z-0"
-              />
-              <div className="space-y-4 relative z-10">
-                <h3 className="text-2xl font-extrabold break-words text-white mb-3 drop-shadow-lg">
-                  Spersonalizowany Plan Treningowy
-                </h3>
-                <p className="text-gray-200 leading-relaxed text-lg drop-shadow">
-                  tak byś miał efekty a także zachował energię na inne
-                  aktywności
-                </p>
-              </div>
-            </div>
-            {/* Karta 3 */}
-            <div className="group bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl p-6 md:p-8 border border-white/10 hover:border-[#DC252A]/30 transition-all duration-300 hover:-translate-y-2 cursor-pointer animate-fade-up [animation-delay:.5s] shadow-xl overflow-hidden relative">
-              <Image
-                src="/erica-steeves-PfQh55R0ZtE-unsplash.jpg"
-                alt="plan dietetyczny"
-                fill
-                className="object-cover object-center absolute inset-0 w-full h-full opacity-30 group-hover:scale-105 transition-transform duration-500 z-0"
-              />
-              <div className="space-y-4 relative z-10">
-                <h3 className="text-2xl font-extrabold text-white mb-3 drop-shadow-lg">
-                  Elastyczny Plan Dietetyczny
-                </h3>
-                <p className="text-gray-200 leading-relaxed text-lg drop-shadow">
-                  dostosowany do Twoich potrzeb. Nie będziesz musiał się zmuszać
-                  do jedzenia a jednocześnie nie będziesz chciał się przejadać.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full py-16 px-2 md:px-0 bg-black">
-        <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
+      <section className="w-full mt-25 py-16 px-2 md:px-0 bg-black">
+        <h2 className="text-4xl mb-20 md:text-5xl lg:text-6xl font-extrabold text-center  text-white">
           CO ZE MNĄ{" "}
           <span
             style={{
@@ -368,7 +383,7 @@ export default function Home() {
         </div>
       </section>
 
-      <h2 className="text-4xl m-5 font-extrabold text-center mb-12 text-white">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl m-5 font-extrabold text-center mb-12 text-white">
         JAK WYGLĄDAJĄ <span style={{ color: "#DC252A" }}>NASZE TRENINGI?</span>
       </h2>
 
@@ -610,117 +625,62 @@ export default function Home() {
       </section>
       {/* END FAQ SECTION */}
 
-      <section className="w-full my-25 md:px-10  bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80  py-10 px-4    md:max-w-3xl lg:max-w-5xl  mx-auto my-10 bg-black/90 rounded-2xl shadow-2xl p-6 md:p-12 flex flex-col gap-12">
-        <div className="flex justify-center space-x-2 text-[#DC252A] text-2xl">
-          {[...Array(3)].map((_, i) => (
-            <svg
-              key={i}
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              height="1em"
-              width="1em"
-              className="inline-block"
-            >
-              <path d="M496 203.3H312.36L256 32l-56.36 171.3H16l150.21 105.4-58.5 171.3L256 373.84 404.29 480l-58.61-171.3z"></path>
-            </svg>
-          ))}
-        </div>
-        <div className="space-y-4">
-          <h2 className="text-2xl uppercase text-center font-bold text-white">
-            3-miesięczna przemiana sylwetki
-          </h2>
-          <p className="text-gray-200 leading-relaxed">
-            W 90 dni poprowadzę Cię przez kompleksową zmianę, w skład której
-            wchodzą: treningi precyzyjnie dobrane do Twojego celu, możliwości i
-            preferencji, plan żywieniowy będący wsparciem w osiąganiu Twoich
-            celów - bez ciężaru i zbędnych wyrzeczeń, systematyczna analiza
-            postępów i dostosowywanie planu do Twoich aktualnych potrzeb,
-            wsparcie mentalne - bo zmiana sylwetki zaczyna się od zmiany sposobu
-            myślenia, motywacja i narzędzia, które pomogą Ci wytrwać i cieszyć
-            się drogą, a nie tylko celem. Nie ważne, czy Twoim marzeniem jest
-            lepsza sylwetka, większa siła, sprawniejsze ciało czy po prostu
-            codzienne lepsze samopoczucie - tutaj masz wszystko, czego
-            potrzebujesz, żeby to osiągnąć.
-          </p>
-        </div>
-        <div className="flex justify-center space-x-2 text-[#DC252A] text-2xl">
-          {[...Array(3)].map((_, i) => (
-            <svg
-              key={i}
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              height="1em"
-              width="1em"
-              className="inline-block"
-            >
-              <path d="M496 203.3H312.36L256 32l-56.36 171.3H16l150.21 105.4-58.5 171.3L256 373.84 404.29 480l-58.61-171.3z"></path>
-            </svg>
-          ))}
-        </div>
-        <div className="space-y-4">
-          <h2 className="text-2xl uppercase text-center font-bold text-white">
-            Gdzie przeprowadzam Treningi?
-          </h2>
-          <div className="flex flex-col md:flex-row justify-center gap-5 items-center text-gray-200">
-            <p className="font-bold max-w-[250px] text-center">
-              Studio treningowe - Medical Training Studio
-              <br />
-              Iwona Odrowąża 26, Kraków
-            </p>
-            <a
-              href="https://www.google.com/maps/dir//Medical+Training+Studio,+Iwona+Odrow%C4%85%C5%BCa+26,+30-009+Krak%C3%B3w/@50.0591081,19.9264005,13.46z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47165bab8a527da7:0x42ecff449136800d!2m2!1d19.9326814!2d50.0774607!3e0?entry=ttu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 border border-[#DC252A] rounded-full px-6 py-2 bg-transparent text-[#DC252A] hover:bg-[#DC252A] hover:text-black transition-colors w-fit mt-2"
-            >
-              <svg
-                viewBox="0 0 384 512"
-                fill="currentColor"
-                className="text-lg"
-                height="1em"
-                width="1em"
+      <section className=" flex flex-col p-2  mx-auto my-12 relative   overflow-hidden bg-black py-10 md:py-20  w-full max-w-5xl  ">
+        <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+          <div className="skew-y-[3deg]">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
+              Gdzie przeprowadzam Treningi?
+            </h3>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+              <div className="flex-1 flex flex-col items-center">
+                <p className="text-gray-200 text-lg md:text-xl font-bold text-center mb-4">
+                  Studio treningowe - Medical Training Studio
+                  <br />
+                  Iwona Odrowąża 26, Kraków
+                </p>
+                <a
+                  href="https://www.google.com/maps/dir//Medical+Training+Studio,+Iwona+Odrow%C4%85%C5%BCa+26,+30-009+Krak%C3%B3w/@50.0591081,19.9264005,13.46z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47165bab8a527da7:0x42ecff449136800d!2m2!1d19.9326814!2d50.0774607!3e0?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 border border-[#DC252A] rounded-full px-6 py-2 bg-transparent text-[#DC252A] hover:bg-[#DC252A] hover:text-black transition-colors w-fit mt-2"
+                >
+                  <svg
+                    viewBox="0 0 384 512"
+                    fill="currentColor"
+                    className="text-lg"
+                    height="1em"
+                    width="1em"
+                  >
+                    <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                  </svg>
+                  Prowadź
+                </a>
+              </div>
+              <div
+                className="flex-1 w-full min-w-[220px] max-w-full rounded-2xl overflow-hidden shadow-lg my-4 md:my-0 md:mx-4"
+                style={{ height: "340px" }}
               >
-                <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
-              </svg>
-              Prowadź
-            </a>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.674074145789!2d19.9626814!3d50.0774607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab8a527da7%3A0x42ecff449136800d!2sIwona%20Odrow%C4%85%C5%BCa%2026%2C%2030-009%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1714140000000!5m2!1spl!2spl"
+                  width="100%"
+                  height="100%"
+                  style={{
+                    border: 0,
+                    minWidth: "180px",
+                    borderRadius: "1rem",
+                    margin: "0 auto",
+                    display: "block",
+                    height: "440px",
+                  }}
+                  className="md:!h-[340px] !h-[440px]"
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mapa - Medical Training Studio"
+                ></iframe>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="flex justify-center space-x-2 text-[#DC252A] text-2xl">
-          {[...Array(3)].map((_, i) => (
-            <svg
-              key={i}
-              viewBox="0 0 512 512"
-              fill="currentColor"
-              height="1em"
-              width="1em"
-              className="inline-block"
-            >
-              <path d="M496 203.3H312.36L256 32l-56.36 171.3H16l150.21 105.4-58.5 171.3L256 373.84 404.29 480l-58.61-171.3z"></path>
-            </svg>
-          ))}
-        </div>
-        <div className="space-y-4">
-          <h2 className="text-2xl uppercase text-center font-bold text-white">
-            Jaki jest koszt Treningu Personalnego?
-          </h2>
-          <p className="text-gray-200 leading-relaxed">
-            To zależy kilku czynników, takich jak stopień zaawansowania i
-            długość współpracy. Cennik ustalam osobiście z podopiecznym i jest
-            to koszt od <span className="font-semibold">100 zł/h</span> w górę.
-          </p>
-        </div>
-        <div className="h-96 w-full rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.674074145789!2d19.9626814!3d50.0774607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bab8a527da7%3A0x42ecff449136800d!2sIwona%20Odrow%C4%85%C5%BCa%2026%2C%2030-009%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1714140000000!5m2!1spl!2spl"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Mapa - Medical Training Studio"
-          ></iframe>
         </div>
       </section>
 
@@ -743,12 +703,15 @@ export default function Home() {
             Zapraszam do kontaktu!
           </h2>
           <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
-            Jeśli masz pytania dotyczące współpracy, treningów lub diety –
-            napisz śmiało! Odpowiem na każdą wiadomość i rozwieję Twoje
-            wątpliwości. Zależy mi na indywidualnym podejściu i pełnym
-            zrozumieniu Twoich potrzeb. Wspólnie ustalimy najlepszą drogę do
-            osiągnięcia Twoich celów.
+            Jeśli chcesz dowiedzieć się, jak możemy wspólnie poprawić Twoją
+            sylwetkę, energię i zdrowie – napisz śmiało!
           </p>
+          <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
+            Odpowiem na każdą wiadomość i rozwieję Twoje wątpliwości. Zależy mi
+            na indywidualnym podejściu i pełnym zrozumieniu Twoich potrzeb.
+            Wspólnie ustalimy najlepszą drogę do osiągnięcia Twoich celów.
+          </p>
+
           <ul className="list-disc pl-6 text-gray-300 text-base md:text-lg">
             <li>Odpowiadam zwykle w ciągu 24h</li>
             <li>Wszystkie dane są poufne</li>
