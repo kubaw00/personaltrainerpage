@@ -13,6 +13,26 @@ html {
   background: transparent;
 }
 
+/* Focus style for accessibility */
+:focus-visible {
+  outline: 2px solid #DC252A;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #DC252A;
+  transition: outline 0.2s, box-shadow 0.2s;
+}
+
+/* Ensure good contrast for gray text on dark backgrounds */
+.text-gray-200, .text-gray-300, .text-gray-100 {
+  color: #f5f6f7 !important;
+}
+
+/* Button and link hover/focus for contrast */
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #DC252A;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #DC252A;
+}
+
 @layer utilities {
   @keyframes fadeSlideUp {
     from {

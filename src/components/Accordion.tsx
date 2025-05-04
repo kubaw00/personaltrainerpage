@@ -20,6 +20,7 @@ export function FaqAccordion({
               className="w-full text-left p-4 font-bold text-gray-200 focus:outline-none flex justify-between items-center cursor-pointer"
               onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
               aria-expanded={openIdx === idx}
+              aria-controls={`faq-answer-${idx}`}
             >
               {faq.question}
               <span className="ml-2 text-[#DC252A] text-xl">
@@ -27,7 +28,12 @@ export function FaqAccordion({
               </span>
             </button>
             {openIdx === idx && (
-              <div className="p-4 pt-0 text-gray-200 animate-fade-in cursor-pointer">
+              <div
+                id={`faq-answer-${idx}`}
+                role="region"
+                aria-labelledby={`faq-question-${idx}`}
+                className="p-4 pt-0 text-gray-200 animate-fade-in cursor-pointer"
+              >
                 {faq.answer}
               </div>
             )}

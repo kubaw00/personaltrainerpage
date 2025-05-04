@@ -20,17 +20,18 @@ export default function Nav() {
       <div className="container h-auto max-w-6xl mx-auto text-black flex justify-between items-center">
         <Image
           src="/logo.png"
-          alt="Logo"
+          alt="Logo Trener Personalny Kraków - Łukasz Moczkodan"
           width={100}
           height={100}
           className="object-cover ml-3 "
+          aria-label="Strona główna - Trener Personalny Kraków"
         />
         <div className="hidden ml-4 w-100px sm:flex flex-col sm:items-center justify-center md:items-start">
           <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
           <p className="text-[12px] font-medium">TRENER PERSONALNY</p>
         </div>
 
-        <HamburgerButton />
+        <HamburgerButton ariaLabel="Otwórz menu nawigacji" />
         <ul className="hidden md:ml-10 lg:ml-30 md:flex md:justify-center lg:justify-around w-full justify-end space-x-5 lg:space-x-8 items-center">
           {[
             { text: "O\u00A0mnie", href: "#about" },

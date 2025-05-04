@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { scrollToSection } from "../utils/scrollToSection";
 
-export default function HamburgerButton() {
+export default function HamburgerButton(props: { ariaLabel: string }) {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   useEffect(() => {
@@ -22,6 +22,7 @@ export default function HamburgerButton() {
       <button
         className="animate-jump cursor-pointer animate-twice animate-duration-500 animate-delay-500 mr-4 animate-ease-in-out flex md:hidden items-center justify-center bg-transparent w-14 h-14 z-50"
         onClick={onClick}
+        aria-label={props.ariaLabel || "Otwórz menu nawigacji"}
         onTouchStart={(e) => e.currentTarget.classList.add("text-amber-400")}
         onTouchEnd={(e) => e.currentTarget.classList.remove("text-amber-400")}
         onMouseDown={(e) => e.currentTarget.classList.add("text-amber-400")}

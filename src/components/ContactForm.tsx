@@ -13,7 +13,7 @@ const initialState = {
   success: false,
 };
 
-function SubmitButton() {
+function SubmitButton({ ariaLabel }: { ariaLabel: string }) {
   const { pending } = useFormStatus();
 
   return (
@@ -21,6 +21,7 @@ function SubmitButton() {
       type="submit"
       aria-disabled={pending}
       disabled={pending}
+      aria-label={ariaLabel}
       className={`w-full py-2 px-4 rounded-md font-bold transition duration-300 border-2
         bg-transparent
         border-white text-white
@@ -54,6 +55,11 @@ export default function ContactForm() {
 
   return (
     <form action={formAction} className="w-full mx-auto space-y-4 text-white">
+      {/* Komunikaty o stanie wysyłki */}
+      <div aria-live="polite" className="sr-only">
+        {state.message}
+      </div>
+
       <div className="relative">
         <input
           type="text"
@@ -134,7 +140,7 @@ export default function ContactForm() {
         </span>
       </div>
 
-      <SubmitButton />
+      <SubmitButton ariaLabel="Wyślij wiadomość" />
     </form>
   );
 }

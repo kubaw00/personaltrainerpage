@@ -106,12 +106,14 @@ export default function Home() {
       >
         <section
           id="about"
-          className="w-full overflow-hidden mt-[90px] md:mt-[120px] relative transition-opacity duration-1000 bg-black h-screen"
+          role="region"
+          aria-label="O mnie"
+          className="w-full overflow-hidden h-[calc(100vh-90px)] md:h-[calc(100vh-120px)] mt-[90px] md:mt-[120px] relative transition-opacity duration-1000 bg-black"
         >
           <div className="z-20 hidden lg:absolute lg:block top-[40%] right-[-400px]  xl:right-[-10%] lg:top-[15%]">
             <Image alt="arrow" src="/arrow.png" height={300} width={900} />
           </div>
-          <div className="z-20 hidden lg:absolute lg:block lg:left-[-45%] xl:left-[-30%] lg:bottom-[10%]">
+          <div className="z-20  hidden   lg:absolute lg:block lg:left-[-45%] xl:left-[-30%] lg:bottom-[5%]">
             <Image alt="arrow" src="/arrow.png" height={300} width={900} />
           </div>
           <div
@@ -130,18 +132,18 @@ export default function Home() {
           <div className="relative  max-w-[740px] aspect-square  overflow-hidden pointer-events-none select-none">
             <Image
               src="/profilowe.jpg"
-              alt="background"
+              alt="Łukasz Moczkodan - trener personalny Kraków, zdjęcie profilowe"
               fill
               className="object-cover rounded-br-full"
               priority
             />
           </div>
-          <div className="z-30  absolute top-[400px] md:left-10 md:top-100 lg:left-1/3 lg:top-1/3 flex flex-col w-4/5  md:w-1/2 px-1 py-16 md:py-0 md:pl-16">
-            <h1 className="text-[#DC252A] text-6xl md:text-8xl  font-extrabold lg:text-[120px] lg:leading-[1.05] lg:tracking-tighter animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
+          <div className="z-30  absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:-translate-x-1/6  flex flex-col px-1 py-16 md:py-0">
+            <h1 className="text-[#DC252A] text-5xl md:text-7xl  font-extrabold xl:text-[100px] lg:leading-[1.05] lg:tracking-tighter animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
               ŁUKASZ MOCZKODAN
             </h1>
             <div className="relative">
-              <h2 className="text-gray-200 p-2  animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear text-balance text-xl md:font-lg md:text-xl lg:text-3xl">
+              <h2 className="text-gray-200 p-2  animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear text-balance text-lg  md:text-xl lg:text-3xl">
                 &quot;Pomagam normalnym ludziom osiągać nienormalnie dobre
                 efekty – bez stresu i liczenia kalorii&quot;
               </h2>
@@ -168,6 +170,8 @@ export default function Home() {
 
       <section
         id="trainings"
+        role="region"
+        aria-label="Treningi personalne"
         className="mt-20 py-10 px-4 w-full max-w-6xl mx-auto mb-12   flex flex-col relative overflow-hidden bg-black  md:py-15  "
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-20 text-white">
@@ -234,6 +238,8 @@ export default function Home() {
         classNameNotInView="opacity-0"
       >
         <section
+          role="region"
+          aria-label="Czym się wyróżniam"
           className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2 mx-auto text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
           style={{
             boxShadow: "0px -30px 100px 60px #DC252A",
@@ -257,7 +263,7 @@ export default function Home() {
             </p>
             <div className="relative grow my-auto justify-center w-full h-[500px]">
               <Image
-                alt="photo1"
+                alt="Trener personalny Kraków - zdjęcie w sekcji o mnie"
                 src="/Messenger_creation_A125B378-5B7A-4B5D-9CF4-33A85B91208E_Easy-Resize.com.jpg"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
@@ -268,7 +274,11 @@ export default function Home() {
         </section>
       </AnimationOnScroll>
 
-      <section className="w-full mt-25 py-16 px-2 md:px-0 bg-black">
+      <section
+        className="w-full mt-25 py-16 px-2 md:px-0 bg-black"
+        role="region"
+        aria-label="Co osiągniesz"
+      >
         <h2 className="text-4xl mb-20 md:text-5xl lg:text-6xl font-extrabold text-center  text-white">
           CO ZE MNĄ{" "}
           <span
@@ -419,7 +429,9 @@ export default function Home() {
             <div className="w-full h-[370px] md:h-[450px] lg:h-[550px] flex items-center justify-center relative">
               <Image
                 src={src}
-                alt={`slider-img-${idx}`}
+                alt={`Trener personalny Kraków - zdjęcie z galerii numer ${
+                  idx + 1
+                }`}
                 fill
                 className="object-cover rounded-2xl shadow-xl"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -433,11 +445,81 @@ export default function Home() {
       {/* FAQ SECTION */}
       <section
         id="questions"
+        role="region"
+        aria-label="Najczęstsze pytania (FAQ)"
         className="w-full py-10 md:mt-20 md:pt-10 max-w-3xl mx-auto mb-16 px-4 "
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
           NAJCZĘSTSZE <span style={{ color: "#DC252A" }}>PYTANIA </span>
         </h2>
+        {/* FAQ – dane strukturalne FAQ schema.org */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "Czy muszę mieć doświadczenie, żeby zacząć?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Nie! Treningi są dostosowane do Twojego poziomu — niezależnie od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze doświadczenia. Wszystkiego nauczysz się krok po kroku.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Ile razy w tygodniu muszę trenować?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Jeśli zastanawiasz się nad częstotliwością treningów, spokojnie — wiele osób rozpoczyna od jednej sesji w tygodniu i to całkowicie wystarczający krok na start. Jeśli jednak zależy Ci na szybszych efektach, rekomenduję spotkania dwa razy w tygodniu — to optymalna częstotliwość, która daje najlepsze rezultaty przy zachowaniu balansu między treningiem a codziennym życiem. Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces, istnieje także możliwość współpracy trzy razy w tygodniu, a dla najbardziej wymagających nawet cztery razy. Niczego jednak nie narzucam — dostosowujemy wszystko do Twoich możliwości i potrzeb.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Czy dostosowujesz plan, jeśli coś mi nie pasuje?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Tak, każdy element współpracy — trening, plan żywieniowy czy nawet komunikacja — jest modyfikowany na bieżąco tak, żeby Ci służył, a nie przeszkadzał. Jesteśmy zespołem i słucham Twojego feedbacku.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Co jeśli mam kontuzje lub ograniczenia zdrowotne?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "W moim zespole współpracuję z doświadczonym fizjoterapeutą, dzięki czemu masz dostęp do kompleksowej opieki. Jeśli zajdzie potrzeba wykonania zabiegów, masaży czy specjalistycznych konsultacji, wszystko jesteśmy w stanie zorganizować w ramach współpracy. Twoje bezpieczeństwo i komfort są dla mnie priorytetem.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Czy mogę trenować, jeśli mam napięty grafik?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Tak. Wspólnie znajdziemy rozwiązanie — możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do Twoich możliwości czasowych.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Jak szybko zobaczę efekty?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Pierwsze zmiany — w energii, samopoczuciu i sile — możesz odczuć już po kilku tygodniach. Sylwetkowe zmiany stają się widoczne zwykle po 8–12 tygodniach regularnej pracy.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Czy muszę stosować ścisłą dietę?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie utrudnieniem. Stawiamy na elastyczność i realne podejście — bez restrykcji, które odbierają radość z życia.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
         {/* Accordion for mobile, normal view for md+ */}
         <FaqAccordion
           faqs={[
@@ -626,7 +708,11 @@ export default function Home() {
       </section>
       {/* END FAQ SECTION */}
 
-      <section className=" flex flex-col p-2  mx-auto my-12 relative   overflow-hidden bg-black py-10 md:py-20  w-full max-w-5xl  ">
+      <section
+        className=" flex flex-col p-2  mx-auto my-12 relative   overflow-hidden bg-black py-10 md:py-20  w-full max-w-5xl  "
+        role="region"
+        aria-label="Lokalizacja treningów"
+      >
         <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
             <h3 className="text-3xl md:text-4xl  lg:text-5xl font-extrabold text-[#DC252A] mb-10 text-center uppercase tracking-wider">
@@ -688,11 +774,13 @@ export default function Home() {
       <section
         style={{ boxShadow: "0px 10px 50px 30px #DC252A" }}
         className="w-full mb-25 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl shadow-2xl my-10 py-10 px-4 md:px-10 max-w-5xl mx-auto gap-8"
+        role="region"
+        aria-label="Kontakt - opis i zachęta"
       >
         <div className="relative w-full md:w-1/2 h-[350px] md:h-[400px] rounded-2xl overflow-hidden flex-shrink-0">
           <Image
             src="/image00018_Easy-Resize.com.jpg"
-            alt="Trener personalny - zdjęcie sekcji przed formularzem"
+            alt="Trener personalny Kraków - kontakt, zdjęcie motywacyjne"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover object-center rounded-2xl"
@@ -727,6 +815,8 @@ export default function Home() {
 
       <section
         id="contact"
+        role="region"
+        aria-label="Formularz kontaktowy"
         className="w-full mt-20 py-10  px-6 max-w-[800px] md:w-[700px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
       >
         <h2 className="text-4xl md:text-5xl w-full  font-bold text-center mb-12 text-white">
@@ -855,6 +945,8 @@ export default function Home() {
       <footer
         style={{ boxShadow: "0px 0px 80px 40px #000000" }}
         className="w-full mt-10 bg-[#f5f6f7] py-15 px-4"
+        role="contentinfo"
+        aria-label="Stopka strony"
       >
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           {/* Logo i nazwa */}
@@ -863,8 +955,12 @@ export default function Home() {
             className=" font-bold p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
             data-glitch="ŁUKASZ MOCZKODAN"
             style={{ color: "#000000" }}
+            itemScope
+            itemType="http://schema.org/Person"
           >
-            ŁUKASZ <span className="text-[#000000]">MOCZKODAN</span>
+            <span itemProp="name">
+              ŁUKASZ <span className="text-[#000000]">MOCZKODAN</span>
+            </span>
           </div>
 
           {/* Nawigacja sekcji */}
@@ -906,6 +1002,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
+              itemProp="sameAs"
             >
               <FaFacebook className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
@@ -914,14 +1011,22 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
+              itemProp="sameAs"
             >
               <FaInstagram className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
-            <Link href="tel:555900999" aria-label="Telefon">
+            <Link
+              href="tel:555900999"
+              aria-label="Telefon"
+              itemProp="telephone"
+            >
               <FaPhone className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
           </div>
         </div>
+        <p className="text-sm text-center font-light text-grey-300">
+          Copyright © Łukasz Moczkodan 2024, created by Jakub Widurek
+        </p>
       </footer>
     </div>
   );
