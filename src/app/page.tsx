@@ -169,7 +169,7 @@ export default function Home() {
 
       <section
         id="trainings"
-        className="md:mx-6 mt-30 max-w-6xl flex flex-col relative overflow-hidden bg-black py-10 md:py-20 px-4 sm:px-6 lg:px-8"
+        className="md:mx-6 mt-15 max-w-6xl flex flex-col relative overflow-hidden bg-black py-10 md:py-15 px-4 sm:px-6 lg:px-8"
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
@@ -383,7 +383,7 @@ export default function Home() {
         </div>
       </section>
 
-      <h2 className="text-4xl md:text-5xl lg:text-6xl m-5 font-extrabold text-center mb-12 text-white">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl m-5 mt-20 font-extrabold text-center mb-12 text-white">
         JAK WYGLĄDAJĄ <span style={{ color: "#DC252A" }}>NASZE TRENINGI?</span>
       </h2>
 
@@ -432,9 +432,9 @@ export default function Home() {
       {/* FAQ SECTION */}
       <section
         id="questions"
-        className="w-full mt-15 max-w-3xl mx-auto mb-16 px-4 "
+        className="w-full mt-20 max-w-3xl mx-auto mb-16 px-4 "
       >
-        <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-center mb-12 text-white">
           NAJCZĘSTSZE <span style={{ color: "#DC252A" }}>PYTANIA </span>
         </h2>
         {/* Accordion for mobile, normal view for md+ */}
@@ -628,7 +628,7 @@ export default function Home() {
       <section className=" flex flex-col p-2  mx-auto my-12 relative   overflow-hidden bg-black py-10 md:py-20  w-full max-w-5xl  ">
         <div className="bg-black/90 border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
-            <h3 className="text-2xl md:text-3xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
+            <h3 className="text-3xl md:text-4xl  lg:text-5xl font-extrabold text-[#DC252A] mb-10 text-center uppercase tracking-wider">
               Gdzie przeprowadzam Treningi?
             </h3>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
@@ -717,6 +717,11 @@ export default function Home() {
             <li>Wszystkie dane są poufne</li>
             <li>Możesz napisać bez zobowiązań</li>
           </ul>
+          <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
+            Czas działać! Nie musisz być idealnie gotowy, aby zmienić swoje
+            życie w 3 miesiące. Skontaktuj się ze mną za pomocą poniższego
+            formularza!
+          </p>
         </div>
       </section>
 
