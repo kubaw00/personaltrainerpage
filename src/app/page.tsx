@@ -944,7 +944,7 @@ export default function Home() {
 
       <footer
         style={{ boxShadow: "0px 0px 80px 40px #000000" }}
-        className="w-full mt-10 bg-[#f5f6f7] py-15 px-4"
+        className="w-full mt-10 bg-[#f5f6f7] py-5 md:py-10 lg:py-15 px-4"
         role="contentinfo"
         aria-label="Stopka strony"
       >
@@ -1024,7 +1024,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <p className="text-sm text-center font-light text-grey-300">
+        <p className="text-sm pt-5 text-center font-light text-grey-300">
           Copyright © Łukasz Moczkodan 2025, created by Jakub Widurek
         </p>
       </footer>

@@ -76,7 +76,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  themeColor: "#DC252A",
 };
 
 export default function RootLayout({
