@@ -131,7 +131,7 @@ export default function Home() {
               pointerEvents: "none",
             }}
           />
-          <div className="relative sm:landscape:w-[40vw] md:landscape:w-[50vw] lg:landscape:w-[60vw] max-w-[800px] w-[90vw]   aspect-square  overflow-hidden pointer-events-none select-none">
+          <div className="relative sm:landscape:w-[40vw] md:landscape:w-[50vw] lg:landscape:w-[60vw] max-w-[800px] w-[90vw] md:w-[70vw] aspect-square  overflow-hidden pointer-events-none select-none">
             <Image
               src="/profilowe.jpg"
               alt="Łukasz Moczkodan - trener personalny Kraków, zdjęcie profilowe"
