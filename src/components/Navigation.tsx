@@ -8,14 +8,11 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <nav
-      className="w-full flex items-center h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5  transition-transform duration-500 ${
+      className="w-full flex items-center  bg-[rgba(255,255,255,0.9)] h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5  transition-transform duration-500 ${
        "
       style={{
         borderBottom: "1px solid",
         borderImage: "linear-gradient(to right, transparent, #DC252A 90%) 1",
-
-        background:
-          "linear-gradient(90deg,rgba(184, 184, 184, 1) 0%, rgba(255, 224, 224, 1) 100%)",
       }}
     >
       <div className="container h-auto max-w-6xl mx-auto text-black flex justify-between items-center">
