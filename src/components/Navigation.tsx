@@ -40,9 +40,9 @@ export default function Nav() {
             className="object-cover ml-3 "
             aria-label="Strona główna - Trener Personalny Kraków"
           />
-          <div className="hidden sm:flex md:hidden ml-4 w-100px flex-col items-center justify-center">
+          <div className="hidden sm:flex md:hidden ml-4 w-100px sm:flex-col items-center justify-center">
             <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
-            <p className="text-[12px] font-medium">TRENER PERSONALNY</p>
+            <p className="text-[12px] font-medium ">TRENER PERSONALNY</p>
           </div>
           <HamburgerButton ariaLabel="Otwórz menu nawigacji" />
         </div>
@@ -74,7 +74,7 @@ export default function Nav() {
             className="object-cover ml-3 "
             aria-label="Strona główna - Trener Personalny Kraków"
           />
-          <div className="ml-4 w-100px text-white flex flex-col items-center justify-center">
+          <div className="ml-4 w-100px text-white flex flex-col items-left justify-center">
             <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
             <p className="text-[12px] font-medium">TRENER PERSONALNY</p>
           </div>
