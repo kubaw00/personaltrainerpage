@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <nav
-      className="w-full h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5 border-b-0 transition-transform duration-500 ${
+      className="w-full flex items-center h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5 border-b-0 transition-transform duration-500 ${
        "
       style={{
         borderBottom: "1px solid",
@@ -26,10 +26,10 @@ export default function Nav() {
           className="object-cover ml-3 "
           aria-label="Strona główna - Trener Personalny Kraków"
         />
-        <div className="hidden ml-4 w-100px sm:flex flex-col sm:items-center justify-center md:items-start">
+        {/* <div className="hidden ml-4 w-100px sm:flex flex-col sm:items-center justify-center md:items-start">
           <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
           <p className="text-[12px] font-medium">TRENER PERSONALNY</p>
-        </div>
+        </div> */}
 
         <HamburgerButton ariaLabel="Otwórz menu nawigacji" />
         <ul className="hidden md:ml-10 lg:ml-30 md:flex md:justify-center lg:justify-around w-full justify-end space-x-5 lg:space-x-8 items-center">

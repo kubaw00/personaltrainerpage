@@ -108,9 +108,10 @@ export default function Home() {
           id="about"
           role="region"
           aria-label="O mnie"
-          className="w-full overflow-hidden h-[calc(100vh-90px)] md:h-[calc(100vh-120px)] mt-[90px] md:mt-[120px] relative transition-opacity duration-1000 bg-black"
+          className="w-full overflow-hidden min-h-screen pt-[90px] md:pt-[120px] mt-0 relative bg-black"
+          style={{ height: "calc(var(--vh) - 90px)" }}
         >
-          <div className="z-20 hidden lg:absolute lg:block top-[40%] right-[-400px]  xl:right-[-10%] lg:top-[15%]">
+          <div className="z-20 hidden lg:absolute  lg:block top-[40%] right-[-400px]  xl:right-[-10%] lg:top-[15%]">
             <Image alt="arrow" src="/arrow.png" height={300} width={900} />
           </div>
           <div className="z-20  hidden   lg:absolute lg:block lg:left-[-45%] xl:left-[-30%] lg:bottom-[5%]">
@@ -129,7 +130,7 @@ export default function Home() {
               pointerEvents: "none",
             }}
           />
-          <div className="relative  max-w-[740px] aspect-square  overflow-hidden pointer-events-none select-none">
+          <div className="relative max-w-[740px] w-[90vw] sm:w-[60vw] md:w-[50vw] aspect-square  overflow-hidden pointer-events-none select-none">
             <Image
               src="/profilowe.jpg"
               alt="Łukasz Moczkodan - trener personalny Kraków, zdjęcie profilowe"
@@ -139,7 +140,7 @@ export default function Home() {
             />
           </div>
           <div className="z-30  absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:-translate-x-1/6  flex flex-col px-1 py-16 md:py-0">
-            <h1 className="text-[#DC252A] text-5xl md:text-7xl  font-extrabold xl:text-[100px] lg:leading-[1.05] lg:tracking-tighter animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
+            <h1 className="text-[#DC252A] text-5xl md:text-6xl lg:text-7xl  font-extrabold xl:text-[100px] lg:leading-[1.05] lg:tracking-tighter animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
               ŁUKASZ MOCZKODAN
             </h1>
             <div className="relative">
