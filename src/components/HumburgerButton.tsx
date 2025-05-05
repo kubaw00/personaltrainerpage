@@ -34,7 +34,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
               isOpenMenu ? "rotate-45 top-1/2 -translate-y-1/2" : "top-0"
             }`}
           >
-            <span className="absolute left-0 bg-black w-full h-full"></span>
+            <span className="absolute left-0 bg-white w-full h-full"></span>
           </div>
 
           <div
@@ -42,15 +42,15 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
               isOpenMenu ? "translate-x-1/2 opacity-0" : " "
             }`}
           >
-            <span className="absolute left-0  bg-black w-full h-full"></span>
+            <span className="absolute left-0  bg-white w-full h-full"></span>
           </div>
 
           <div
-            className={`relative  bg-black w-full h-[5%] transition-all duration-400 ${
+            className={`relative   w-full h-[5%] transition-all duration-400 ${
               isOpenMenu ? "-rotate-45 -top-1/2 translate-y-1/2 " : "bottom-0"
             }`}
           >
-            <span className="absolute left-0  bg-black w-full h-full"></span>
+            <span className="absolute left-0  bg-white w-full h-full"></span>
           </div>
         </div>
       </button>

@@ -12,11 +12,13 @@ export default function Nav() {
        "
       style={{
         borderBottom: "1px solid",
-        background: "linear-gradient(to top left, #111827, #ef4444)",
-        borderImage: "linear-gradient(to right, transparent, #DC252A 90%) 1",
+        background: "transparent",
+        borderImageSource:
+          "linear-gradient(to right, transparent, #DC252A 90%)",
+        borderImageSlice: 1,
       }}
     >
-      <div className="container h-auto max-w-6xl mx-auto text-black flex justify-between items-center">
+      <div className="container h-auto max-w-6xl mx-auto text-white flex justify-between items-center">
         <Image
           src="/logo.png"
           alt="Logo Trener Personalny Kraków - Łukasz Moczkodan"
@@ -25,10 +27,10 @@ export default function Nav() {
           className="object-cover ml-3 "
           aria-label="Strona główna - Trener Personalny Kraków"
         />
-        {/* <div className="hidden ml-4 w-100px sm:flex flex-col sm:items-center justify-center md:items-start">
+        <div className="hidden ml-4 w-100px sm:flex flex-col sm:items-center justify-center md:items-start">
           <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
           <p className="text-[12px] font-medium">TRENER PERSONALNY</p>
-        </div> */}
+        </div>
 
         <HamburgerButton ariaLabel="Otwórz menu nawigacji" />
         <ul className="hidden md:ml-10 lg:ml-30 md:flex md:justify-center lg:justify-around w-full justify-end space-x-5 lg:space-x-8 items-center">
@@ -61,7 +63,7 @@ export default function Nav() {
                   e.currentTarget.classList.remove("text-amber-400")
                 }
               >
-                <span className="px-2 uppercase ">{item.text}</span>
+                <span className="px-2 uppercase text-white">{item.text}</span>
 
                 {/* kreska */}
                 <span className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-[#DC252A] transition-all duration-300 group-hover:w-1/2 group-hover:left-0 animate-fade-in"></span>
