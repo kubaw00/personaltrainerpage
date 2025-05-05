@@ -32,7 +32,7 @@ export function FaqAccordion({
                 id={`faq-answer-${idx}`}
                 role="region"
                 aria-labelledby={`faq-question-${idx}`}
-                className="p-4 pt-0 text-gray-200 animate-fade-in cursor-pointer"
+                className=" break-words hyphens-auto text-justify p-4 pt-0 text-gray-200 animate-fade-in cursor-pointer"
               >
                 {faq.answer}
               </div>

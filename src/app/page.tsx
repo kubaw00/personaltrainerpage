@@ -29,6 +29,7 @@ import {
 
 import { CiBatteryFull } from "react-icons/ci";
 import { CgArrowsExpandUpRight } from "react-icons/cg";
+import { BsBookmarkCheckFill } from "react-icons/bs";
 
 const sliderImages = [
   "/1_Easy-Resize.com (1)_Easy-Resize.com.jpg",
@@ -130,7 +131,7 @@ export default function Home() {
               pointerEvents: "none",
             }}
           />
-          <div className="relative max-w-[740px] w-[90vw] sm:w-[60vw] md:w-[50vw] aspect-square  overflow-hidden pointer-events-none select-none">
+          <div className="relative sm:landscape:w-[40vw] md:landscape:w-[50vw] lg:landscape:w-[60vw] max-w-[800px] w-[90vw]   aspect-square  overflow-hidden pointer-events-none select-none">
             <Image
               src="/profilowe.jpg"
               alt="Łukasz Moczkodan - trener personalny Kraków, zdjęcie profilowe"
@@ -139,8 +140,8 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="z-30  absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:-translate-x-1/6  flex flex-col px-1 py-16 md:py-0">
-            <h1 className="text-[#DC252A] text-5xl md:text-6xl lg:text-7xl  font-extrabold xl:text-[100px] lg:leading-[1.05] lg:tracking-tighter animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
+          <div className="z-30 sm:landscape:left-2/3 lg:landscape:left-1/2  absolute top-2/3 left-1/2 md:left-2/3 transform -translate-x-1/2 -translate-y-1/2 m  lg:-translate-x-1/6  flex flex-col px-1 py-16 md:py-0">
+            <h1 className="text-[#DC252A] max-w-[400px] font-anton text-6xl md:text-7xl lg:text-8xl  font-bold xl:text-[120px] lg:leading-[1.2] tracking-wide animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
               ŁUKASZ MOCZKODAN
             </h1>
             <div className="relative">
@@ -152,16 +153,12 @@ export default function Home() {
                 className="absolute left-0 top-0 w-full h-[3px] block"
                 style={{
                   background: "#DC252A",
-                  transform: "skewY(-2deg)",
-                  transformOrigin: "left",
                 }}
               />
               <span
                 className="absolute left-0 bottom-0 w-full h-[3px] block"
                 style={{
                   background: "#DC252A",
-                  transform: "skewY(-1deg)",
-                  transformOrigin: "left",
                 }}
               />
             </div>
@@ -175,59 +172,74 @@ export default function Home() {
         aria-label="Treningi personalne"
         className="mt-20 py-10 px-4 w-full max-w-6xl mx-auto mb-12   flex flex-col relative overflow-hidden bg-black  md:py-15  "
       >
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-20 text-white">
+        <h2 className="text-5xl font-anton tracking-wide md:text-5xl lg:text-6xl font-extrabold text-center mb-20 text-white">
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
         </h2>
 
         <div className=" border-2 border-[#DC252A] bg-black/70 bg-blend-darken bg-[url('/sven-mieke-n0IVZWQKBuA-unsplash.jpg')] bg-cover bg-center  rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
+            <h3 className=" font-anton text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
               3-miesięczna przemiana sylwetki
             </h3>
-            <p className="my-15 text-gray-200 text-lg md:text-xl text-center mb-8 max-w-2xl mx-auto">
+            <p className="my-15  font-bold text-gray-200 text-lg md:text-xl text-center mb-8 max-w-2xl mx-auto">
               W 90 dni poprowadzę Cię przez kompleksową zmianę, w skład której
               wchodzą:
             </p>
-            <ul className="space-y-4 max-w-2xl mx-auto mb-8">
+            <ul className="space-y-4 max-w-2xl mx-auto mb-8 break-words hyphens-auto text-justify">
               <li className="flex items-start gap-3 text-lg md:text-xl ">
-                <span className="mt-1 ">✅</span>
-                <span className="text-gray-100">
+                <BsBookmarkCheckFill
+                  size="2em"
+                  className="mt-1 shrink-0 text-[#DC252A] "
+                />
+                <span className="text-gray-100 ">
                   treningi precyzyjnie dobrane do Twojego celu, możliwości i
                   preferencji
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <span className="mt-1">✅</span>
+                <BsBookmarkCheckFill
+                  size="2em"
+                  className="mt-1 shrink-0 text-[#DC252A] "
+                />
                 <span className="text-gray-100">
-                  plan żywieniowy będący wsparciem w osiąganiu Twoich celów —
+                  plan żywieniowy będący wsparciem w osiąganiu Twoich celów -
                   bez ciężaru i zbędnych wyrzeczeń
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <span className="mt-1">✅</span>
+                <BsBookmarkCheckFill
+                  size="2em"
+                  className="mt-1 shrink-0 text-[#DC252A] "
+                />
                 <span className="text-gray-100">
                   systematyczna analiza postępów i dostosowywanie planu do
                   Twoich aktualnych potrzeb
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <span className="mt-1">✅</span>
+                <BsBookmarkCheckFill
+                  size="2em"
+                  className="mt-1 shrink-0 text-[#DC252A] "
+                />
                 <span className="text-gray-100">
-                  wsparcie mentalne — bo zmiana sylwetki zaczyna się od zmiany
+                  wsparcie mentalne - bo zmiana sylwetki zaczyna się od zmiany
                   sposobu myślenia
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <span className="mt-1">✅</span>
+                <BsBookmarkCheckFill
+                  size="2em"
+                  className="mt-1 shrink-0 text-[#DC252A] "
+                />
                 <span className="text-gray-100">
                   motywacja i narzędzia, które pomogą Ci wytrwać i cieszyć się
                   drogą, a nie tylko celem
                 </span>
               </li>
             </ul>
-            <p className="text-gray-200 text-lg md:text-xl text-center max-w-2xl mx-auto">
+            <p className="text-gray-200 text-lg md:text-xl text-justify hyphens-auto break-words max-w-2xl mx-auto">
               Nie ważne, czy Twoim marzeniem jest lepsza sylwetka, większa siła,
-              sprawniejsze ciało czy po prostu codzienne lepsze samopoczucie —
+              sprawniejsze ciało czy po prostu codzienne lepsze samopoczucie -
               tutaj masz wszystko, czego potrzebujesz, żeby to osiągnąć.
             </p>
           </div>
@@ -246,17 +258,17 @@ export default function Home() {
             boxShadow: "0px -30px 100px 60px #DC252A",
           }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl m-10 font-extrabold text-center mb-12 text-white">
+          <h2 className="text-5xl font-anton leading-[1.3] tracking-wide md:text-5xl lg:text-6xl m-10 font-extrabold text-center mb-12 text-white">
             CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
           </h2>
 
           <div className="flex flex-col md:flex-row md:justify-between w-full">
-            <p className="leading-relaxed p-10 text-gray-200 lg:text-xl w-full md:w-1/2 flex-shrink-0">
+            <p className="break-words hyphens-auto text-justify leading-relaxed p-10 text-gray-200 lg:text-xl w-full md:w-1/2 flex-shrink-0">
               Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
               budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
               część układanki - najważniejsze jest to, jak się czujesz na co
               dzień, jak postrzegasz siebie i jak wpływa to na Twoje życie. Na
-              co dzień pracuję z osobami o różnorodnych celach — pomagam w
+              co dzień pracuję z osobami o różnorodnych celach - pomagam w
               redukcji tkanki tłuszczowej, budowie masy mięśniowej, poprawie
               sprawności, przygotowaniu do testów sprawnościowych czy powrocie
               do formy po urazach. Niezależnie od Twojego punktu wyjścia,
@@ -280,7 +292,7 @@ export default function Home() {
         role="region"
         aria-label="Co osiągniesz"
       >
-        <h2 className="text-4xl mb-20 md:text-5xl lg:text-6xl font-extrabold text-center  text-white">
+        <h2 className="text-5xl leading-[1.3] font-anton tracking-wide mb-20 md:text-5xl lg:text-6xl font-extrabold text-center  text-white">
           CO ZE MNĄ{" "}
           <span
             style={{
@@ -395,7 +407,7 @@ export default function Home() {
         </div>
       </section>
 
-      <h2 className="text-4xl md:text-5xl lg:text-6xl m-5 mt-20 font-extrabold text-center mb-12 text-white">
+      <h2 className="text-5xl leading-[1.3] font-anton tracking-wide md:text-5xl lg:text-6xl m-5 mt-20 font-extrabold text-center mb-12 text-white">
         JAK WYGLĄDAJĄ <span style={{ color: "#DC252A" }}>NASZE TRENINGI?</span>
       </h2>
 
@@ -450,7 +462,7 @@ export default function Home() {
         aria-label="Najczęstsze pytania (FAQ)"
         className="w-full py-10 md:mt-20 md:pt-10 max-w-3xl mx-auto mb-16 px-4 "
       >
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
+        <h2 className="text-5xl leading-[1.3] font-anton tracking-wide md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
           NAJCZĘSTSZE <span style={{ color: "#DC252A" }}>PYTANIA </span>
         </h2>
         {/* FAQ – dane strukturalne FAQ schema.org */}
@@ -527,17 +539,17 @@ export default function Home() {
             {
               question: "Czy muszę mieć doświadczenie, żeby zacząć?",
               answer:
-                "Nie! Treningi są dostosowane do Twojego poziomu — niezależnie od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze doświadczenia. Wszystkiego nauczysz się krok po kroku.",
+                "Nie! Treningi są dostosowane do Twojego poziomu - niezależnie od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze doświadczenia. Wszystkiego nauczysz się krok po kroku.",
             },
             {
               question: "Ile razy w tygodniu muszę trenować?",
               answer:
-                "Jeśli zastanawiasz się nad częstotliwością treningów, spokojnie — wiele osób rozpoczyna od jednej sesji w tygodniu i to całkowicie wystarczający krok na start. Jeśli jednak zależy Ci na szybszych efektach, rekomenduję spotkania dwa razy w tygodniu — to optymalna częstotliwość, która daje najlepsze rezultaty przy zachowaniu balansu między treningiem a codziennym życiem. Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces, istnieje także możliwość współpracy trzy razy w tygodniu, a dla najbardziej wymagających nawet cztery razy. Niczego jednak nie narzucam — dostosowujemy wszystko do Twoich możliwości i potrzeb.",
+                "Jeśli zastanawiasz się nad częstotliwością treningów, spokojnie - wiele osób rozpoczyna od jednej sesji w tygodniu i to całkowicie wystarczający krok na start. Jeśli jednak zależy Ci na szybszych efektach, rekomenduję spotkania dwa razy w tygodniu - to optymalna częstotliwość, która daje najlepsze rezultaty przy zachowaniu balansu między treningiem a codziennym życiem. Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces, istnieje także możliwość współpracy trzy razy w tygodniu, a dla najbardziej wymagających nawet cztery razy. Niczego jednak nie narzucam - dostosowujemy wszystko do Twoich możliwości i potrzeb.",
             },
             {
               question: "Czy dostosowujesz plan, jeśli coś mi nie pasuje?",
               answer:
-                "Tak, każdy element współpracy — trening, plan żywieniowy czy nawet komunikacja — jest modyfikowany na bieżąco tak, żeby Ci służył, a nie przeszkadzał. Jesteśmy zespołem i słucham Twojego feedbacku.",
+                "Tak, każdy element współpracy - trening, plan żywieniowy czy nawet komunikacja - jest modyfikowany na bieżąco tak, żeby Ci służył, a nie przeszkadzał. Jesteśmy zespołem i słucham Twojego feedbacku.",
             },
             {
               question: "Co jeśli mam kontuzje lub ograniczenia zdrowotne?",
@@ -547,22 +559,22 @@ export default function Home() {
             {
               question: "Czy mogę trenować, jeśli mam napięty grafik?",
               answer:
-                "Tak. Wspólnie znajdziemy rozwiązanie — możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do Twoich możliwości czasowych.",
+                "Tak. Wspólnie znajdziemy rozwiązanie - możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do Twoich możliwości czasowych.",
             },
             {
               question: "Jak szybko zobaczę efekty?",
               answer:
-                "Pierwsze zmiany — w energii, samopoczuciu i sile — możesz odczuć już po kilku tygodniach. Sylwetkowe zmiany stają się widoczne zwykle po 8–12 tygodniach regularnej pracy.",
+                "Pierwsze zmiany - w energii, samopoczuciu i sile - możesz odczuć już po kilku tygodniach. Sylwetkowe zmiany stają się widoczne zwykle po 8–12 tygodniach regularnej pracy.",
             },
             {
               question: "Czy muszę stosować ścisłą dietę?",
               answer:
-                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie utrudnieniem. Stawiamy na elastyczność i realne podejście — bez restrykcji, które odbierają radość z życia.",
+                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie utrudnieniem. Stawiamy na elastyczność i realne podejście - bez restrykcji, które odbierają radość z życia.",
             },
           ]}
         />
         <div className="hidden md:block">
-          <div className="space-y-6">
+          <div className="space-y-6 break-words hyphens-auto text-justify">
             <AnimationOnScroll
               classNameInView="animate-fade-up opacity-100"
               classNameNotInView="opacity-0"
@@ -575,7 +587,7 @@ export default function Home() {
                   Czy muszę mieć doświadczenie, żeby zacząć?
                 </h3>
                 <p className="text-gray-200">
-                  Nie! Treningi są dostosowane do Twojego poziomu — niezależnie
+                  Nie! Treningi są dostosowane do Twojego poziomu - niezależnie
                   od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze
                   doświadczenia. Wszystkiego nauczysz się krok po kroku.
                 </p>
@@ -594,10 +606,10 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-200">
                   Jeśli zastanawiasz się nad częstotliwością treningów,
-                  spokojnie — wiele osób rozpoczyna od jednej sesji w tygodniu i
+                  spokojnie - wiele osób rozpoczyna od jednej sesji w tygodniu i
                   to całkowicie wystarczający krok na start. Jeśli jednak zależy
                   Ci na szybszych efektach, rekomenduję spotkania dwa razy w
-                  tygodniu — to optymalna częstotliwość, która daje najlepsze
+                  tygodniu - to optymalna częstotliwość, która daje najlepsze
                   rezultaty przy zachowaniu balansu między treningiem a
                   codziennym życiem.
                   <br />
@@ -605,7 +617,7 @@ export default function Home() {
                   Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces,
                   istnieje także możliwość współpracy trzy razy w tygodniu, a
                   dla najbardziej wymagających nawet cztery razy. Niczego jednak
-                  nie narzucam — dostosowujemy wszystko do Twoich możliwości i
+                  nie narzucam - dostosowujemy wszystko do Twoich możliwości i
                   potrzeb.
                 </p>
               </div>
@@ -622,8 +634,8 @@ export default function Home() {
                   Czy dostosowujesz plan, jeśli coś mi nie pasuje?
                 </h3>
                 <p className="text-gray-200">
-                  Tak, każdy element współpracy — trening, plan żywieniowy czy
-                  nawet komunikacja — jest modyfikowany na bieżąco tak, żeby Ci
+                  Tak, każdy element współpracy - trening, plan żywieniowy czy
+                  nawet komunikacja - jest modyfikowany na bieżąco tak, żeby Ci
                   służył, a nie przeszkadzał. Jesteśmy zespołem i słucham
                   Twojego feedbacku.
                 </p>
@@ -662,7 +674,7 @@ export default function Home() {
                   Czy mogę trenować, jeśli mam napięty grafik?
                 </h3>
                 <p className="text-gray-200">
-                  Tak. Wspólnie znajdziemy rozwiązanie — możliwe są krótsze
+                  Tak. Wspólnie znajdziemy rozwiązanie - możliwe są krótsze
                   sesje, elastyczne godziny lub plan dostosowany do Twoich
                   możliwości czasowych.
                 </p>
@@ -680,7 +692,7 @@ export default function Home() {
                   Jak szybko zobaczę efekty?
                 </h3>
                 <p className="text-gray-200">
-                  Pierwsze zmiany — w energii, samopoczuciu i sile — możesz
+                  Pierwsze zmiany - w energii, samopoczuciu i sile - możesz
                   odczuć już po kilku tygodniach. Sylwetkowe zmiany stają się
                   widoczne zwykle po 8–12 tygodniach regularnej pracy.
                 </p>
@@ -699,7 +711,7 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-200">
                   Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie
-                  utrudnieniem. Stawiamy na elastyczność i realne podejście —
+                  utrudnieniem. Stawiamy na elastyczność i realne podejście -
                   bez restrykcji, które odbierają radość z życia.
                 </p>
               </div>
@@ -716,7 +728,7 @@ export default function Home() {
       >
         <div className=" bg-black/80 bg-blend-darken bg-[url('/sven-vahaja-1hZjJh-mGeA-unsplash.jpg')] bg-cover bg-center border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
-            <h3 className="text-3xl md:text-4xl  lg:text-5xl font-extrabold text-[#DC252A] mb-10 text-center uppercase tracking-wider">
+            <h3 className="text-3xl font-anton tracking-wider md:text-4xl  lg:text-5xl font-extrabold text-[#DC252A] mb-10 text-center uppercase ">
               Gdzie przeprowadzam Treningi?
             </h3>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
@@ -788,8 +800,8 @@ export default function Home() {
             priority={false}
           />
         </div>
-        <div className="flex-1 flex flex-col justify-center items-start gap-4 max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2">
+        <div className="flex-1 break-words hyphens-auto text-justify flex flex-col justify-center items-start gap-4 max-w-xl">
+          <h2 className="text-3xl font-anton tracking-wider md:text-4xl font-extrabold text-white mb-2">
             Zapraszam do kontaktu!
           </h2>
           <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
@@ -820,7 +832,7 @@ export default function Home() {
         aria-label="Formularz kontaktowy"
         className="w-full mt-20 py-10  px-6 max-w-[800px] md:w-[700px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
       >
-        <h2 className="text-4xl md:text-5xl w-full  font-bold text-center mb-12 text-white">
+        <h2 className="text-5xl leading-[1.3] font-anton tracking-wider md:text-5xl w-full  font-bold text-center mb-12 text-white">
           FORMULARZ <span style={{ color: "#DC252A" }}>KONTAKTOWY</span>
         </h2>
         <ContactForm />
@@ -828,8 +840,10 @@ export default function Home() {
 
       <section className="w-full my-15 max-w-none bg-black/80  px-2 flex flex-col items-center relative overflow-x-visible overflow-y-visible">
         <div className="absolute inset-0 w-full h-full bg-black/80 -z-10" />
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-4">
-          <span className="text-white">ZNAJDŹ MNIE NA PROFILACH </span>
+        <h2 className="text-3xl font-anton  tracking-wider  md:text-4xl font-extrabold text-center mb-4">
+          <span className="text-white  leading-[1.2]">
+            ZNAJDŹ MNIE NA PROFILACH{" "}
+          </span>
           <span
             className="bg-clip-text text-transparent"
             style={{
@@ -840,7 +854,7 @@ export default function Home() {
             SPOŁECZNOŚCIOWYCH
           </span>
         </h2>
-        <p className="text-gray-300 text-center max-w-2xl mx-auto mb-10">
+        <p className="text-gray-300 p-2  text-center max-w-2xl mx-auto mb-10">
           Zajrzyj na mojego Facebooka i Instagrama, gdzie na bieżąco publikuję
           wiele przydatnych wskazówek dotyczących treningu i diety przeznaczonej
           dla osób prowadzących aktywny styl życia
@@ -945,7 +959,7 @@ export default function Home() {
 
       <footer
         style={{ boxShadow: "0px 0px 80px 40px #000000" }}
-        className="w-full mt-10 bg-[#f5f6f7] py-5 md:py-10 lg:py-15 px-4"
+        className="w-full mt-10 bg-[#f5f6f7] py-5 md:pt-10  px-4"
         role="contentinfo"
         aria-label="Stopka strony"
       >
@@ -953,7 +967,7 @@ export default function Home() {
           {/* Logo i nazwa */}
 
           <div
-            className=" font-bold p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
+            className=" font-bold font-anton tracking-wider p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
             data-glitch="ŁUKASZ MOCZKODAN"
             style={{ color: "#000000" }}
             itemScope

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Anton } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import "@/styles/animations.css";
@@ -8,6 +8,15 @@ import "@/styles/swiper-overrides.css";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
+
+const anton = Anton({
+  variable: "--font-anton",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -84,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
+    <html lang="pl" className={`${montserrat.variable} ${anton.variable}`}>
       <head>
         {/* Strukturalne dane JSON-LD dla LocalBusiness */}
         <script
@@ -113,7 +122,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={` ${montserrat.variable} antialiased`}>
+      <body className={`antialiased`}>
         <Toaster
           position="top-right"
           toastOptions={{ duration: 2000, className: "toast-slide-up" }}

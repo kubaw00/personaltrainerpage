@@ -6,7 +6,11 @@
 } */
 
 body {
-  font-family: var(--font-montserrat), var(--font-geist-sans);
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.font-anton {
+  font-family: var(--font-anton), sans-serif;
 }
 
 :root {

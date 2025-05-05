@@ -126,15 +126,13 @@ export default function ContactForm() {
           name="message"
           required
           rows={4}
-          placeholder=" "
+          placeholder="Jaki efekt byłby dla Ciebie naprawdę satysfakcjonujący?"
           className="w-full p-5 rounded-md bg-[#181818] border border-white pr-12 focus:ring-2 focus:ring-white focus:outline-none peer resize-none"
         />
         <label
           htmlFor="message"
-          className="absolute left-5 top-6 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
-        >
-          Wiadomość
-        </label>
+          className="absolute left-5 top-6 text-gray-400 text-base pointer-events-none transition-all duration-200   peer-focus:text-white bg-transparent"
+        ></label>
         <span className="absolute right-4 top-6 flex items-center h-6  border-white text-white pointer-events-none">
           <FaEnvelope />
         </span>
