@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Montserrat, Anton } from "next/font/google";
+import { Work_Sans, Montserrat, Anton } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import "@/styles/animations.css";
 import "@/styles/swiper-overrides.css";
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+  display: "swap",
+});
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -93,7 +99,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className={`${montserrat.variable} ${anton.variable}`}>
+    <html
+      lang="pl"
+      className={`${workSans.variable} ${montserrat.variable} ${anton.variable}`}
+    >
       <head>
         {/* Strukturalne dane JSON-LD dla LocalBusiness */}
         <script

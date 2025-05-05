@@ -29,7 +29,7 @@ import {
 
 import { CiBatteryFull } from "react-icons/ci";
 import { CgArrowsExpandUpRight } from "react-icons/cg";
-import { BsBookmarkCheckFill } from "react-icons/bs";
+import { IoMdCheckmark } from "react-icons/io";
 
 const sliderImages = [
   "/1_Easy-Resize.com (1)_Easy-Resize.com.jpg",
@@ -187,7 +187,7 @@ export default function Home() {
             </p>
             <ul className="space-y-4 max-w-2xl mx-auto mb-8 break-words hyphens-auto text-justify">
               <li className="flex items-start gap-3 text-lg md:text-xl ">
-                <BsBookmarkCheckFill
+                <IoMdCheckmark
                   size="2em"
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
@@ -197,7 +197,7 @@ export default function Home() {
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <BsBookmarkCheckFill
+                <IoMdCheckmark
                   size="2em"
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
@@ -207,7 +207,7 @@ export default function Home() {
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <BsBookmarkCheckFill
+                <IoMdCheckmark
                   size="2em"
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
@@ -217,7 +217,7 @@ export default function Home() {
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <BsBookmarkCheckFill
+                <IoMdCheckmark
                   size="2em"
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
@@ -227,7 +227,7 @@ export default function Home() {
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
-                <BsBookmarkCheckFill
+                <IoMdCheckmark
                   size="2em"
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />

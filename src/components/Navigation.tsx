@@ -8,10 +8,11 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <nav
-      className="w-full flex items-center  bg-[rgba(255,255,255,0.9)] h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5  transition-transform duration-500 ${
+      className="w-full flex items-center   h-[90px] md:h-[120px] z-1000 fixed p-3 md:p-5  transition-transform duration-500 ${
        "
       style={{
         borderBottom: "1px solid",
+        background: "linear-gradient(to top left, #111827, #ef4444)",
         borderImage: "linear-gradient(to right, transparent, #DC252A 90%) 1",
       }}
     >
@@ -33,7 +34,7 @@ export default function Nav() {
         <ul className="hidden md:ml-10 lg:ml-30 md:flex md:justify-center lg:justify-around w-full justify-end space-x-5 lg:space-x-8 items-center">
           {[
             { text: "O\u00A0mnie", href: "#about" },
-            { text: "Treningi personalne", href: "#trainings" },
+            { text: "Co oferuję", href: "#trainings" },
             { text: "Najczęstsze pytania (FAQ)", href: "#questions" },
             { text: "Kontakt", href: "#contact" },
           ].map((item, index) => (

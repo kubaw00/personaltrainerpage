@@ -77,7 +77,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
               {[
                 { text: "O mnie", href: "#about", className: "text-white" },
                 {
-                  text: "Treningi personalne",
+                  text: "Co oferuję",
                   href: "#trainings",
                   className: "text-white",
                 },
