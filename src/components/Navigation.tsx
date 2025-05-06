@@ -23,7 +23,7 @@ export default function Nav() {
     <>
       {/* MOBILE NAV */}
       <nav
-        className="block md:hidden w-full flex items-center h-[90px] z-[1000] fixed p-3 transition-opacity duration-500 opacity-100 bg-black"
+        className=" md:hidden w-full flex items-center h-[90px] z-[1000] fixed p-3 transition-opacity duration-500 opacity-100 bg-transparent"
         style={{
           borderBottom: "1px solid",
           borderImageSource:
