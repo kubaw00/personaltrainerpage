@@ -74,9 +74,11 @@ export default function Nav() {
             className="object-cover ml-3 "
             aria-label="Strona główna - Trener Personalny Kraków"
           />
-          <div className="ml-4 w-[130px] text-white flex flex-col items-left justify-center">
+          <div className="ml-4 w-[140px] text-white flex flex-col items-left justify-center">
             <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
-            <p className="text-[12px]  font-medium">TRENER PERSONALNY</p>
+            <p className="text-[12px] whitespace-nowrap  font-medium">
+              TRENER PERSONALNY
+            </p>
           </div>
           <ul className="ml-10 flex justify-around grow-1 gap-7 items-center">
             {[

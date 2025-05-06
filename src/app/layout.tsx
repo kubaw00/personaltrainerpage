@@ -104,7 +104,17 @@ export default function RootLayout({
       className={`${workSans.variable} ${montserrat.variable} ${anton.variable}`}
     >
       <head>
-        {/* Strukturalne dane JSON-LD dla LocalBusiness */}
+        {/* Google Tag Manager */}
+        <script>
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-W6C9K4XB');`}
+        </script>
+        {/* End Google Tag Manager */}
+
+        {/* Structured data JSON-LD for LocalBusiness */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
