@@ -982,7 +982,7 @@ export default function Home() {
           {/* Logo i&nbsp;nazwa */}
 
           <div
-            className=" font-bold font-anton tracking-wider p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
+            className=" font-bold font-anton  p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
             data-glitch="ŁUKASZ MOCZKODAN"
             style={{ color: "#000000" }}
             itemScope
