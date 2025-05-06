@@ -15,15 +15,10 @@ type EmailContent = {
 };
 
 const SMTP_CONFIG = {
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
-  secure: false,
+  service: "gmail",
   auth: {
-    user: process.env.WP_EMAIL,
-    pass: process.env.WP_PASSWORD,
-  },
-  tls: {
-    minVersion: "TLSv1.2", // Wymagane przez WP.pl
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD, // hasło aplikacji Gmail
   },
 } as const;
 
@@ -57,27 +52,40 @@ export async function sendEmail(
     const transporter = createTransport(SMTP_CONFIG);
 
     const mailOptions: SendMailOptions = {
-      from: process.env.WP_EMAIL,
-      to: process.env.WP_EMAIL,
-      subject: "Nowa wiadomość z formularza kontaktowego",
-      text: `
-          Imię: ${content.name}
-          Email: ${content.email}
-          Telefon: ${content.phone}
-          Wiadomość: ${content.message}
-        `,
+      from: process.env.GMAIL_USER,
+      to: process.env.GMAIL_USER,
+      subject:
+        "Nowa wiadomość z formularza kontaktowego ze strony lukaszmoczkodan.pl",
+      text: `Imię: ${content.name}\nEmail: ${content.email}\nTelefon: ${content.phone}\nWiadomość: ${content.message}`,
       html: `
-          <h1>Nowa wiadomość</h1>
-          ${Object.entries(content)
-            .map(([key, value]) => `<p><strong>${key}:</strong> ${value}</p>`)
-            .join("")}
-        `,
+        <div style="font-family: Arial, sans-serif; background: #fafafa; padding: 32px 16px; border-radius: 12px; border: 1px solid #eee; max-width: 480px; margin: 20px;">
+          <h1 style="color: #006400; margin-bottom: 24px;">Nowa wiadomość</h1>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="padding: 8px 0; font-weight: bold; color: #222; width: 120px;">Imię:</td>
+              <td style="padding: 8px 0; color: #333;">${content.name}</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0; font-weight: bold; color: #222;">Email:</td>
+              <td style="padding: 8px 0; color: #333;">${content.email}</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0; font-weight: bold; color: #222;">Telefon:</td>
+              <td style="padding: 8px 0; color: #333;">${content.phone}</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0; font-weight: bold; color: #222; vertical-align: top;">Wiadomość:</td>
+              <td style="padding: 8px 0; color: #333; white-space: pre-line;">${content.message}</td>
+            </tr>
+          </table>
+        </div>
+      `,
     };
 
-    console.log("Próba logowania jako:", process.env.WP_EMAIL);
+    console.log("Próba logowania jako:", process.env.GMAIL_USER);
     console.log(
       "Hasło aplikacji:",
-      process.env.WP_PASSWORD?.slice(0, 2) + "..."
+      process.env.GMAIL_APP_PASSWORD?.slice(0, 2) + "..."
     );
 
     transporter.verify((error) => {

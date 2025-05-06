@@ -147,7 +147,7 @@ export default function Home() {
             <div className="relative">
               <h2 className="text-gray-200 p-2  animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear text-balance text-lg  md:text-xl lg:text-3xl">
                 &quot;Pomagam normalnym ludziom osiągać nienormalnie dobre
-                efekty – bez stresu i liczenia kalorii&quot;
+                efekty – bez stresu iliczenia kalorii&quot;
               </h2>
               <span
                 className="absolute left-0 top-0 w-full h-[3px] block"
@@ -182,18 +182,18 @@ export default function Home() {
               3-miesięczna przemiana sylwetki
             </h3>
             <p className="my-15  font-bold text-gray-200 text-lg md:text-xl text-center mb-8 max-w-2xl mx-auto">
-              W 90 dni poprowadzę Cię przez kompleksową zmianę, w skład której
-              wchodzą:
+              W&nbsp;90 dni poprowadzę Cię przez kompleksową zmianę w&nbsp;skład
+              której wchodzą:
             </p>
-            <ul className="space-y-4 max-w-2xl mx-auto mb-8 break-words hyphens-auto text-justify">
+            <ul className="space-y-4 max-w-2xl mx-auto mb-8  break-words hyphens-auto text-justify">
               <li className="flex items-start gap-3 text-lg md:text-xl ">
                 <IoMdCheckmark
                   size="2em"
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
                 <span className="text-gray-100 ">
-                  treningi precyzyjnie dobrane do Twojego celu, możliwości i
-                  preferencji
+                  treningi precyzyjnie dobrane do&nbsp;Twojego celu, możliwości
+                  i&nbsp;preferencji
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
@@ -202,8 +202,8 @@ export default function Home() {
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
                 <span className="text-gray-100">
-                  plan żywieniowy będący wsparciem w osiąganiu Twoich celów -
-                  bez ciężaru i zbędnych wyrzeczeń
+                  plan żywieniowy będący wsparciem w&nbsp;osiąganiu Twoich
+                  celów& -&nbsp;bez ciężaru i&nbsp;zbędnych wyrzeczeń
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
@@ -212,8 +212,8 @@ export default function Home() {
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
                 <span className="text-gray-100">
-                  systematyczna analiza postępów i dostosowywanie planu do
-                  Twoich aktualnych potrzeb
+                  systematyczna analiza postępów i&nbsp;dostosowywanie planu
+                  do&nbsp;Twoich aktualnych potrzeb
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
@@ -222,8 +222,8 @@ export default function Home() {
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
                 <span className="text-gray-100">
-                  wsparcie mentalne - bo zmiana sylwetki zaczyna się od zmiany
-                  sposobu myślenia
+                  wsparcie mentalne -&nbsp;bo&nbsp;zmiana sylwetki zaczyna się
+                  od&nbsp;zmiany sposobu myślenia
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
@@ -232,15 +232,16 @@ export default function Home() {
                   className="mt-1 shrink-0 text-[#DC252A] "
                 />
                 <span className="text-gray-100">
-                  motywacja i narzędzia, które pomogą Ci wytrwać i cieszyć się
-                  drogą, a nie tylko celem
+                  motywacja i&nbsp;narzędzia, które pomogą Ci wytrwać
+                  i&nbsp;cieszyć się drogą, a nie tylko celem
                 </span>
               </li>
             </ul>
             <p className="text-gray-200 text-lg md:text-xl text-justify hyphens-auto break-words max-w-2xl mx-auto">
-              Nie ważne, czy Twoim marzeniem jest lepsza sylwetka, większa siła,
-              sprawniejsze ciało czy po prostu codzienne lepsze samopoczucie -
-              tutaj masz wszystko, czego potrzebujesz, żeby to osiągnąć.
+              Nie ważne, czy&nbsp;Twoim marzeniem jest lepsza sylwetka, większa
+              siła, sprawniejsze ciało czy po&nbsp;prostu codzienne lepsze
+              samopoczucie - tutaj masz wszystko, czego potrzebujesz, żeby
+              to&nbsp;osiągnąć.
             </p>
           </div>
         </div>
@@ -264,19 +265,21 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row md:justify-between w-full">
             <p className="break-words hyphens-auto text-justify leading-relaxed p-10 text-gray-200 lg:text-xl w-full md:w-1/2 flex-shrink-0">
-              Nie jestem tu po to, żeby tylko rzeźbić sylwetki. Moją misją jest
-              budowanie się ciała i głowy jednocześnie. Wiem, że wygląd to tylko
-              część układanki - najważniejsze jest to, jak się czujesz na co
-              dzień, jak postrzegasz siebie i jak wpływa to na Twoje życie. Na
-              co dzień pracuję z osobami o różnorodnych celach - pomagam w
-              redukcji tkanki tłuszczowej, budowie masy mięśniowej, poprawie
-              sprawności, przygotowaniu do testów sprawnościowych czy powrocie
-              do formy po urazach. Niezależnie od Twojego punktu wyjścia,
-              znajdziemy najlepsze rozwiązanie dla Ciebie.
+              Nie jestem tu po&nbsp;to, żeby tylko rzeźbić sylwetki. Moją misją
+              jest budowanie się ciała i&nbsp;głowy jednocześnie. Wiem,
+              że&nbsp;wygląd to tylko część układanki - najważniejsze jest to,
+              jak się czujesz na&nbsp;co dzień, jak postrzegasz siebie
+              i&nbsp;jak wpływa to na&nbsp;Twoje życie. Na co&nbsp;dzień pracuję
+              z&nbsp;osobami o&nbsp;różnorodnych celach - pomagam
+              w&nbsp;redukcji tkanki tłuszczowej, budowie masy mięśniowej,
+              poprawie sprawności, przygotowaniu
+              do&nbsp;testów&nbsp;sprawnościowych czy&nbsp;powrocie
+              do&nbsp;formy po&nbsp;urazach.Niezależnie od&nbsp;Twojego punktu
+              wyjścia, znajdziemy najlepsze rozwiązanie dla Ciebie.
             </p>
             <div className="relative grow my-auto justify-center w-full h-[500px]">
               <Image
-                alt="Trener personalny Kraków - zdjęcie w sekcji o mnie"
+                alt="Trener personalny Kraków&nbsp;- zdjęcie w&nbsp;sekcji o mnie"
                 src="/Messenger_creation_A125B378-5B7A-4B5D-9CF4-33A85B91208E_Easy-Resize.com.jpg"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
@@ -315,9 +318,10 @@ export default function Home() {
               Kompleksowa transformacja zdrowia
             </h3>
             <p className="text-base">
-              Spersonalizowane plany żywieniowe i treningowe, dopasowane do
-              Twoich unikalnych potrzeb, stanowią klucz do poprawy samopoczucia,
-              wzmocnienia organizmu i podniesienia jakości codziennego życia
+              Spersonalizowane plany żywieniowe i&nbsp;treningowe, dopasowane do
+              Twoich unikalnych potrzeb, stanowią klucz do&nbsp;poprawy
+              samopoczucia, wzmocnienia organizmu i&nbsp;podniesienia jakości
+              codziennego życia
             </p>
           </div>
           {/* 2 */}
@@ -333,8 +337,9 @@ export default function Home() {
             </h3>
             <p className="text-base">
               Wspólnie wyrzeźbimy Twoje ciało – pomogę Ci pozbyć się
-              nadprogramowych kilogramów i zbliżyć się do wymarzonego celu.
-              Twoja idealna figura to nie tylko wygląd, ale nowy etap w życiu.
+              nadprogramowych kilogramów i&nbsp;zbliżyć się do&nbsp;wymarzonego
+              celu. Twoja idealna figura to nie tylko wygląd, ale nowy etap
+              w&nbsp;życiu.
             </p>
           </div>
           {/* 3 */}
@@ -347,10 +352,10 @@ export default function Home() {
             </span>
             <h3 className="font-bold text-xl mb-2">Równowaga dla umysłu</h3>
             <p className="text-base">
-              Połączenie regularnej aktywności fizycznej z odpowiednio
+              Połączenie regularnej aktywności fizycznej z&nbsp;odpowiednio
               zbilansowaną dietą redukuje napięcie nerwowe, wzmacnia odporność
-              na stres i przekłada się na lepszą koncentrację oraz wewnętrzną
-              harmonię.
+              na&nbsp;stres i&nbsp;przekłada się na&nbsp;lepszą koncentrację
+              oraz wewnętrzną harmonię.
             </p>
           </div>
           {/* 4 */}
@@ -361,11 +366,13 @@ export default function Home() {
             <span className="mb-4 text-5xl animate-bounce animate-delay-600">
               <CiBatteryFull />
             </span>
-            <h3 className="font-bold text-xl mb-2">Energia w każdym ruchu</h3>
+            <h3 className="font-bold text-xl mb-2">
+              Energia w&nbsp;każdym ruchu
+            </h3>
             <p className="text-base">
-              Dzięki dopasowanemu planowi żywieniowemu i indywidualnemu
+              Dzięki dopasowanemu planowi żywieniowemu i&nbsp;indywidualnemu
               programowi treningowemu odzyskasz lekkość ciała, zwiększysz
-              wytrzymałość i poczujesz się sprawniejszy w codziennych
+              wytrzymałość i&nbsp;poczujesz się sprawniejszy w&nbsp;codziennych
               aktywnościach.
             </p>
           </div>
@@ -378,12 +385,13 @@ export default function Home() {
               <MdPublishedWithChanges />
             </span>
             <h3 className="font-bold text-xl mb-2">
-              Witalność na wysokim poziomie
+              Witalność na&nbsp;wysokim poziomie
             </h3>
             <p className="text-base">
-              Chroniczne zmęczenie to sygnał, że organizm potrzebuje zmiany.
-              Moja metoda łączy regenerujące posiłki z treningami, które nie
-              tylko dodadzą Ci siły, ale też „naładują baterie” na cały dzień.
+              Chroniczne zmęczenie to sygnał, że&nbsp;organizm potrzebuje
+              zmiany. Moja metoda łączy&nbsp;regenerujące posiłki
+              z&nbsp;treningami, które nie tylko dodadzą Ci siły, ale też
+              „naładują baterie” na&nbsp;cały dzień.
             </p>
           </div>
           {/* 6 */}
@@ -395,13 +403,13 @@ export default function Home() {
               <CgArrowsExpandUpRight />
             </span>
             <h3 className="font-bold text-xl mb-2">
-              Harmonia w sferze intymnej
+              Harmonia w&nbsp;sferze intymnej
             </h3>
             <p className="text-base">
-              Zmęczony organizm często traci ochotę na bliskość. Poprzez
-              odpowiednio dobrane treningi i dietę wspieramy nie tylko formę
-              fizyczną, ale też naturalne poczucie pewności siebie i satysfakcję
-              z życia erotycznego.
+              Zmęczony organizm często traci ochotę na&nbsp;bliskość. Poprzez
+              odpowiednio dobrane treningi i&nbsp;dietę wspieramy nie tylko
+              formę fizyczną, ale też naturalne poczucie pewności siebie
+              i&nbsp;satysfakcję z&nbsp;życia erotycznego.
             </p>
           </div>
         </div>
@@ -442,7 +450,7 @@ export default function Home() {
             <div className="w-full h-[370px] md:h-[450px] lg:h-[550px] flex items-center justify-center relative">
               <Image
                 src={src}
-                alt={`Trener personalny Kraków - zdjęcie z galerii numer ${
+                alt={`Trener personalny Kraków&nbsp;- zdjęcie z&nbsp;galerii numer ${
                   idx + 1
                 }`}
                 fill
@@ -475,26 +483,26 @@ export default function Home() {
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "Czy muszę mieć doświadczenie, żeby zacząć?",
+                  name: "Czy&nbsp;muszę mieć doświadczenie, żeby zacząć?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Nie! Treningi są dostosowane do Twojego poziomu — niezależnie od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze doświadczenia. Wszystkiego nauczysz się krok po kroku.",
+                    text: "Nie! Treningi są dostosowane do&nbsp;Twojego poziomu — niezależnie od&nbsp;tego, czy&nbsp;dopiero zaczynasz, czy&nbsp;masz już za&nbsp;sobą pierwsze doświadczenia. Wszystkiego nauczysz się krok po&nbsp;kroku.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Ile razy w tygodniu muszę trenować?",
+                  name: "Ile razy w&nbsp;tygodniu muszę trenować?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Jeśli zastanawiasz się nad częstotliwością treningów, spokojnie — wiele osób rozpoczyna od jednej sesji w tygodniu i to całkowicie wystarczający krok na start. Jeśli jednak zależy Ci na szybszych efektach, rekomenduję spotkania dwa razy w tygodniu — to optymalna częstotliwość, która daje najlepsze rezultaty przy zachowaniu balansu między treningiem a codziennym życiem. Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces, istnieje także możliwość współpracy trzy razy w tygodniu, a dla najbardziej wymagających nawet cztery razy. Niczego jednak nie narzucam — dostosowujemy wszystko do Twoich możliwości i potrzeb.",
+                    text: "Jeśli zastanawiasz się nad częstotliwością treningów, spokojnie — wiele osób rozpoczyna od&nbsp;jednej sesji w&nbsp;tygodniu i&nbsp;to całkowicie wystarczający krok na&nbsp;start. Jeśli jednak zależy Ci na&nbsp;szybszych efektach, rekomenduję spotkania dwa razy w&nbsp;tygodniu — to optymalna częstotliwość, która daje najlepsze rezultaty przy zachowaniu balansu między treningiem a codziennym życiem. Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces, istnieje także&nbsp;możliwość współpracy trzy razy w&nbsp;tygodniu, a dla najbardziej wymagających nawet cztery razy. Niczego jednak nie narzucam — dostosowujemy wszystko do&nbsp;Twoich możliwości i&nbsp;potrzeb.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Czy dostosowujesz plan, jeśli coś mi nie pasuje?",
+                  name: "Czy&nbsp;dostosowujesz plan, jeśli coś mi nie pasuje?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Tak, każdy element współpracy — trening, plan żywieniowy czy nawet komunikacja — jest modyfikowany na bieżąco tak, żeby Ci służył, a nie przeszkadzał. Jesteśmy zespołem i słucham Twojego feedbacku.",
+                    text: "Tak, każdy element współpracy — trening, plan żywieniowy czy&nbsp;nawet komunikacja — jest modyfikowany na&nbsp;bieżąco tak, żeby Ci służył, a nie przeszkadzał. Jesteśmy zespołem i&nbsp;słucham Twojego feedbacku.",
                   },
                 },
                 {
@@ -502,15 +510,15 @@ export default function Home() {
                   name: "Co jeśli mam kontuzje lub ograniczenia zdrowotne?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "W moim zespole współpracuję z doświadczonym fizjoterapeutą, dzięki czemu masz dostęp do kompleksowej opieki. Jeśli zajdzie potrzeba wykonania zabiegów, masaży czy specjalistycznych konsultacji, wszystko jesteśmy w stanie zorganizować w ramach współpracy. Twoje bezpieczeństwo i komfort są dla mnie priorytetem.",
+                    text: "W&nbsp;moim zespole współpracuję z&nbsp;doświadczonym fizjoterapeutą, dzięki czemu masz dostęp do&nbsp;kompleksowej opieki. Jeśli zajdzie potrzeba wykonania zabiegów, masaży czy&nbsp;specjalistycznych konsultacji, wszystko jesteśmy w&nbsp;stanie zorganizować w&nbsp;ramach współpracy. Twoje bezpieczeństwo i&nbsp;komfort są dla mnie priorytetem.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Czy mogę trenować, jeśli mam napięty grafik?",
+                  name: "Czy&nbsp;mogę trenować, jeśli mam napięty grafik?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Tak. Wspólnie znajdziemy rozwiązanie — możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do Twoich możliwości czasowych.",
+                    text: "Tak. Wspólnie znajdziemy rozwiązanie — możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do&nbsp;Twoich możliwości czasowych.",
                   },
                 },
                 {
@@ -518,15 +526,15 @@ export default function Home() {
                   name: "Jak szybko zobaczę efekty?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Pierwsze zmiany — w energii, samopoczuciu i sile — możesz odczuć już po kilku tygodniach. Sylwetkowe zmiany stają się widoczne zwykle po 8–12 tygodniach regularnej pracy.",
+                    text: "Pierwsze zmiany — w&nbsp;energii, samopoczuciu i&nbsp;sile — możesz odczuć już po&nbsp;kilku tygodniach. Sylwetkowe zmiany stają się widoczne zwykle po&nbsp;8–12 tygodniach regularnej pracy.",
                   },
                 },
                 {
                   "@type": "Question",
-                  name: "Czy muszę stosować ścisłą dietę?",
+                  name: "Czy&nbsp;muszę stosować ścisłą dietę?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie utrudnieniem. Stawiamy na elastyczność i realne podejście — bez restrykcji, które odbierają radość z życia.",
+                    text: "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie utrudnieniem. Stawiamy na&nbsp;elastyczność i&nbsp;realne podejście — bez restrykcji, które odbierają radość z&nbsp;życia.",
                   },
                 },
               ],
@@ -539,37 +547,37 @@ export default function Home() {
             {
               question: "Czy muszę mieć doświadczenie, żeby zacząć?",
               answer:
-                "Nie! Treningi są dostosowane do Twojego poziomu - niezależnie od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze doświadczenia. Wszystkiego nauczysz się krok po kroku.",
+                "Nie! Treningi są dostosowane do\u00A0Twojego poziomu - niezależnie od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze doświadczenia. Wszystkiego nauczysz się krok po\u00A0kroku.",
             },
             {
               question: "Ile razy w tygodniu muszę trenować?",
               answer:
-                "Jeśli zastanawiasz się nad częstotliwością treningów, spokojnie - wiele osób rozpoczyna od jednej sesji w tygodniu i to całkowicie wystarczający krok na start. Jeśli jednak zależy Ci na szybszych efektach, rekomenduję spotkania dwa razy w tygodniu - to optymalna częstotliwość, która daje najlepsze rezultaty przy zachowaniu balansu między treningiem a codziennym życiem. Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces, istnieje także możliwość współpracy trzy razy w tygodniu, a dla najbardziej wymagających nawet cztery razy. Niczego jednak nie narzucam - dostosowujemy wszystko do Twoich możliwości i potrzeb.",
+                "Jeśli zastanawiasz się nad częstotliwością treningów, spokojnie - wiele osób rozpoczyna od jednej sesji w tygodniu i\u00A0to całkowicie wystarczający krok na start. Jeśli jednak zależy Ci na\u00A0szybszych efektach, rekomenduję spotkania dwa razy w\u00A0tygodniu - to\u00A0optymalna częstotliwość, która daje najlepsze rezultaty przy zachowaniu balansu między treningiem a\u00A0codziennym życiem. Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces, istnieje także możliwość współpracy trzy razy w\u00A0tygodniu, a\u00A0dla najbardziej wymagających nawet cztery razy. Niczego jednak nie narzucam - dostosowujemy wszystko do\u00A0Twoich możliwości i\u00A0potrzeb.",
             },
             {
               question: "Czy dostosowujesz plan, jeśli coś mi nie pasuje?",
               answer:
-                "Tak, każdy element współpracy - trening, plan żywieniowy czy nawet komunikacja - jest modyfikowany na bieżąco tak, żeby Ci służył, a nie przeszkadzał. Jesteśmy zespołem i słucham Twojego feedbacku.",
+                "Tak, każdy element współpracy - trening, plan żywieniowy czy nawet komunikacja - jest modyfikowany na\u00A0bieżąco tak, żeby Ci służył, a\u00A0nie przeszkadzał. Jesteśmy zespołem i\u00A0słucham Twojego feedbacku.",
             },
             {
               question: "Co jeśli mam kontuzje lub ograniczenia zdrowotne?",
               answer:
-                "W moim zespole współpracuję z doświadczonym fizjoterapeutą, dzięki czemu masz dostęp do kompleksowej opieki. Jeśli zajdzie potrzeba wykonania zabiegów, masaży czy specjalistycznych konsultacji, wszystko jesteśmy w stanie zorganizować w ramach współpracy. Twoje bezpieczeństwo i komfort są dla mnie priorytetem.",
+                "W moim zespole współpracuję z doświadczonym fizjoterapeutą, dzięki czemu masz dostęp do\u00A0kompleksowej opieki. Jeśli zajdzie potrzeba wykonania zabiegów, masaży czy specjalistycznych konsultacji, wszystko jesteśmy w\u00A0stanie zorganizować w\u00A0ramach współpracy. Twoje bezpieczeństwo i\u00A0komfort są dla mnie priorytetem.",
             },
             {
               question: "Czy mogę trenować, jeśli mam napięty grafik?",
               answer:
-                "Tak. Wspólnie znajdziemy rozwiązanie - możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do Twoich możliwości czasowych.",
+                "Tak. Wspólnie znajdziemy rozwiązanie -możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do\u00A0Twoich możliwości czasowych.",
             },
             {
               question: "Jak szybko zobaczę efekty?",
               answer:
-                "Pierwsze zmiany - w energii, samopoczuciu i sile - możesz odczuć już po kilku tygodniach. Sylwetkowe zmiany stają się widoczne zwykle po 8–12 tygodniach regularnej pracy.",
+                "Pierwsze zmiany - w\u00A0energii, samopoczuciu i\u00A0sile - możesz odczuć już po\u00A0kilku tygodniach. Sylwetkowe zmiany stają się widoczne zwykle po 8–12 tygodniach regularnej pracy.",
             },
             {
               question: "Czy muszę stosować ścisłą dietę?",
               answer:
-                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie utrudnieniem. Stawiamy na elastyczność i realne podejście - bez restrykcji, które odbierają radość z życia.",
+                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a\u00A0nie utrudnieniem. Stawiamy na\u00A0elastyczność i\u00A0realne podejście - bez restrykcji, które odbierają radość z\u00A0życia.",
             },
           ]}
         />
@@ -584,12 +592,13 @@ export default function Home() {
                 tabIndex={0}
               >
                 <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
-                  Czy muszę mieć doświadczenie, żeby zacząć?
+                  Czy&nbsp;muszę mieć doświadczenie, żeby zacząć?
                 </h3>
                 <p className="text-gray-200">
-                  Nie! Treningi są dostosowane do Twojego poziomu - niezależnie
-                  od tego, czy dopiero zaczynasz, czy masz już za sobą pierwsze
-                  doświadczenia. Wszystkiego nauczysz się krok po kroku.
+                  Nie! Treningi są dostosowane do&nbsp;Twojego poziomu -
+                  niezależnie od&nbsp;tego, czy&nbsp;dopiero zaczynasz,
+                  czy&nbsp;masz już za&nbsp;sobą pierwsze doświadczenia.
+                  Wszystkiego nauczysz się krok po&nbsp;kroku.
                 </p>
               </div>
             </AnimationOnScroll>
@@ -602,23 +611,24 @@ export default function Home() {
                 tabIndex={0}
               >
                 <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
-                  Ile razy w tygodniu muszę trenować?
+                  Ile razy w&nbsp;tygodniu muszę trenować?
                 </h3>
                 <p className="text-gray-200">
                   Jeśli zastanawiasz się nad częstotliwością treningów,
-                  spokojnie - wiele osób rozpoczyna od jednej sesji w tygodniu i
-                  to całkowicie wystarczający krok na start. Jeśli jednak zależy
-                  Ci na szybszych efektach, rekomenduję spotkania dwa razy w
-                  tygodniu - to optymalna częstotliwość, która daje najlepsze
-                  rezultaty przy zachowaniu balansu między treningiem a
-                  codziennym życiem.
+                  spokojnie - wiele osób rozpoczyna od&nbsp;jednej sesji
+                  w&nbsp;tygodniu i&nbsp;to całkowicie wystarczający krok
+                  na&nbsp;start. Jeśli jednak zależy Ci na&nbsp;szybszych
+                  efektach, rekomenduję spotkania dwa razy w&nbsp;tygodniu
+                  -&nbsp;to&nbsp; optymalna częstotliwość, która daje najlepsze
+                  rezultaty przy zachowaniu balansu między treningiem
+                  a&nbsp;codziennym życiem.
                   <br />
                   <br />
                   Jeśli masz bardzo ambitne cele lub chcesz przyspieszyć proces,
-                  istnieje także możliwość współpracy trzy razy w tygodniu, a
-                  dla najbardziej wymagających nawet cztery razy. Niczego jednak
-                  nie narzucam - dostosowujemy wszystko do Twoich możliwości i
-                  potrzeb.
+                  istnieje także&nbsp;możliwość współpracy trzy razy
+                  w&nbsp;tygodniu, a&nbsp;dla najbardziej wymagających nawet
+                  cztery razy. Niczego jednak nie narzucam -&nbsp;dostosowujemy
+                  wszystko do&nbsp;Twoich możliwości i&nbsp;potrzeb.
                 </p>
               </div>
             </AnimationOnScroll>
@@ -631,13 +641,13 @@ export default function Home() {
                 tabIndex={0}
               >
                 <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
-                  Czy dostosowujesz plan, jeśli coś mi nie pasuje?
+                  Czy&nbsp;dostosowujesz plan, jeśli coś mi nie pasuje?
                 </h3>
                 <p className="text-gray-200">
                   Tak, każdy element współpracy - trening, plan żywieniowy czy
-                  nawet komunikacja - jest modyfikowany na bieżąco tak, żeby Ci
-                  służył, a nie przeszkadzał. Jesteśmy zespołem i słucham
-                  Twojego feedbacku.
+                  nawet komunikacja - jest modyfikowany na&nbsp;bieżąco tak,
+                  żeby Ci służył, a nie przeszkadzał. Jesteśmy zespołem
+                  i&nbsp;słucham Twojego feedbacku.
                 </p>
               </div>
             </AnimationOnScroll>
@@ -653,12 +663,12 @@ export default function Home() {
                   Co jeśli mam kontuzje lub ograniczenia zdrowotne?
                 </h3>
                 <p className="text-gray-200">
-                  W moim zespole współpracuję z doświadczonym fizjoterapeutą,
-                  dzięki czemu masz dostęp do kompleksowej opieki. Jeśli zajdzie
-                  potrzeba wykonania zabiegów, masaży czy specjalistycznych
-                  konsultacji, wszystko jesteśmy w stanie zorganizować w ramach
-                  współpracy. Twoje bezpieczeństwo i komfort są dla mnie
-                  priorytetem.
+                  W&nbsp;moim zespole współpracuję z&nbsp;doświadczonym
+                  fizjoterapeutą, dzięki czemu masz dostęp do&nbsp;kompleksowej
+                  opieki. Jeśli zajdzie potrzeba wykonania zabiegów, masaży
+                  czy&nbsp;specjalistycznych konsultacji, wszystko jesteśmy
+                  w&nbsp;stanie zorganizować w&nbsp;ramach współpracy. Twoje
+                  bezpieczeństwo i&nbsp;komfort są dla mnie priorytetem.
                 </p>
               </div>
             </AnimationOnScroll>
@@ -671,11 +681,11 @@ export default function Home() {
                 tabIndex={0}
               >
                 <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
-                  Czy mogę trenować, jeśli mam napięty grafik?
+                  Czy&nbsp;mogę trenować, jeśli mam napięty grafik?
                 </h3>
                 <p className="text-gray-200">
                   Tak. Wspólnie znajdziemy rozwiązanie - możliwe są krótsze
-                  sesje, elastyczne godziny lub plan dostosowany do Twoich
+                  sesje, elastyczne godziny lub plan dostosowany do&nbsp;Twoich
                   możliwości czasowych.
                 </p>
               </div>
@@ -692,9 +702,10 @@ export default function Home() {
                   Jak szybko zobaczę efekty?
                 </h3>
                 <p className="text-gray-200">
-                  Pierwsze zmiany - w energii, samopoczuciu i sile - możesz
-                  odczuć już po kilku tygodniach. Sylwetkowe zmiany stają się
-                  widoczne zwykle po 8–12 tygodniach regularnej pracy.
+                  Pierwsze zmiany - w&nbsp;energii, samopoczuciu i&nbsp;sile
+                  -&nbsp;możesz odczuć już po&nbsp;kilku tygodniach. Sylwetkowe
+                  zmiany stają się widoczne zwykle po&nbsp;8–12 tygodniach
+                  regularnej pracy.
                 </p>
               </div>
             </AnimationOnScroll>
@@ -707,12 +718,13 @@ export default function Home() {
                 tabIndex={0}
               >
                 <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
-                  Czy muszę stosować ścisłą dietę?
+                  Czy&nbsp;muszę stosować ścisłą dietę?
                 </h3>
                 <p className="text-gray-200">
-                  Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a nie
-                  utrudnieniem. Stawiamy na elastyczność i realne podejście -
-                  bez restrykcji, które odbierają radość z życia.
+                  Nie. Otrzymasz plan żywieniowy, który ma być wsparciem,
+                  a&nbsp;nie utrudnieniem. Stawiamy na&nbsp;elastyczność
+                  i&nbsp;realne podejście -&nbsp;bez restrykcji, które odbierają
+                  radość z&nbsp;życia.
                 </p>
               </div>
             </AnimationOnScroll>
@@ -788,40 +800,42 @@ export default function Home() {
         style={{ boxShadow: "0px 10px 50px 30px #DC252A" }}
         className="w-full mb-25 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl shadow-2xl my-10 py-10 px-4 md:px-10 max-w-5xl mx-auto gap-8"
         role="region"
-        aria-label="Kontakt - opis i zachęta"
+        aria-label="Kontakt - opis i&nbsp;zachęta"
       >
         <div className="relative w-full md:w-1/2 h-[350px] md:h-[400px] rounded-2xl overflow-hidden flex-shrink-0">
           <Image
             src="/image00018_Easy-Resize.com.jpg"
-            alt="Trener personalny Kraków - kontakt, zdjęcie motywacyjne"
+            alt="Trener personalny Kraków&nbsp;- kontakt, zdjęcie motywacyjne"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover object-center rounded-2xl"
             priority={false}
           />
         </div>
-        <div className="flex-1 break-words hyphens-auto text-justify flex flex-col justify-center items-start gap-4 max-w-xl">
-          <h2 className="text-3xl font-anton tracking-wider md:text-4xl font-extrabold text-white mb-2">
-            Zapraszam do kontaktu!
+        <div className="flex-1 text-justify flex flex-col  items-start gap-4 max-w-xl">
+          <h2 className="text-3xl  font-anton tracking-wider md:text-4xl font-extrabold text-white mb-2">
+            Zapraszam do&nbsp;kontaktu!
           </h2>
-          <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-200 justify-center break-words hyphens-auto  text-lg md:text-xl leading-relaxed">
             Jeśli chcesz dowiedzieć się, jak możemy wspólnie poprawić Twoją
-            sylwetkę, energię i zdrowie – napisz śmiało!
+            sylwetkę, energię i&nbsp;zdrowie –&nbsp;napisz śmiało!
           </p>
-          <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
-            Odpowiem na każdą wiadomość i rozwieję Twoje wątpliwości. Zależy mi
-            na indywidualnym podejściu i pełnym zrozumieniu Twoich potrzeb.
-            Wspólnie ustalimy najlepszą drogę do osiągnięcia Twoich celów.
+          <p className="text-gray-200 justify-center break-words hyphens-auto  text-lg md:text-xl leading-relaxed">
+            Odpowiem na&nbsp;każdą wiadomość i&nbsp;rozwieję Twoje wątpliwości.
+            Zależy mi na&nbsp;indywidualnym podejściu i&nbsp;pełnym zrozumieniu
+            Twoich potrzeb. Wspólnie ustalimy najlepszą drogę
+            do&nbsp;osiągnięcia Twoich celów.
           </p>
 
           <ul className="list-disc pl-6 text-gray-300 text-base md:text-lg">
-            <li>Odpowiadam zwykle w ciągu 24h</li>
+            <li>Odpowiadam zwykle w&nbsp;ciągu 24h</li>
             <li>Wszystkie dane są poufne</li>
             <li>Możesz napisać bez zobowiązań</li>
           </ul>
-          <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
-            Czas działać! Nie musisz być idealnie gotowy. Zmień swoje życie w 3
-            miesiące. Skontaktuj się ze mną za pomocą poniższego formularza!
+          <p className="text-gray-200 justify-center break-words hyphens-auto  text-lg md:text-xl leading-relaxed">
+            Czas działać! Nie musisz być idealnie gotowy. Zmień swoje życie
+            w&nbsp;3&nbsp;miesiące. Skontaktuj się ze mną za&nbsp;pomocą
+            poniższego formularza!
           </p>
         </div>
       </section>
@@ -842,7 +856,7 @@ export default function Home() {
         <div className="absolute inset-0 w-full h-full bg-black/80 -z-10" />
         <h2 className="text-3xl font-anton  tracking-wider  md:text-4xl font-extrabold text-center mb-4">
           <span className="text-white  leading-[1.2]">
-            ZNAJDŹ MNIE NA PROFILACH{" "}
+            ZNAJDŹ MNIE NA&nbsp;PROFILACH{" "}
           </span>
           <span
             className="bg-clip-text text-transparent"
@@ -855,9 +869,10 @@ export default function Home() {
           </span>
         </h2>
         <p className="text-gray-300 p-2  text-center max-w-2xl mx-auto mb-10">
-          Zajrzyj na mojego Facebooka i Instagrama, gdzie na bieżąco publikuję
-          wiele przydatnych wskazówek dotyczących treningu i diety przeznaczonej
-          dla osób prowadzących aktywny styl życia
+          Zajrzyj na&nbsp;mojego Facebooka i&nbsp;Instagrama, gdzie
+          na&nbsp;bieżąco publikuję wiele przydatnych wskazówek dotyczących
+          treningu i&nbsp;diety przeznaczonej dla osób prowadzących aktywny styl
+          życia
         </p>
         <div className="w-full flex flex-col md:flex-row gap-16 justify-center items-center px-0 md:px-16 lg:px-32 xl:px-64 overflow-visible">
           {/* Instagram */}
@@ -964,7 +979,7 @@ export default function Home() {
         aria-label="Stopka strony"
       >
         <div className="max-w-6xl mx-auto flex flex-col items-center">
-          {/* Logo i nazwa */}
+          {/* Logo i&nbsp;nazwa */}
 
           <div
             className=" font-bold font-anton tracking-wider p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
@@ -1040,7 +1055,8 @@ export default function Home() {
           </div>
         </div>
         <p className="text-sm pt-5 text-center font-light text-grey-300">
-          Copyright © Łukasz Moczkodan 2025, created by Jakub Widurek
+          © 2025 Łukasz Moczkodan. All rights reserved. | Designed by Jakub
+          Widurek
         </p>
       </footer>
     </div>

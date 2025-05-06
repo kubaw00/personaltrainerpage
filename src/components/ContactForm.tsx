@@ -66,15 +66,10 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          placeholder=" "
+          placeholder="Imię"
           className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
         />
-        <label
-          htmlFor="name"
-          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
-        >
-          Imię
-        </label>
+
         <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
           <FaUser />
         </span>
@@ -86,15 +81,10 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          placeholder=" "
+          placeholder="Twój adres e-mail"
           className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
         />
-        <label
-          htmlFor="email"
-          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
-        >
-          Email
-        </label>
+
         <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
           <MdAlternateEmail />
         </span>
@@ -106,15 +96,10 @@ export default function ContactForm() {
           id="phone"
           name="phone"
           required
-          placeholder=" "
+          placeholder="Telefon"
           className="w-full rounded-md bg-[#181818] border border-white  p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
         />
-        <label
-          htmlFor="phone"
-          className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-base pointer-events-none transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-white bg-transparent"
-        >
-          Telefon
-        </label>
+
         <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
           <FaPhone />
         </span>
@@ -129,10 +114,7 @@ export default function ContactForm() {
           placeholder="Jaki efekt byłby dla Ciebie naprawdę satysfakcjonujący?"
           className="w-full p-5 rounded-md bg-[#181818] border border-white pr-12 focus:ring-2 focus:ring-white focus:outline-none peer resize-none"
         />
-        <label
-          htmlFor="message"
-          className="absolute left-5 top-6 text-gray-400 text-base pointer-events-none transition-all duration-200   peer-focus:text-white bg-transparent"
-        ></label>
+
         <span className="absolute right-4 top-6 flex items-center h-6  border-white text-white pointer-events-none">
           <FaEnvelope />
         </span>
