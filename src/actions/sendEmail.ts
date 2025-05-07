@@ -37,6 +37,15 @@ export async function sendEmail(
       return { message: "Nieprawidłowy adres email", success: false };
     }
 
+    // Sprawdzenie zgody na przetwarzanie danych osobowych
+    const rodoConsent = formData.get("rodoConsent");
+    if (!rodoConsent) {
+      return {
+        message: "Musisz wyrazić zgodę na przetwarzanie danych osobowych.",
+        success: false,
+      };
+    }
+
     const content: EmailContent = {
       name: formData.get("name") as string,
       email,

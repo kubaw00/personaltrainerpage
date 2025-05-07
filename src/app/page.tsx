@@ -32,15 +32,16 @@ import { CgArrowsExpandUpRight } from "react-icons/cg";
 import { IoMdCheckmark } from "react-icons/io";
 
 const sliderImages = [
-  "/1_Easy-Resize.com (1)_Easy-Resize.com.jpg",
-  "/2_Easy-Resize.com (4)_Easy-Resize.com.jpg",
-  "/481682548_17873561865280084_5729706280772083147_n_Easy-Resize.com (1)_Easy-Resize.com.jpg",
-  "/DSC00829_Easy-Resize.com_Easy-Resize.com.jpg",
-  "/image00006_Easy-Resize.com.jpg",
-  "/image00031_Easy-Resize.com_Easy-Resize.com.jpg",
-  "/image00043_Easy-Resize.com_Easy-Resize.com.jpg",
-  "/Messenger_creation_AE1B44C4-A954-4C11-B08A-B43258509316_Easy-Resize.com_Easy-Resize.com.jpg",
-  "/Messenger_creation_F39F95DB-3554-41B8-9B41-32B8922C8825_Easy-Resize.com.jpg",
+  "/pic1.jpg",
+  "/pic2.jpg",
+  "/pic3.jpg",
+  "/pic4.jpg",
+  "/pic5.jpg",
+  "/pic6.jpg",
+  "/pic7.jpg",
+  "/pic8.jpg",
+  "/pic9.jpg",
+  "/pic10.jpg",
 ];
 
 export default function Home() {
@@ -106,9 +107,9 @@ export default function Home() {
         classNameNotInView="opacity-0"
       >
         <section
-          id="about"
+          id="hero"
           role="region"
-          aria-label="O mnie"
+          aria-label="hero"
           className="w-full overflow-hidden min-h-screen pt-[90px] md:pt-[120px] mt-0 relative bg-black"
           style={{ height: "calc(var(--vh) - 90px)" }}
         >
@@ -176,7 +177,7 @@ export default function Home() {
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
         </h2>
 
-        <div className=" border-2 border-[#DC252A] bg-black/70 bg-blend-darken bg-[url('/sven-mieke-n0IVZWQKBuA-unsplash.jpg')] bg-cover bg-center  rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+        <div className=" border-2 border-[#DC252A] bg-black/70 bg-blend-darken bg-[url('/cooferuje.jpg')] bg-cover bg-center  rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
             <h3 className=" font-anton text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
               3-miesięczna przemiana sylwetki
@@ -252,6 +253,7 @@ export default function Home() {
         classNameNotInView="opacity-0"
       >
         <section
+          id="about"
           role="region"
           aria-label="Czym się wyróżniam"
           className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2 mx-auto text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
@@ -280,7 +282,7 @@ export default function Home() {
             <div className="relative grow my-auto justify-center w-full h-[500px]">
               <Image
                 alt="Trener personalny Kraków&nbsp;- zdjęcie w&nbsp;sekcji o mnie"
-                src="/Messenger_creation_A125B378-5B7A-4B5D-9CF4-33A85B91208E_Easy-Resize.com.jpg"
+                src="/czymsiewyrozniam.jpg"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover object-top w-full h-full rounded-none md:rounded-tl-2xl "
@@ -291,6 +293,7 @@ export default function Home() {
       </AnimationOnScroll>
 
       <section
+        id="achieve"
         className="w-full mt-25 py-16 px-2 md:px-0 bg-black"
         role="region"
         aria-label="Co osiągniesz"
@@ -734,11 +737,12 @@ export default function Home() {
       {/* END FAQ SECTION */}
 
       <section
+        id="location"
         className=" flex flex-col p-2  mx-auto my-12 relative   overflow-hidden bg-black py-10 md:py-20  w-full max-w-5xl  "
         role="region"
         aria-label="Lokalizacja treningów"
       >
-        <div className=" bg-black/80 bg-blend-darken bg-[url('/sven-vahaja-1hZjJh-mGeA-unsplash.jpg')] bg-cover bg-center border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+        <div className=" bg-black/80 bg-blend-darken bg-[url('/gdzieprzeprowadzamtreningi.jpg')] bg-cover bg-center border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
           <div className="skew-y-[3deg]">
             <h3 className="text-3xl font-anton tracking-wider md:text-4xl  lg:text-5xl font-extrabold text-[#DC252A] mb-10 text-center uppercase ">
               Gdzie przeprowadzam Treningi?
@@ -797,14 +801,15 @@ export default function Home() {
       </section>
 
       <section
+        id="invitation"
         style={{ boxShadow: "0px 10px 50px 30px #DC252A" }}
         className="w-full mb-25 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl shadow-2xl my-10 py-10 px-4 md:px-10 max-w-5xl mx-auto gap-8"
         role="region"
-        aria-label="Kontakt - opis i&nbsp;zachęta"
+        aria-label="Kontakt - opis i zachęta"
       >
         <div className="relative w-full md:w-1/2 h-[350px] md:h-[400px] rounded-2xl overflow-hidden flex-shrink-0">
           <Image
-            src="/image00018_Easy-Resize.com.jpg"
+            src="/zapraszamdokontaktu.jpg"
             alt="Trener personalny Kraków&nbsp;- kontakt, zdjęcie motywacyjne"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -813,7 +818,7 @@ export default function Home() {
           />
         </div>
         <div className="flex-1 text-justify flex flex-col  items-start gap-4 max-w-xl">
-          <h2 className="text-3xl  font-anton tracking-wider md:text-4xl font-extrabold text-white mb-2">
+          <h2 className="text-3xl   font-anton tracking-wider md:text-4xl font-extrabold text-white mb-2">
             Zapraszam do&nbsp;kontaktu!
           </h2>
           <p className="text-gray-200 justify-center break-words hyphens-auto  text-lg md:text-xl leading-relaxed">
@@ -852,7 +857,10 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      <section className="w-full my-15 max-w-none bg-black/80  px-2 flex flex-col items-center relative overflow-x-visible overflow-y-visible">
+      <section
+        id="social-media"
+        className="w-full my-15 max-w-none bg-black/80  px-2 flex flex-col items-center relative overflow-x-visible overflow-y-visible"
+      >
         <div className="absolute inset-0 w-full h-full bg-black/80 -z-10" />
         <h2 className="text-3xl font-anton  tracking-wider  md:text-4xl font-extrabold text-center mb-4">
           <span className="text-white  leading-[1.2]">
@@ -877,7 +885,7 @@ export default function Home() {
         <div className="w-full flex flex-col md:flex-row gap-16 justify-center items-center px-0 md:px-16 lg:px-32 xl:px-64 overflow-visible">
           {/* Instagram */}
           <Link
-            href="https://instagram.com/"
+            href="https://www.instagram.com/lukasz.moczkodan/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 min-w-[260px] max-w-md bg-black/80 rounded-xl flex flex-col items-center justify-center py-14 px-8 shadow-lg transition-transform hover:scale-105 group overflow-visible"
@@ -924,7 +932,7 @@ export default function Home() {
           </Link>
           {/* Facebook */}
           <Link
-            href="https://facebook.com/"
+            href="https://www.facebook.com/people/Trener-Personalny-%C5%81ukasz-Moczkodan/61566847799568/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 min-w-[260px] max-w-md bg-black/80 rounded-xl flex flex-col items-center justify-center py-14 px-8 shadow-lg transition-transform hover:scale-105 group overflow-visible"
@@ -973,6 +981,7 @@ export default function Home() {
       </section>
 
       <footer
+        id="footer"
         style={{ boxShadow: "0px 0px 80px 40px #000000" }}
         className="w-full mt-10 bg-[#f5f6f7] py-5 md:pt-10  px-4"
         role="contentinfo"
@@ -1028,7 +1037,7 @@ export default function Home() {
           {/* Ikony social media */}
           <div className="flex gap-8 items-center justify-center w-full mb-2">
             <Link
-              href="https://facebook.com/"
+              href="https://www.facebook.com/people/Trener-Personalny-%C5%81ukasz-Moczkodan/61566847799568/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -1037,7 +1046,7 @@ export default function Home() {
               <FaFacebook className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
             <Link
-              href="https://instagram.com/"
+              href="https://www.instagram.com/lukasz.moczkodan/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -1046,13 +1055,21 @@ export default function Home() {
               <FaInstagram className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
             <Link
-              href="tel:555900999"
+              href="tel:511274140"
               aria-label="Telefon"
               itemProp="telephone"
             >
               <FaPhone className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
             </Link>
           </div>
+        </div>
+        <div className="flex gap-4 justify-center mt-4 mb-2">
+          <Link
+            href="/privacy-policy"
+            className="text-sm text-[#000000] hover:text-[#DC252A] transition-colors"
+          >
+            Polityka Prywatności
+          </Link>
         </div>
         <p className="text-sm pt-5 text-center font-light text-grey-300">
           © 2025 Łukasz Moczkodan. All rights reserved. | Designed by Jakub

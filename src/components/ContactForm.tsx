@@ -120,6 +120,32 @@ export default function ContactForm() {
         </span>
       </div>
 
+      {/* Zgoda na przetwarzanie danych osobowych */}
+      <div className="flex items-start gap-2">
+        <input
+          type="checkbox"
+          id="rodoConsent"
+          name="rodoConsent"
+          required
+          className="mt-1 accent-red-500"
+        />
+        <label
+          htmlFor="rodoConsent"
+          className="text-sm text-gray-300 select-none"
+        >
+          Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
+          odpowiedzi na przesłane zapytanie zgodnie z{" "}
+          <a
+            href="/privacy-policy"
+            target="_blank"
+            className="underline text-red-800"
+          >
+            polityką prywatności
+          </a>
+          .
+        </label>
+      </div>
+
       <SubmitButton ariaLabel="Wyślij wiadomość" />
     </form>
   );

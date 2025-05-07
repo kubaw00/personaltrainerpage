@@ -142,6 +142,16 @@ export default function RootLayout({
         />
       </head>
       <body className={`antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-W6C9K4XB"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Toaster
           position="top-right"
           toastOptions={{ duration: 2000, className: "toast-slide-up" }}
