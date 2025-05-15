@@ -119,7 +119,12 @@ export default function Home() {
             <Image alt="arrow" src="/arrow.png" height={300} width={900} />
           </div>
           <div className="z-20 hidden lg:absolute lg:bottom-[5%] lg:left-[-45%] lg:block xl:left-[-30%]">
-            <Image alt="arrow" src="/arrow.png" height={300} width={900} />
+            <Image
+              alt="Graficzny element ozdobny - strzałka wskazująca na trenera"
+              src="/arrow.png"
+              height={300}
+              width={900}
+            />
           </div>
           <div
             className="absolute inset-0 z-0 h-screen"
@@ -137,7 +142,7 @@ export default function Home() {
           <div className="pointer-events-none relative aspect-square w-[90vw] max-w-[800px] overflow-hidden select-none md:w-[70vw] sm:landscape:w-[40vw] md:landscape:w-[50vw] lg:landscape:w-[60vw]">
             <Image
               src="/profilowe.jpg"
-              alt="Łukasz Moczkodan - trener personalny Kraków, zdjęcie profilowe"
+              alt="Łukasz Moczkodan - profesjonalny trener personalny z Krakowa w trakcie treningu"
               fill
               className="rounded-br-full object-cover"
               priority
@@ -185,7 +190,7 @@ export default function Home() {
             </a>
 
             <a
-              href="tel:555900999"
+              href="tel:511274140"
               aria-label="Telefon"
               itemProp="telephone"
               rel="noopener noreferrer"
@@ -338,7 +343,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="tel:555900999"
+                  href="tel:511274140"
                   aria-label="Telefon"
                   itemProp="telephone"
                   rel="noopener noreferrer"
@@ -529,8 +534,26 @@ export default function Home() {
             <div className="relative flex h-[370px] w-full items-center justify-center md:h-[450px] lg:h-[550px]">
               <Image
                 src={src}
-                alt={`Trener personalny Kraków&nbsp;- zdjęcie z&nbsp;galerii numer ${
-                  idx + 1
+                alt={`Trening personalny Kraków z trenerem Łukaszem Moczkodan - ${
+                  idx === 0
+                    ? "trening siłowy"
+                    : idx === 1
+                      ? "ćwiczenia funkcjonalne"
+                      : idx === 2
+                        ? "trening z hantlami"
+                        : idx === 3
+                          ? "ćwiczenia rozciągające"
+                          : idx === 4
+                            ? "trening cardio"
+                            : idx === 5
+                              ? "ćwiczenia stabilizacyjne"
+                              : idx === 6
+                                ? "trening obwodowy"
+                                : idx === 7
+                                  ? "ćwiczenia mobilności"
+                                  : idx === 8
+                                    ? "trening personalny dla kobiet"
+                                    : "trening personalny dla mężczyzn"
                 }`}
                 fill
                 className="rounded-2xl object-cover shadow-xl"
@@ -858,7 +881,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="tel:555900999"
+                    href="tel:511274140"
                     aria-label="Telefon"
                     itemProp="telephone"
                     rel="noopener noreferrer"
@@ -1161,7 +1184,7 @@ export default function Home() {
               <FaInstagram className="text-2xl text-[#000000] transition-colors hover:text-[#DC252A]" />
             </Link>
             <Link
-              href="tel:555900999"
+              href="tel:511274140"
               aria-label="Telefon"
               itemProp="telephone"
             >

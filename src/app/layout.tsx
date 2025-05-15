@@ -121,10 +121,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
+              "@id": "https://lukaszmoczkodan.pl/#business",
               name: "Łukasz Moczkodan - Trener Personalny Kraków",
               image: "https://lukaszmoczkodan.pl/logo.png",
               url: "https://lukaszmoczkodan.pl/",
-              telephone: "+48555900999",
+              telephone: "+48511274140",
+              email: "lukasz.moczkodan@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Iwona Odrowąża 26",
@@ -132,11 +134,54 @@ export default function RootLayout({
                 postalCode: "30-009",
                 addressCountry: "PL",
               },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "50.0774607",
+                longitude: "19.9326814",
+              },
               description:
                 "Profesjonalny trener personalny w Krakowie. Osiągnij swoje cele fitness dzięki indywidualnym planom treningowym i wsparciu eksperta.",
               priceRange: "$$",
               openingHours: "Mo-Su 06:00-22:00",
-              sameAs: ["https://facebook.com/", "https://instagram.com/"],
+              sameAs: [
+                "https://www.facebook.com/people/Trener-Personalny-%C5%81ukasz-Moczkodan/61566847799568/",
+                "https://www.instagram.com/lukasz.moczkodan/",
+              ],
+              servesCuisine: ["Healthy", "Fitness nutrition"],
+              makesOffer: [
+                {
+                  "@type": "Offer",
+                  name: "3-miesięczna przemiana sylwetki",
+                  description:
+                    "Kompleksowy program treningowy i dietetyczny na 90 dni",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Treningi personalne",
+                  description:
+                    "Indywidualne treningi dostosowane do Twoich potrzeb",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Konsultacje dietetyczne",
+                  description:
+                    "Spersonalizowane plany żywieniowe wspierające Twoje cele",
+                },
+              ],
+              review: {
+                "@type": "Review",
+                reviewRating: {
+                  "@type": "Rating",
+                  ratingValue: "5",
+                  bestRating: "5",
+                },
+                author: {
+                  "@type": "Person",
+                  name: "Klient",
+                },
+                reviewBody:
+                  "Dzięki treningom z Łukaszem całkowicie zmieniłem swoją sylwetkę i podejście do zdrowego stylu życia.",
+              },
             }),
           }}
         />

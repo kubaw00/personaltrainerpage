@@ -1,10 +1,32 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Polityka Prywatności | Trener Personalny Kraków - Łukasz Moczkodan",
+  description:
+    "Zasady przetwarzania danych osobowych, cookies i inne informacje dotyczące prywatności na stronie trenera personalnego w Krakowie - Łukasza Moczkodana.",
+  keywords: [
+    "polityka prywatności",
+    "ochrona danych osobowych",
+    "RODO",
+    "prywatność",
+    "Łukasz Moczkodan",
+    "trener personalny Kraków",
+  ],
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function PrivacyPolicy() {
   return (
-    <div className="w-full min-h-screen bg-black">
-      <main className="w-full mx-auto p-4 md:p-8 max-w-4xl text-white">
-        <h1 className="text-4xl font-anton tracking-wide text-center mb-8">
+    <div className="min-h-screen w-full bg-black">
+      <main className="mx-auto w-full max-w-4xl p-4 text-white md:p-8">
+        <h1 className="font-anton mb-8 text-center text-4xl tracking-wide">
           Polityka prywatności
         </h1>
 
@@ -14,7 +36,7 @@ export default function PrivacyPolicy() {
           naszej strony internetowej oraz formularza kontaktowego.
         </p>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Administrator danych
         </h2>
         <p className="mb-4">
@@ -24,13 +46,13 @@ export default function PrivacyPolicy() {
           formularz kontaktowy dostępny na stronie.
         </p>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Zakres zbieranych danych
         </h2>
         <p className="mb-4">
           Podczas korzystania z naszej strony możemy zbierać następujące dane:
         </p>
-        <ul className="list-disc ml-6 mb-6">
+        <ul className="mb-6 ml-6 list-disc">
           <li className="mb-2">
             Dane kontaktowe (imię i nazwisko, adres e-mail, numer telefonu) -
             podawane dobrowolnie w formularzu kontaktowym
@@ -41,11 +63,11 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Cel i podstawa przetwarzania
         </h2>
         <p className="mb-4">Twoje dane przetwarzamy w następujących celach:</p>
-        <ul className="list-disc ml-6 mb-6">
+        <ul className="mb-6 ml-6 list-disc">
           <li className="mb-2">
             Udzielenie odpowiedzi na zapytania przesłane przez formularz
             kontaktowy (podstawa prawna: art. 6 ust. 1 lit. b RODO - działania
@@ -58,7 +80,7 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Odbiorcy danych
         </h2>
         <p className="mb-6">
@@ -69,7 +91,7 @@ export default function PrivacyPolicy() {
           Gospodarczy.
         </p>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Google Analytics
         </h2>
         <p className="mb-6">
@@ -82,7 +104,7 @@ export default function PrivacyPolicy() {
           dodatek do przeglądarki dostępny pod adresem:
           <Link
             href="https://tools.google.com/dlpage/gaoptout"
-            className="text-[#DC252A] ml-1 hover:underline"
+            className="ml-1 text-[#DC252A] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +113,7 @@ export default function PrivacyPolicy() {
           .
         </p>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Okres przechowywania
         </h2>
         <p className="mb-6">
@@ -101,13 +123,13 @@ export default function PrivacyPolicy() {
           analityczne przechowywane są przez okres 14 miesięcy.
         </p>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Twoje prawa
         </h2>
         <p className="mb-4">
           W związku z przetwarzaniem danych przysługują Ci następujące prawa:
         </p>
-        <ul className="list-disc ml-6 mb-6">
+        <ul className="mb-6 ml-6 list-disc">
           <li className="mb-2">Prawo dostępu do danych</li>
           <li className="mb-2">Prawo do sprostowania danych</li>
           <li className="mb-2">Prawo do usunięcia danych</li>
@@ -120,7 +142,7 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Bezpieczeństwo danych
         </h2>
         <p className="mb-6">
@@ -129,7 +151,7 @@ export default function PrivacyPolicy() {
           przed nieuprawnionym dostępem, utratą lub zniszczeniem.
         </p>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Zmiany w Polityce Prywatności
         </h2>
         <p className="mb-6">
@@ -138,7 +160,7 @@ export default function PrivacyPolicy() {
           Znaczące zmiany będą komunikowane w odpowiedni sposób.
         </p>
 
-        <h2 className="text-2xl font-anton tracking-wide mt-8 mb-4">
+        <h2 className="font-anton mt-8 mb-4 text-2xl tracking-wide">
           Kontakt w sprawach prywatności
         </h2>
         <p className="mb-6">
@@ -154,7 +176,7 @@ export default function PrivacyPolicy() {
         <div className="mt-10 mb-4">
           <Link
             href="/"
-            className="inline-block bg-[#DC252A] text-white py-2 px-6 rounded hover:bg-[#B01E22] transition-colors"
+            className="inline-block rounded bg-[#DC252A] px-6 py-2 text-white transition-colors hover:bg-[#B01E22]"
           >
             Powrót na stronę główną
           </Link>

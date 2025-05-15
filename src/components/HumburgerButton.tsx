@@ -167,7 +167,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
               </a>
 
               <a
-                href="tel:555900999"
+                href="tel:511274140"
                 aria-label="Telefon"
                 itemProp="telephone"
                 rel="noopener noreferrer"
