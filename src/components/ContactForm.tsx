@@ -97,7 +97,7 @@ export default function ContactForm() {
           name="phone"
           required
           placeholder="Telefon"
-          className="w-full rounded-md bg-[#181818] border border-white  p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
+          className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
         />
 
         <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
@@ -115,7 +115,7 @@ export default function ContactForm() {
           className="w-full p-5 rounded-md bg-[#181818] border border-white pr-12 focus:ring-2 focus:ring-white focus:outline-none peer resize-none"
         />
 
-        <span className="absolute right-4 top-6 flex items-center h-6  border-white text-white pointer-events-none">
+        <span className="absolute right-4 top-6 flex items-center h-6 border-white text-white pointer-events-none">
           <FaEnvelope />
         </span>
       </div>

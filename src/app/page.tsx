@@ -11,6 +11,8 @@ import {
   FaHeartbeat,
   FaBrain,
 } from "react-icons/fa";
+
+import { MdLocationPin, MdOutlineMailOutline } from "react-icons/md";
 import AnimationOnScroll from "@/components/Observer";
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
@@ -97,8 +99,8 @@ export default function Home() {
   });
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-black">
-      <div className="w-full fixed top-0 left-0 z-50 ">
+    <div className="flex min-h-screen flex-col items-center bg-black">
+      <div className="fixed top-0 left-0 z-50 w-full">
         <Nav />
       </div>
 
@@ -110,17 +112,17 @@ export default function Home() {
           id="hero"
           role="region"
           aria-label="hero"
-          className="w-full overflow-hidden min-h-screen pt-[90px] md:pt-[120px] mt-0 relative bg-black"
+          className="relative mt-0 min-h-screen w-full overflow-hidden bg-black pt-[90px] md:pt-[120px]"
           style={{ height: "calc(var(--vh) - 90px)" }}
         >
-          <div className="z-20 hidden lg:absolute  lg:block top-[40%] right-[-400px]  xl:right-[-10%] lg:top-[15%]">
+          <div className="top-[40%] right-[-400px] z-20 hidden lg:absolute lg:top-[15%] lg:block xl:right-[-10%]">
             <Image alt="arrow" src="/arrow.png" height={300} width={900} />
           </div>
-          <div className="z-20  hidden   lg:absolute lg:block lg:left-[-45%] xl:left-[-30%] lg:bottom-[5%]">
+          <div className="z-20 hidden lg:absolute lg:bottom-[5%] lg:left-[-45%] lg:block xl:left-[-30%]">
             <Image alt="arrow" src="/arrow.png" height={300} width={900} />
           </div>
           <div
-            className="absolute h-screen inset-0 z-0"
+            className="absolute inset-0 z-0 h-screen"
             style={{
               background:
                 "repeating-conic-gradient(from 45deg, #171717 0% 25%, #000000 0% 50%)",
@@ -132,37 +134,72 @@ export default function Home() {
               pointerEvents: "none",
             }}
           />
-          <div className="relative sm:landscape:w-[40vw] md:landscape:w-[50vw] lg:landscape:w-[60vw] max-w-[800px] w-[90vw] md:w-[70vw] aspect-square  overflow-hidden pointer-events-none select-none">
+          <div className="pointer-events-none relative aspect-square w-[90vw] max-w-[800px] overflow-hidden select-none md:w-[70vw] sm:landscape:w-[40vw] md:landscape:w-[50vw] lg:landscape:w-[60vw]">
             <Image
               src="/profilowe.jpg"
               alt="Łukasz Moczkodan - trener personalny Kraków, zdjęcie profilowe"
               fill
-              className="object-cover rounded-br-full"
+              className="rounded-br-full object-cover"
               priority
             />
           </div>
-          <div className="z-30 sm:landscape:left-2/3 lg:landscape:left-1/2  absolute top-2/3 left-1/2 md:left-2/3 transform -translate-x-1/2 -translate-y-1/2 m  lg:-translate-x-1/6  flex flex-col px-1 py-16 md:py-0">
-            <h1 className="text-[#DC252A] max-w-[400px] font-anton text-6xl md:text-7xl lg:text-8xl  font-bold xl:text-[120px] lg:leading-[1.2] tracking-wide animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 md:font-bold">
+          <div className="m absolute top-2/3 left-1/2 z-30 flex -translate-x-1/2 -translate-y-1/2 transform flex-col px-1 py-16 md:left-2/3 md:py-0 lg:-translate-x-1/6 sm:landscape:left-2/3 lg:landscape:left-1/2">
+            <h1 className="font-anton animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 max-w-[400px] text-6xl font-bold tracking-wide text-[#DC252A] md:text-7xl md:font-bold lg:text-8xl lg:leading-[1.2] xl:text-[120px]">
               ŁUKASZ MOCZKODAN
             </h1>
             <div className="relative">
-              <h2 className="text-gray-200 p-2  animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear text-balance text-lg  md:text-xl lg:text-3xl">
+              <h2 className="animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear p-2 text-lg text-balance text-gray-200 md:text-xl lg:text-3xl">
                 &quot;Pomagam normalnym ludziom osiągać nienormalnie dobre
                 efekty – bez stresu iliczenia kalorii&quot;
               </h2>
               <span
-                className="absolute left-0 top-0 w-full h-[3px] block"
+                className="absolute top-0 left-0 block h-[3px] w-full"
                 style={{
                   background: "#DC252A",
                 }}
               />
               <span
-                className="absolute left-0 bottom-0 w-full h-[3px] block"
+                className="absolute bottom-0 left-0 block h-[3px] w-full"
                 style={{
                   background: "#DC252A",
                 }}
               />
             </div>
+          </div>
+
+          <div className="font-anton absolute bottom-10 left-1/2 z-30 m-5 mx-auto flex w-full -translate-x-1/2 items-center justify-center gap-10 lg:hidden">
+            <a
+              href="mailto:lukasz.moczkodan@gmail.com"
+              aria-label="Email"
+              itemProp="email"
+              target="_blank"
+            >
+              <button
+                className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+              >
+                <span className="flex skew-x-[15deg] items-center gap-2">
+                  Napisz do mnie <MdOutlineMailOutline size={18} />
+                </span>
+              </button>
+            </a>
+
+            <a
+              href="tel:555900999"
+              aria-label="Telefon"
+              itemProp="telephone"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button
+                className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+              >
+                <span className="flex skew-x-[15deg] items-center gap-2">
+                  Zadzwoń <FaPhone size={12} />
+                </span>
+              </button>
+            </a>
           </div>
         </section>
       </AnimationOnScroll>
@@ -171,66 +208,66 @@ export default function Home() {
         id="trainings"
         role="region"
         aria-label="Treningi personalne"
-        className="mt-20 py-10 px-4 w-full max-w-6xl mx-auto mb-12   flex flex-col relative overflow-hidden bg-black  md:py-15  "
+        className="relative mx-auto mt-20 mb-12 flex w-full max-w-6xl flex-col overflow-hidden bg-black px-4 py-10 md:py-15"
       >
-        <h2 className="text-5xl font-anton tracking-wide md:text-5xl lg:text-6xl font-extrabold text-center mb-20 text-white">
+        <h2 className="font-anton mb-20 text-center text-5xl font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
         </h2>
 
-        <div className=" border-2 border-[#DC252A] bg-black/70 bg-blend-darken bg-[url('/cooferuje.jpg')] bg-cover bg-center  rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+        <div className="relative skew-y-[-3deg] overflow-hidden rounded-2xl border-2 border-[#DC252A] bg-black/70 bg-[url('/cooferuje.jpg')] bg-cover bg-center p-8 bg-blend-darken shadow-2xl md:p-12">
           <div className="skew-y-[3deg]">
-            <h3 className=" font-anton text-3xl md:text-4xl font-extrabold text-[#DC252A] mb-6 text-center uppercase tracking-wider">
+            <h3 className="font-anton mb-6 text-center text-3xl font-extrabold tracking-wider text-[#DC252A] uppercase md:text-4xl">
               3-miesięczna przemiana sylwetki
             </h3>
-            <p className="my-15  font-bold text-gray-200 text-lg md:text-xl text-center mb-8 max-w-2xl mx-auto">
+            <p className="mx-auto my-15 mb-8 max-w-2xl text-center text-lg font-bold text-gray-200 md:text-xl">
               W&nbsp;90 dni poprowadzę Cię przez kompleksową zmianę w&nbsp;skład
               której wchodzą:
             </p>
-            <ul className="space-y-4 max-w-2xl mx-auto mb-8  break-words hyphens-auto text-justify">
-              <li className="flex items-start gap-3 text-lg md:text-xl ">
+            <ul className="mx-auto mb-8 max-w-2xl space-y-4 text-justify break-words hyphens-auto">
+              <li className="flex items-start gap-3 text-lg md:text-xl">
                 <IoMdCheckmark
                   size="2em"
-                  className="mt-1 shrink-0 text-[#DC252A] "
+                  className="mt-1 shrink-0 text-[#DC252A]"
                 />
-                <span className="text-gray-100 ">
+                <span className="text-gray-100">
                   treningi precyzyjnie dobrane do&nbsp;Twojego celu, możliwości
                   i&nbsp;preferencji
                 </span>
               </li>
-              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+              <li className="flex items-start gap-3 text-lg text-green-400 md:text-xl">
                 <IoMdCheckmark
                   size="2em"
-                  className="mt-1 shrink-0 text-[#DC252A] "
+                  className="mt-1 shrink-0 text-[#DC252A]"
                 />
                 <span className="text-gray-100">
                   plan żywieniowy będący wsparciem w&nbsp;osiąganiu Twoich
                   celów& -&nbsp;bez ciężaru i&nbsp;zbędnych wyrzeczeń
                 </span>
               </li>
-              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+              <li className="flex items-start gap-3 text-lg text-green-400 md:text-xl">
                 <IoMdCheckmark
                   size="2em"
-                  className="mt-1 shrink-0 text-[#DC252A] "
+                  className="mt-1 shrink-0 text-[#DC252A]"
                 />
                 <span className="text-gray-100">
                   systematyczna analiza postępów i&nbsp;dostosowywanie planu
                   do&nbsp;Twoich aktualnych potrzeb
                 </span>
               </li>
-              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+              <li className="flex items-start gap-3 text-lg text-green-400 md:text-xl">
                 <IoMdCheckmark
                   size="2em"
-                  className="mt-1 shrink-0 text-[#DC252A] "
+                  className="mt-1 shrink-0 text-[#DC252A]"
                 />
                 <span className="text-gray-100">
                   wsparcie mentalne -&nbsp;bo&nbsp;zmiana sylwetki zaczyna się
                   od&nbsp;zmiany sposobu myślenia
                 </span>
               </li>
-              <li className="flex items-start gap-3 text-lg md:text-xl text-green-400">
+              <li className="flex items-start gap-3 text-lg text-green-400 md:text-xl">
                 <IoMdCheckmark
                   size="2em"
-                  className="mt-1 shrink-0 text-[#DC252A] "
+                  className="mt-1 shrink-0 text-[#DC252A]"
                 />
                 <span className="text-gray-100">
                   motywacja i&nbsp;narzędzia, które pomogą Ci wytrwać
@@ -238,7 +275,7 @@ export default function Home() {
                 </span>
               </li>
             </ul>
-            <p className="text-gray-200 text-lg md:text-xl text-justify hyphens-auto break-words max-w-2xl mx-auto">
+            <p className="mx-auto max-w-2xl text-justify text-lg break-words hyphens-auto text-gray-200 md:text-xl">
               Nie ważne, czy&nbsp;Twoim marzeniem jest lepsza sylwetka, większa
               siła, sprawniejsze ciało czy po&nbsp;prostu codzienne lepsze
               samopoczucie - tutaj masz wszystko, czego potrzebujesz, żeby
@@ -256,17 +293,17 @@ export default function Home() {
           id="about"
           role="region"
           aria-label="Czym się wyróżniam"
-          className=" md:flex-row mt-35 z-20 max-w-6xl md:mx-2 mx-auto text-white container  lg:flex-row bg-black text-lg text-montserrat transition-transform duration-700  rounded-2xl shadow-2xl overflow-hidden"
+          className="text-montserrat z-20 container mx-auto mt-35 max-w-6xl overflow-hidden rounded-2xl bg-black text-lg text-white shadow-2xl transition-transform duration-700 md:mx-2 md:flex-row lg:flex-row"
           style={{
             boxShadow: "0px -30px 100px 60px #DC252A",
           }}
         >
-          <h2 className="text-5xl font-anton leading-[1.3] tracking-wide md:text-5xl lg:text-6xl m-10 font-extrabold text-center mb-12 text-white">
+          <h2 className="font-anton m-10 mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
             CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
           </h2>
 
-          <div className="flex flex-col md:flex-row md:justify-between w-full">
-            <p className="break-words hyphens-auto text-justify leading-relaxed p-10 text-gray-200 lg:text-xl w-full md:w-1/2 flex-shrink-0">
+          <div className="flex w-full flex-col md:flex-row md:justify-between">
+            <p className="w-full flex-shrink-0 p-10 text-justify leading-relaxed break-words hyphens-auto text-gray-200 md:w-1/2 lg:text-xl">
               Nie jestem tu po&nbsp;to, żeby tylko rzeźbić sylwetki. Moją misją
               jest budowanie się ciała i&nbsp;głowy jednocześnie. Wiem,
               że&nbsp;wygląd to tylko część układanki - najważniejsze jest to,
@@ -279,26 +316,100 @@ export default function Home() {
               do&nbsp;formy po&nbsp;urazach.Niezależnie od&nbsp;Twojego punktu
               wyjścia, znajdziemy najlepsze rozwiązanie dla Ciebie.
             </p>
-            <div className="relative grow my-auto justify-center w-full h-[500px]">
+
+            <div className="font-anton m-5 mx-auto my-10 flex w-full items-center justify-around md:hidden">
+              <a
+                href="mailto:lukasz.moczkodan@gmail.com"
+                aria-label="Email"
+                itemProp="email"
+                target="_blank"
+              >
+                <button
+                  className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                  style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                >
+                  <span className="flex skew-x-[15deg] items-center gap-2">
+                    {" "}
+                    Napisz do mnie
+                    <MdOutlineMailOutline size={18} />
+                  </span>
+                </button>
+              </a>
+
+              <a
+                href="tel:555900999"
+                aria-label="Telefon"
+                itemProp="telephone"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button
+                  className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                  style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                >
+                  <span className="flex skew-x-[15deg] items-center gap-2">
+                    Zadzwoń <FaPhone size={12} />
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <div className="relative my-auto h-[500px] w-full grow justify-center">
               <Image
                 alt="Trener personalny Kraków&nbsp;- zdjęcie w&nbsp;sekcji o mnie"
                 src="/czymsiewyrozniam.jpg"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
-                className="object-cover object-top w-full h-full rounded-none md:rounded-tl-2xl "
+                className="h-full w-full rounded-none object-cover object-top"
               />
             </div>
+          </div>
+          <div className="font-anton m-5 mx-auto my-10 hidden w-full items-center justify-around md:flex">
+            <a
+              href="mailto:lukasz.moczkodan@gmail.com"
+              aria-label="Email"
+              itemProp="email"
+              target="_blank"
+            >
+              <button
+                className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+              >
+                <span className="flex skew-x-[15deg] items-center gap-2">
+                  {" "}
+                  Napisz do mnie
+                  <MdOutlineMailOutline size={18} />
+                </span>
+              </button>
+            </a>
+
+            <a
+              href="tel:555900999"
+              aria-label="Telefon"
+              itemProp="telephone"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button
+                className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+              >
+                <span className="flex skew-x-[15deg] items-center gap-2">
+                  Zadzwoń <FaPhone size={12} />
+                </span>
+              </button>
+            </a>
           </div>
         </section>
       </AnimationOnScroll>
 
       <section
         id="achieve"
-        className="w-full mt-25 py-16 px-2 md:px-0 bg-black"
+        className="mt-25 w-full bg-black px-2 py-16 md:px-0"
         role="region"
         aria-label="Co osiągniesz"
       >
-        <h2 className="text-5xl leading-[1.3] font-anton tracking-wide mb-20 md:text-5xl lg:text-6xl font-extrabold text-center  text-white">
+        <h2 className="font-anton mb-20 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
           CO ZE MNĄ{" "}
           <span
             style={{
@@ -308,16 +419,16 @@ export default function Home() {
             OSIĄGNIESZ?
           </span>
         </h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/* 1 */}
           <div
-            className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
+            className="flex min-h-[260px] flex-col items-center p-8 text-center md:p-10"
             style={{ background: "#000", color: "#fff" }}
           >
-            <span className="mb-4 text-5xl animate-bounce ">
+            <span className="mb-4 animate-bounce text-5xl">
               <FaHeartbeat />
             </span>
-            <h3 className="font-bold text-xl mb-2">
+            <h3 className="mb-2 text-xl font-bold">
               Kompleksowa transformacja zdrowia
             </h3>
             <p className="text-base">
@@ -329,13 +440,13 @@ export default function Home() {
           </div>
           {/* 2 */}
           <div
-            className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
+            className="flex min-h-[260px] flex-col items-center p-8 text-center md:p-10"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-bounce animate-delay-200">
+            <span className="animate-delay-200 mb-4 animate-bounce text-5xl">
               <MdOutlineSportsGymnastics />
             </span>
-            <h3 className="font-bold text-xl mb-2">
+            <h3 className="mb-2 text-xl font-bold">
               Sylwetka, o której marzysz
             </h3>
             <p className="text-base">
@@ -347,13 +458,13 @@ export default function Home() {
           </div>
           {/* 3 */}
           <div
-            className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
+            className="flex min-h-[260px] flex-col items-center p-8 text-center md:p-10"
             style={{ background: "#000", color: "#FFFFFF" }}
           >
-            <span className="mb-4 text-5xl animate-bounce animate-delay-400">
+            <span className="animate-delay-400 mb-4 animate-bounce text-5xl">
               <FaBrain />
             </span>
-            <h3 className="font-bold text-xl mb-2">Równowaga dla umysłu</h3>
+            <h3 className="mb-2 text-xl font-bold">Równowaga dla umysłu</h3>
             <p className="text-base">
               Połączenie regularnej aktywności fizycznej z&nbsp;odpowiednio
               zbilansowaną dietą redukuje napięcie nerwowe, wzmacnia odporność
@@ -363,13 +474,13 @@ export default function Home() {
           </div>
           {/* 4 */}
           <div
-            className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
+            className="flex min-h-[260px] flex-col items-center p-8 text-center md:p-10"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-bounce animate-delay-600">
+            <span className="animate-delay-600 mb-4 animate-bounce text-5xl">
               <CiBatteryFull />
             </span>
-            <h3 className="font-bold text-xl mb-2">
+            <h3 className="mb-2 text-xl font-bold">
               Energia w&nbsp;każdym ruchu
             </h3>
             <p className="text-base">
@@ -381,13 +492,13 @@ export default function Home() {
           </div>
           {/* 5 */}
           <div
-            className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
+            className="flex min-h-[260px] flex-col items-center p-8 text-center md:p-10"
             style={{ background: "#000", color: "#fff" }}
           >
-            <span className="mb-4 text-5xl animate-bounce animate-delay-800">
+            <span className="animate-delay-800 mb-4 animate-bounce text-5xl">
               <MdPublishedWithChanges />
             </span>
-            <h3 className="font-bold text-xl mb-2">
+            <h3 className="mb-2 text-xl font-bold">
               Witalność na&nbsp;wysokim poziomie
             </h3>
             <p className="text-base">
@@ -399,13 +510,13 @@ export default function Home() {
           </div>
           {/* 6 */}
           <div
-            className="flex flex-col items-center text-center p-8 md:p-10 min-h-[260px]"
+            className="flex min-h-[260px] flex-col items-center p-8 text-center md:p-10"
             style={{ background: "#FFFFFF", color: "#000" }}
           >
-            <span className="mb-4 text-5xl animate-bounce animate-delay-1000">
+            <span className="animate-delay-1000 mb-4 animate-bounce text-5xl">
               <CgArrowsExpandUpRight />
             </span>
-            <h3 className="font-bold text-xl mb-2">
+            <h3 className="mb-2 text-xl font-bold">
               Harmonia w&nbsp;sferze intymnej
             </h3>
             <p className="text-base">
@@ -418,7 +529,7 @@ export default function Home() {
         </div>
       </section>
 
-      <h2 className="text-5xl leading-[1.3] font-anton tracking-wide md:text-5xl lg:text-6xl m-5 mt-20 font-extrabold text-center mb-12 text-white">
+      <h2 className="font-anton m-5 mt-20 mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
         JAK WYGLĄDAJĄ <span style={{ color: "#DC252A" }}>NASZE TRENINGI?</span>
       </h2>
 
@@ -446,18 +557,18 @@ export default function Home() {
         navigation
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Navigation, Pagination]}
-        className="w-full my-5 lg:!max-w-none lg:!px-0 lg:!mx-0 custom-swiper-nav"
+        className="custom-swiper-nav my-5 w-full lg:!mx-0 lg:!max-w-none lg:!px-0"
       >
         {sliderImages.map((src, idx) => (
           <SwiperSlide key={idx}>
-            <div className="w-full h-[370px] md:h-[450px] lg:h-[550px] flex items-center justify-center relative">
+            <div className="relative flex h-[370px] w-full items-center justify-center md:h-[450px] lg:h-[550px]">
               <Image
                 src={src}
                 alt={`Trener personalny Kraków&nbsp;- zdjęcie z&nbsp;galerii numer ${
                   idx + 1
                 }`}
                 fill
-                className="object-cover rounded-2xl shadow-xl"
+                className="rounded-2xl object-cover shadow-xl"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 priority={idx === 0}
               />
@@ -471,9 +582,9 @@ export default function Home() {
         id="questions"
         role="region"
         aria-label="Najczęstsze pytania (FAQ)"
-        className="w-full py-10 md:mt-20 md:pt-10 max-w-3xl mx-auto mb-16 px-4 "
+        className="mx-auto mb-16 w-full max-w-3xl px-4 py-10 md:mt-20 md:pt-10"
       >
-        <h2 className="text-5xl leading-[1.3] font-anton tracking-wide md:text-5xl lg:text-6xl font-extrabold text-center mb-12 text-white">
+        <h2 className="font-anton mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
           NAJCZĘSTSZE <span style={{ color: "#DC252A" }}>PYTANIA </span>
         </h2>
         {/* FAQ – dane strukturalne FAQ schema.org */}
@@ -585,16 +696,16 @@ export default function Home() {
           ]}
         />
         <div className="hidden md:block">
-          <div className="space-y-6 break-words hyphens-auto text-justify">
+          <div className="space-y-6 text-justify break-words hyphens-auto">
             <AnimationOnScroll
               classNameInView="animate-fade-up opacity-100"
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#181818] p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:-translate-y-2 focus:shadow-2xl active:-translate-y-2 active:shadow-2xl"
                 tabIndex={0}
               >
-                <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
+                <h3 className="mb-2 text-lg font-bold text-gray-200 md:text-xl">
                   Czy&nbsp;muszę mieć doświadczenie, żeby zacząć?
                 </h3>
                 <p className="text-gray-200">
@@ -610,10 +721,10 @@ export default function Home() {
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#181818] p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:-translate-y-2 focus:shadow-2xl active:-translate-y-2 active:shadow-2xl"
                 tabIndex={0}
               >
-                <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
+                <h3 className="mb-2 text-lg font-bold text-gray-200 md:text-xl">
                   Ile razy w&nbsp;tygodniu muszę trenować?
                 </h3>
                 <p className="text-gray-200">
@@ -640,10 +751,10 @@ export default function Home() {
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#181818] p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:-translate-y-2 focus:shadow-2xl active:-translate-y-2 active:shadow-2xl"
                 tabIndex={0}
               >
-                <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
+                <h3 className="mb-2 text-lg font-bold text-gray-200 md:text-xl">
                   Czy&nbsp;dostosowujesz plan, jeśli coś mi nie pasuje?
                 </h3>
                 <p className="text-gray-200">
@@ -659,10 +770,10 @@ export default function Home() {
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#181818] p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:-translate-y-2 focus:shadow-2xl active:-translate-y-2 active:shadow-2xl"
                 tabIndex={0}
               >
-                <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
+                <h3 className="mb-2 text-lg font-bold text-gray-200 md:text-xl">
                   Co jeśli mam kontuzje lub ograniczenia zdrowotne?
                 </h3>
                 <p className="text-gray-200">
@@ -680,10 +791,10 @@ export default function Home() {
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#181818] p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:-translate-y-2 focus:shadow-2xl active:-translate-y-2 active:shadow-2xl"
                 tabIndex={0}
               >
-                <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
+                <h3 className="mb-2 text-lg font-bold text-gray-200 md:text-xl">
                   Czy&nbsp;mogę trenować, jeśli mam napięty grafik?
                 </h3>
                 <p className="text-gray-200">
@@ -698,10 +809,10 @@ export default function Home() {
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#181818] p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:-translate-y-2 focus:shadow-2xl active:-translate-y-2 active:shadow-2xl"
                 tabIndex={0}
               >
-                <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
+                <h3 className="mb-2 text-lg font-bold text-gray-200 md:text-xl">
                   Jak szybko zobaczę efekty?
                 </h3>
                 <p className="text-gray-200">
@@ -717,10 +828,10 @@ export default function Home() {
               classNameNotInView="opacity-0"
             >
               <div
-                className="bg-[#181818] rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl active:-translate-y-2 active:shadow-2xl focus:-translate-y-2 focus:shadow-2xl cursor-pointer"
+                className="cursor-pointer rounded-xl bg-[#181818] p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:-translate-y-2 focus:shadow-2xl active:-translate-y-2 active:shadow-2xl"
                 tabIndex={0}
               >
-                <h3 className="font-bold text-lg md:text-xl text-gray-200 mb-2">
+                <h3 className="mb-2 text-lg font-bold text-gray-200 md:text-xl">
                   Czy&nbsp;muszę stosować ścisłą dietę?
                 </h3>
                 <p className="text-gray-200">
@@ -738,18 +849,18 @@ export default function Home() {
 
       <section
         id="location"
-        className=" flex flex-col p-2  mx-auto my-12 relative   overflow-hidden bg-black py-10 md:py-20  w-full max-w-5xl  "
+        className="relative mx-auto my-12 flex w-full max-w-5xl flex-col overflow-hidden bg-black p-2 py-10 md:py-20"
         role="region"
         aria-label="Lokalizacja treningów"
       >
-        <div className=" bg-black/80 bg-blend-darken bg-[url('/gdzieprzeprowadzamtreningi.jpg')] bg-cover bg-center border-2 border-[#DC252A] rounded-2xl shadow-2xl p-8 md:p-12 skew-y-[-3deg] relative  overflow-hidden">
+        <div className="relative skew-y-[-3deg] overflow-hidden rounded-2xl border-2 border-[#DC252A] bg-black/80 bg-[url('/gdzieprzeprowadzamtreningi.jpg')] bg-cover bg-center p-8 bg-blend-darken shadow-2xl md:p-12">
           <div className="skew-y-[3deg]">
-            <h3 className="text-3xl font-anton tracking-wider md:text-4xl  lg:text-5xl font-extrabold text-[#DC252A] mb-10 text-center uppercase ">
+            <h3 className="font-anton mt-10 mb-10 text-center text-3xl font-extrabold tracking-wider text-[#DC252A] uppercase md:text-4xl lg:text-5xl">
               Gdzie przeprowadzam Treningi?
             </h3>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
-              <div className="flex-1 flex flex-col items-center">
-                <p className="text-gray-200 text-lg md:text-xl font-bold text-center mb-4">
+            <div className="mb-8 flex flex-col items-center justify-center gap-8 md:flex-row">
+              <div className="flex flex-1 flex-col items-center">
+                <p className="mb-4 text-center text-lg font-bold text-gray-200 md:text-xl">
                   Studio treningowe - Medical Training Studio
                   <br />
                   Iwona Odrowąża 26, Kraków
@@ -758,22 +869,50 @@ export default function Home() {
                   href="https://www.google.com/maps/dir//Medical+Training+Studio,+Iwona+Odrow%C4%85%C5%BCa+26,+30-009+Krak%C3%B3w/@50.0591081,19.9264005,13.46z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47165bab8a527da7:0x42ecff449136800d!2m2!1d19.9326814!2d50.0774607!3e0?entry=ttu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border border-[#DC252A] rounded-full px-6 py-2 bg-transparent text-[#DC252A] hover:bg-[#DC252A] hover:text-black transition-colors w-fit mt-2"
+                  className="font-anton mt-2 flex w-fit items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black"
+                  style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
                 >
-                  <svg
-                    viewBox="0 0 384 512"
-                    fill="currentColor"
-                    className="text-lg"
-                    height="1em"
-                    width="1em"
-                  >
-                    <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
-                  </svg>
-                  Prowadź
+                  Prowadź <MdLocationPin />
                 </a>
+                <div className="font-anton m-5 mx-auto flex w-full flex-col items-center justify-around gap-5 sm:flex-row">
+                  <a
+                    href="mailto:lukasz.moczkodan@gmail.com"
+                    aria-label="Email"
+                    itemProp="email"
+                    target="_blank"
+                  >
+                    <button
+                      className="mt-2 flex cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black"
+                      style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                    >
+                      Napisz do mnie
+                      <span>
+                        <MdOutlineMailOutline size={18} />
+                      </span>
+                    </button>
+                  </a>
+
+                  <a
+                    href="tel:555900999"
+                    aria-label="Telefon"
+                    itemProp="telephone"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button
+                      className="mt-2 flex w-fit cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black"
+                      style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                    >
+                      Zadzwoń
+                      <span>
+                        <FaPhone size={12} />
+                      </span>
+                    </button>
+                  </a>
+                </div>
               </div>
               <div
-                className="flex-1 w-full min-w-[220px] max-w-full rounded-2xl overflow-hidden shadow-lg my-4 md:my-0 md:mx-4"
+                className="my-4 w-full max-w-full min-w-[220px] flex-1 overflow-hidden rounded-2xl shadow-lg md:mx-4 md:my-0"
                 style={{ height: "340px" }}
               >
                 <iframe
@@ -788,7 +927,7 @@ export default function Home() {
                     display: "block",
                     height: "440px",
                   }}
-                  className="md:!h-[340px] !h-[440px]"
+                  className="!h-[440px] md:!h-[340px]"
                   allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -803,45 +942,47 @@ export default function Home() {
       <section
         id="invitation"
         style={{ boxShadow: "0px 10px 50px 30px #DC252A" }}
-        className="w-full mb-25 flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 rounded-2xl shadow-2xl my-10 py-10 px-4 md:px-10 max-w-5xl mx-auto gap-8"
+        className="mx-auto my-10 mb-25 w-full max-w-5xl items-center justify-center rounded-2xl bg-gradient-to-br from-[#232323]/80 to-[#1a1a1a]/80 px-4 py-10 shadow-2xl md:px-10"
         role="region"
         aria-label="Kontakt - opis i zachęta"
       >
-        <div className="relative w-full md:w-1/2 h-[350px] md:h-[400px] rounded-2xl overflow-hidden flex-shrink-0">
-          <Image
-            src="/zapraszamdokontaktu.jpg"
-            alt="Trener personalny Kraków&nbsp;- kontakt, zdjęcie motywacyjne"
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover object-center rounded-2xl"
-            priority={false}
-          />
-        </div>
-        <div className="flex-1 text-justify flex flex-col  items-start gap-4 max-w-xl">
-          <h2 className="text-3xl   font-anton tracking-wider md:text-4xl font-extrabold text-white mb-2">
-            Zapraszam do&nbsp;kontaktu!
-          </h2>
-          <p className="text-gray-200 justify-center break-words hyphens-auto  text-lg md:text-xl leading-relaxed">
-            Jeśli chcesz dowiedzieć się, jak możemy wspólnie poprawić Twoją
-            sylwetkę, energię i&nbsp;zdrowie –&nbsp;napisz śmiało!
-          </p>
-          <p className="text-gray-200 justify-center break-words hyphens-auto  text-lg md:text-xl leading-relaxed">
-            Odpowiem na&nbsp;każdą wiadomość i&nbsp;rozwieję Twoje wątpliwości.
-            Zależy mi na&nbsp;indywidualnym podejściu i&nbsp;pełnym zrozumieniu
-            Twoich potrzeb. Wspólnie ustalimy najlepszą drogę
-            do&nbsp;osiągnięcia Twoich celów.
-          </p>
+        <div className="flex w-full flex-col items-center justify-center gap-8 md:flex-row">
+          <div className="relative h-[350px] w-full flex-shrink-0 overflow-hidden rounded-2xl md:h-[400px] md:w-1/2">
+            <Image
+              src="/zapraszamdokontaktu.jpg"
+              alt="Trener personalny Kraków&nbsp;- kontakt, zdjęcie motywacyjne"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-2xl object-cover object-center"
+              priority={false}
+            />
+          </div>
+          <div className="flex max-w-xl flex-1 flex-col items-start gap-4 text-justify">
+            <h2 className="font-anton mb-2 text-3xl font-extrabold tracking-wider text-white md:text-4xl">
+              Zapraszam do&nbsp;kontaktu!
+            </h2>
+            <p className="justify-center text-lg leading-relaxed break-words hyphens-auto text-gray-200 md:text-xl">
+              Jeśli chcesz dowiedzieć się, jak możemy wspólnie poprawić Twoją
+              sylwetkę, energię i&nbsp;zdrowie –&nbsp;napisz śmiało!
+            </p>
+            <p className="justify-center text-lg leading-relaxed break-words hyphens-auto text-gray-200 md:text-xl">
+              Odpowiem na&nbsp;każdą wiadomość i&nbsp;rozwieję Twoje
+              wątpliwości. Zależy mi na&nbsp;indywidualnym podejściu
+              i&nbsp;pełnym zrozumieniu Twoich potrzeb. Wspólnie ustalimy
+              najlepszą drogę do&nbsp;osiągnięcia Twoich celów.
+            </p>
 
-          <ul className="list-disc pl-6 text-gray-300 text-base md:text-lg">
-            <li>Odpowiadam zwykle w&nbsp;ciągu 24h</li>
-            <li>Wszystkie dane są poufne</li>
-            <li>Możesz napisać bez zobowiązań</li>
-          </ul>
-          <p className="text-gray-200 justify-center break-words hyphens-auto  text-lg md:text-xl leading-relaxed">
-            Czas działać! Nie musisz być idealnie gotowy. Zmień swoje życie
-            w&nbsp;3&nbsp;miesiące. Skontaktuj się ze mną za&nbsp;pomocą
-            poniższego formularza!
-          </p>
+            <ul className="list-disc pl-6 text-base text-gray-300 md:text-lg">
+              <li>Odpowiadam zwykle w&nbsp;ciągu 24h</li>
+              <li>Wszystkie dane są poufne</li>
+              <li>Możesz napisać bez zobowiązań</li>
+            </ul>
+            <p className="justify-center text-lg leading-relaxed break-words hyphens-auto text-gray-200 md:text-xl">
+              Czas działać! Nie musisz być idealnie gotowy. Zmień swoje życie
+              w&nbsp;3&nbsp;miesiące. Skontaktuj się ze mną za&nbsp;pomocą
+              poniższego formularza!
+            </p>
+          </div>
         </div>
       </section>
 
@@ -849,9 +990,9 @@ export default function Home() {
         id="contact"
         role="region"
         aria-label="Formularz kontaktowy"
-        className="w-full mt-20 py-10  px-6 max-w-[800px] md:w-[700px] md:mx-6 sm:px-6 lg:px-8 mx-auto mb-10"
+        className="mx-auto mt-20 mb-10 w-full max-w-[800px] px-6 py-10 sm:px-6 md:mx-6 md:w-[700px] lg:px-8"
       >
-        <h2 className="text-5xl leading-[1.3] font-anton tracking-wider md:text-5xl w-full  font-bold text-center mb-12 text-white">
+        <h2 className="font-anton mb-12 w-full text-center text-5xl leading-[1.3] font-bold tracking-wider text-white md:text-5xl">
           FORMULARZ <span style={{ color: "#DC252A" }}>KONTAKTOWY</span>
         </h2>
         <ContactForm />
@@ -859,11 +1000,11 @@ export default function Home() {
 
       <section
         id="social-media"
-        className="w-full my-15 max-w-none bg-black/80  px-2 flex flex-col items-center relative overflow-x-visible overflow-y-visible"
+        className="relative my-15 flex w-full max-w-none flex-col items-center overflow-x-visible overflow-y-visible bg-black/80 px-2"
       >
-        <div className="absolute inset-0 w-full h-full bg-black/80 -z-10" />
-        <h2 className="text-3xl font-anton  tracking-wider  md:text-4xl font-extrabold text-center mb-4">
-          <span className="text-white  leading-[1.2]">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-black/80" />
+        <h2 className="font-anton mb-4 text-center text-3xl font-extrabold tracking-wider md:text-4xl">
+          <span className="leading-[1.2] text-white">
             ZNAJDŹ MNIE NA&nbsp;PROFILACH{" "}
           </span>
           <span
@@ -876,22 +1017,22 @@ export default function Home() {
             SPOŁECZNOŚCIOWYCH
           </span>
         </h2>
-        <p className="text-gray-300 p-2  text-center max-w-2xl mx-auto mb-10">
+        <p className="mx-auto mb-10 max-w-2xl p-2 text-center text-gray-300">
           Zajrzyj na&nbsp;mojego Facebooka i&nbsp;Instagrama, gdzie
           na&nbsp;bieżąco publikuję wiele przydatnych wskazówek dotyczących
           treningu i&nbsp;diety przeznaczonej dla osób prowadzących aktywny styl
           życia
         </p>
-        <div className="w-full flex flex-col md:flex-row gap-16 justify-center items-center px-0 md:px-16 lg:px-32 xl:px-64 overflow-visible">
+        <div className="flex w-full flex-col items-center justify-center gap-16 overflow-visible px-0 md:flex-row md:px-16 lg:px-32 xl:px-64">
           {/* Instagram */}
           <Link
             href="https://www.instagram.com/lukasz.moczkodan/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 min-w-[260px] max-w-md bg-black/80 rounded-xl flex flex-col items-center justify-center py-14 px-8 shadow-lg transition-transform hover:scale-105 group overflow-visible"
+            className="group flex max-w-md min-w-[260px] flex-1 flex-col items-center justify-center overflow-visible rounded-xl bg-black/80 px-8 py-14 shadow-lg transition-transform hover:scale-105"
             onTouchStart={(e) => {
               const span = e.currentTarget.querySelector(
-                "[data-ig-gradient]"
+                "[data-ig-gradient]",
               ) as HTMLElement;
               if (span) {
                 span.style.opacity = "1";
@@ -900,7 +1041,7 @@ export default function Home() {
             }}
             onTouchEnd={(e) => {
               const span = e.currentTarget.querySelector(
-                "[data-ig-gradient]"
+                "[data-ig-gradient]",
               ) as HTMLElement;
               if (span) {
                 span.style.opacity = "0";
@@ -909,11 +1050,11 @@ export default function Home() {
             }}
           >
             <div
-              className="bg-white rounded-full w-28 h-28 flex items-center justify-center mb-6 relative overflow-hidden"
+              className="relative mb-6 flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-white"
               style={{ boxShadow: "inset 0 0 0 2px #DC252A" }}
             >
               <span
-                className="absolute inset-0 z-0 pointer-events-none"
+                className="pointer-events-none absolute inset-0 z-0"
                 style={{
                   background:
                     "linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%)",
@@ -924,9 +1065,9 @@ export default function Home() {
                 }}
                 data-ig-gradient
               ></span>
-              <FaInstagram className="text-black text-5xl relative z-10" />
+              <FaInstagram className="relative z-10 text-5xl text-black" />
             </div>
-            <span className="text-white font-extrabold text-xl tracking-wider">
+            <span className="text-xl font-extrabold tracking-wider text-white">
               INSTAGRAM
             </span>
           </Link>
@@ -935,10 +1076,10 @@ export default function Home() {
             href="https://www.facebook.com/people/Trener-Personalny-%C5%81ukasz-Moczkodan/61566847799568/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 min-w-[260px] max-w-md bg-black/80 rounded-xl flex flex-col items-center justify-center py-14 px-8 shadow-lg transition-transform hover:scale-105 group overflow-visible"
+            className="group flex max-w-md min-w-[260px] flex-1 flex-col items-center justify-center overflow-visible rounded-xl bg-black/80 px-8 py-14 shadow-lg transition-transform hover:scale-105"
             onTouchStart={(e) => {
               const span = e.currentTarget.querySelector(
-                "[data-fb-gradient]"
+                "[data-fb-gradient]",
               ) as HTMLElement;
               if (span) {
                 span.style.opacity = "1";
@@ -947,7 +1088,7 @@ export default function Home() {
             }}
             onTouchEnd={(e) => {
               const span = e.currentTarget.querySelector(
-                "[data-fb-gradient]"
+                "[data-fb-gradient]",
               ) as HTMLElement;
               if (span) {
                 span.style.opacity = "0";
@@ -956,11 +1097,11 @@ export default function Home() {
             }}
           >
             <div
-              className="bg-white rounded-full w-28 h-28 flex items-center justify-center mb-6 relative overflow-hidden"
+              className="relative mb-6 flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-white"
               style={{ boxShadow: "inset 0 0 0 2px #DC252A" }}
             >
               <span
-                className="absolute inset-0 z-0 pointer-events-none"
+                className="pointer-events-none absolute inset-0 z-0"
                 style={{
                   background:
                     "linear-gradient(135deg,rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
@@ -971,9 +1112,9 @@ export default function Home() {
                 }}
                 data-fb-gradient
               ></span>
-              <FaFacebook className="text-black text-5xl relative z-10" />
+              <FaFacebook className="relative z-10 text-5xl text-black" />
             </div>
-            <span className="text-white font-extrabold text-xl tracking-wider">
+            <span className="text-xl font-extrabold tracking-wider text-white">
               FACEBOOK
             </span>
           </Link>
@@ -983,15 +1124,15 @@ export default function Home() {
       <footer
         id="footer"
         style={{ boxShadow: "0px 0px 80px 40px #000000" }}
-        className="w-full mt-10 bg-[#f5f6f7] py-5 md:pt-10  px-4"
+        className="mt-10 w-full bg-[#f5f6f7] px-4 py-5 md:pt-10"
         role="contentinfo"
         aria-label="Stopka strony"
       >
-        <div className="max-w-6xl mx-auto flex flex-col items-center">
+        <div className="mx-auto flex max-w-6xl flex-col items-center">
           {/* Logo i&nbsp;nazwa */}
 
           <div
-            className=" font-bold font-anton  p-10 text-4xl md:text-5xl lg:text-6xl tracking-wider text-center"
+            className="font-anton p-10 text-center text-4xl font-bold tracking-wider md:text-5xl lg:text-6xl"
             data-glitch="ŁUKASZ MOCZKODAN"
             style={{ color: "#000000" }}
             itemScope
@@ -1003,7 +1144,7 @@ export default function Home() {
           </div>
 
           {/* Nawigacja sekcji */}
-          <nav className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 mb-8">
+          <nav className="mb-8 flex w-full flex-col items-center justify-center gap-4 md:flex-row md:gap-10">
             {[
               { label: "O MNIE", section: "#about" },
               { label: "TRENINGI PERSONALNE", section: "#trainings" },
@@ -1012,7 +1153,7 @@ export default function Home() {
             ].map(({ label, section }) => (
               <button
                 key={section}
-                className="font-extrabold text-[#000000] text-base tracking-widest hover:text-[#DC252A] active:text-[#DC252A] transition-colors cursor-pointer"
+                className="cursor-pointer text-base font-extrabold tracking-widest text-[#000000] transition-colors hover:text-[#DC252A] active:text-[#DC252A]"
                 onClick={() => scrollToSection(section)}
                 onMouseDown={(e) =>
                   e.currentTarget.classList.add("text-[#DC252A]")
@@ -1035,7 +1176,7 @@ export default function Home() {
             ))}
           </nav>
           {/* Ikony social media */}
-          <div className="flex gap-8 items-center justify-center w-full mb-2">
+          <div className="mb-2 flex w-full items-center justify-center gap-8">
             <Link
               href="https://www.facebook.com/people/Trener-Personalny-%C5%81ukasz-Moczkodan/61566847799568/"
               target="_blank"
@@ -1043,7 +1184,7 @@ export default function Home() {
               aria-label="Facebook"
               itemProp="sameAs"
             >
-              <FaFacebook className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
+              <FaFacebook className="text-2xl text-[#000000] transition-colors hover:text-[#DC252A]" />
             </Link>
             <Link
               href="https://www.instagram.com/lukasz.moczkodan/"
@@ -1052,26 +1193,18 @@ export default function Home() {
               aria-label="Instagram"
               itemProp="sameAs"
             >
-              <FaInstagram className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
+              <FaInstagram className="text-2xl text-[#000000] transition-colors hover:text-[#DC252A]" />
             </Link>
             <Link
-              href="tel:511274140"
+              href="tel:555900999"
               aria-label="Telefon"
               itemProp="telephone"
             >
-              <FaPhone className="text-[#000000] text-2xl hover:text-[#DC252A] transition-colors" />
+              <FaPhone className="text-2xl text-[#000000] transition-colors hover:text-[#DC252A]" />
             </Link>
           </div>
         </div>
-        <div className="flex gap-4 justify-center mt-4 mb-2">
-          <Link
-            href="/privacy-policy"
-            className="text-sm text-[#000000] hover:text-[#DC252A] transition-colors"
-          >
-            Polityka Prywatności
-          </Link>
-        </div>
-        <p className="text-sm pt-5 text-center font-light text-grey-300">
+        <p className="text-grey-300 pt-5 text-center text-sm font-light">
           © 2025 Łukasz Moczkodan. All rights reserved. | Designed by Jakub
           Widurek
         </p>
