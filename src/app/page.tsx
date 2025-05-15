@@ -303,57 +303,58 @@ export default function Home() {
           </h2>
 
           <div className="flex w-full flex-col md:flex-row md:justify-between">
-            <p className="w-full flex-shrink-0 p-10 text-justify leading-relaxed break-words hyphens-auto text-gray-200 md:w-1/2 lg:text-xl">
-              Nie jestem tu po&nbsp;to, żeby tylko rzeźbić sylwetki. Moją misją
-              jest budowanie się ciała i&nbsp;głowy jednocześnie. Wiem,
-              że&nbsp;wygląd to tylko część układanki - najważniejsze jest to,
-              jak się czujesz na&nbsp;co dzień, jak postrzegasz siebie
-              i&nbsp;jak wpływa to na&nbsp;Twoje życie. Na co&nbsp;dzień pracuję
-              z&nbsp;osobami o&nbsp;różnorodnych celach - pomagam
-              w&nbsp;redukcji tkanki tłuszczowej, budowie masy mięśniowej,
-              poprawie sprawności, przygotowaniu
-              do&nbsp;testów&nbsp;sprawnościowych czy&nbsp;powrocie
-              do&nbsp;formy po&nbsp;urazach.Niezależnie od&nbsp;Twojego punktu
-              wyjścia, znajdziemy najlepsze rozwiązanie dla Ciebie.
-            </p>
+            <div className="w-full flex-shrink-0 p-10 md:w-1/2">
+              <p className="text-justify leading-relaxed break-words hyphens-auto text-gray-200 lg:text-xl">
+                Nie jestem tu po&nbsp;to, żeby tylko rzeźbić sylwetki. Moją
+                misją jest budowanie się ciała i&nbsp;głowy jednocześnie. Wiem,
+                że&nbsp;wygląd to tylko część układanki - najważniejsze jest to,
+                jak się czujesz na&nbsp;co dzień, jak postrzegasz siebie
+                i&nbsp;jak wpływa to na&nbsp;Twoje życie. Na co&nbsp;dzień
+                pracuję z&nbsp;osobami o&nbsp;różnorodnych celach - pomagam
+                w&nbsp;redukcji tkanki tłuszczowej, budowie masy mięśniowej,
+                poprawie sprawności, przygotowaniu
+                do&nbsp;testów&nbsp;sprawnościowych czy&nbsp;powrocie
+                do&nbsp;formy po&nbsp;urazach.Niezależnie od&nbsp;Twojego punktu
+                wyjścia, znajdziemy najlepsze rozwiązanie dla Ciebie.
+              </p>
 
-            <div className="font-anton m-5 mx-auto my-10 flex w-full items-center justify-around md:hidden">
-              <a
-                href="mailto:lukasz.moczkodan@gmail.com"
-                aria-label="Email"
-                itemProp="email"
-                target="_blank"
-              >
-                <button
-                  className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
-                  style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+              <div className="font-anton md m-5 mx-auto my-10 flex w-full items-center justify-around">
+                <a
+                  href="mailto:lukasz.moczkodan@gmail.com"
+                  aria-label="Email"
+                  itemProp="email"
+                  target="_blank"
                 >
-                  <span className="flex skew-x-[15deg] items-center gap-2">
-                    {" "}
-                    Napisz do mnie
-                    <MdOutlineMailOutline size={18} />
-                  </span>
-                </button>
-              </a>
+                  <button
+                    className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                    style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                  >
+                    <span className="flex skew-x-[15deg] items-center gap-2">
+                      {" "}
+                      Napisz do mnie
+                      <MdOutlineMailOutline size={18} />
+                    </span>
+                  </button>
+                </a>
 
-              <a
-                href="tel:555900999"
-                aria-label="Telefon"
-                itemProp="telephone"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <button
-                  className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
-                  style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                <a
+                  href="tel:555900999"
+                  aria-label="Telefon"
+                  itemProp="telephone"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  <span className="flex skew-x-[15deg] items-center gap-2">
-                    Zadzwoń <FaPhone size={12} />
-                  </span>
-                </button>
-              </a>
+                  <button
+                    className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                    style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                  >
+                    <span className="flex skew-x-[15deg] items-center gap-2">
+                      Zadzwoń <FaPhone size={12} />
+                    </span>
+                  </button>
+                </a>
+              </div>
             </div>
-
             <div className="relative my-auto h-[500px] w-full grow justify-center">
               <Image
                 alt="Trener personalny Kraków&nbsp;- zdjęcie w&nbsp;sekcji o mnie"
@@ -363,42 +364,6 @@ export default function Home() {
                 className="h-full w-full rounded-none object-cover object-top"
               />
             </div>
-          </div>
-          <div className="font-anton m-5 mx-auto my-10 hidden w-full items-center justify-around md:flex">
-            <a
-              href="mailto:lukasz.moczkodan@gmail.com"
-              aria-label="Email"
-              itemProp="email"
-              target="_blank"
-            >
-              <button
-                className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
-                style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
-              >
-                <span className="flex skew-x-[15deg] items-center gap-2">
-                  {" "}
-                  Napisz do mnie
-                  <MdOutlineMailOutline size={18} />
-                </span>
-              </button>
-            </a>
-
-            <a
-              href="tel:555900999"
-              aria-label="Telefon"
-              itemProp="telephone"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <button
-                className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
-                style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
-              >
-                <span className="flex skew-x-[15deg] items-center gap-2">
-                  Zadzwoń <FaPhone size={12} />
-                </span>
-              </button>
-            </a>
           </div>
         </section>
       </AnimationOnScroll>
