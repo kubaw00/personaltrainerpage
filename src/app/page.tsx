@@ -139,7 +139,7 @@ export default function Home() {
               pointerEvents: "none",
             }}
           />
-          <div className="pointer-events-none relative aspect-square w-[90vw] max-w-[800px] overflow-hidden select-none md:w-[70vw] sm:landscape:w-[40vw] md:landscape:w-[50vw] lg:landscape:w-[60vw]">
+          <div className="pointer-events-none relative aspect-square w-[90vw] max-w-[800px] overflow-hidden select-none md:w-[70vw] sm:landscape:w-[50vw] md:landscape:w-[60vw] lg:landscape:w-[60vw]">
             <Image
               src="/profilowe.jpg"
               alt="Łukasz Moczkodan - profesjonalny trener personalny z Krakowa w trakcie treningu"
@@ -148,12 +148,12 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="m absolute top-2/3 left-1/2 z-30 flex -translate-x-1/2 -translate-y-1/2 transform flex-col px-1 py-16 md:left-2/3 md:py-0 lg:-translate-x-1/6 sm:landscape:left-2/3 lg:landscape:left-1/2">
-            <h1 className="font-anton animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 max-w-[400px] text-6xl font-bold tracking-wide text-[#DC252A] md:text-7xl md:font-bold lg:text-8xl lg:leading-[1.2] xl:text-[120px]">
+          <div className="absolute top-2/3 left-1/2 z-30 flex -translate-x-1/2 -translate-y-2/3 transform flex-col px-1 py-16 md:left-2/3 md:py-0 lg:-translate-x-1/6 sm:landscape:left-2/3 lg:landscape:left-1/2">
+            <h1 className="font-anton animate-fade-left animate-duration-[400ms] animate-delay-100 animate-ease-linear mb-6 max-w-[400px] text-6xl font-bold tracking-wide text-[#DC252A] md:text-7xl md:font-bold lg:text-8xl lg:leading-[1.2] [@media_(max-height:500px)_and_(orientation:landscape)]:text-4xl">
               ŁUKASZ MOCZKODAN
             </h1>
             <div className="relative">
-              <h2 className="animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear p-2 text-lg text-balance text-gray-200 md:text-xl lg:text-3xl">
+              <h2 className="animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear p-2 text-lg text-balance text-gray-200 md:text-xl lg:text-2xl [@media_(max-height:500px)_and_(orientation:landscape)]:text-sm">
                 &quot;Pomagam normalnym ludziom osiągać nienormalnie dobre
                 efekty – bez stresu i&nbsp;liczenia kalorii&quot;
               </h2>
@@ -172,12 +172,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="font-anton absolute bottom-10 left-1/2 z-30 m-5 mx-auto flex w-full -translate-x-1/2 items-center justify-center gap-10 lg:hidden">
+          <div className="font-anton landscape absolute bottom-10 left-1/2 z-30 m-5 mx-auto flex w-full -translate-x-1/2 items-center justify-center gap-8 overflow-hidden [@media_(max-height:650px)_and_(orientation:landscape)]:hidden">
             <a
-              href="mailto:lukasz.moczkodan@gmail.com"
-              aria-label="Email"
-              itemProp="email"
-              target="_blank"
+              href="#contact"
+              aria-label="contact-form"
+              itemProp="contact-form"
             >
               <button
                 className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
@@ -299,17 +298,17 @@ export default function Home() {
           id="about"
           role="region"
           aria-label="Czym się wyróżniam"
-          className="text-montserrat z-20 container mx-auto mt-35 max-w-6xl overflow-hidden rounded-2xl bg-black text-lg text-white shadow-2xl transition-transform duration-700 md:mx-2 md:flex-row lg:flex-row"
+          className="text-montserrat z-20 container mx-auto mt-40 max-w-6xl rounded-2xl bg-black pt-20 text-lg text-white shadow-2xl transition-transform duration-700 md:flex-row lg:flex-row"
           style={{
             boxShadow: "0px -30px 100px 60px #DC252A",
           }}
         >
-          <h2 className="font-anton m-10 mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
+          <h2 className="font-anton m-10 mt-20 mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
             CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
           </h2>
 
           <div className="flex w-full flex-col md:flex-row md:justify-between">
-            <div className="w-full flex-shrink-0 p-10 md:w-1/2">
+            <div className="w-full p-10 md:w-1/2 md:max-w-[50%] md:flex-shrink-0">
               <p className="text-justify leading-relaxed break-words hyphens-auto text-gray-200 lg:text-xl">
                 Nie jestem tu po&nbsp;to, żeby tylko rzeźbić sylwetki. Moją
                 misją jest budowanie się ciała i&nbsp;głowy jednocześnie. Wiem,
@@ -326,10 +325,9 @@ export default function Home() {
 
               <div className="font-anton md m-5 mx-auto my-10 flex w-full items-center justify-around">
                 <a
-                  href="mailto:lukasz.moczkodan@gmail.com"
-                  aria-label="Email"
-                  itemProp="email"
-                  target="_blank"
+                  href="#contact"
+                  aria-label="contact-form"
+                  itemProp="contact-form"
                 >
                   <button
                     className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
@@ -361,13 +359,13 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative my-auto h-[500px] w-full grow justify-center">
+            <div className="relative my-auto h-[550px] w-full md:flex-grow">
               <Image
-                alt="Trener personalny Kraków&nbsp;- zdjęcie w&nbsp;sekcji o mnie"
+                alt="Trener personalny Kraków - zdjęcie w sekcji o mnie"
                 src="/czymsiewyrozniam.jpg"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
-                className="h-full w-full rounded-none object-cover object-top"
+                className="h-full w-full overflow-hidden rounded-none object-cover object-top"
               />
             </div>
           </div>
@@ -565,6 +563,18 @@ export default function Home() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <section
+        id="contact"
+        role="region"
+        aria-label="Formularz kontaktowy"
+        className="mx-auto mt-20 mb-10 w-full max-w-[800px] px-6 py-10 sm:px-6 md:mx-6 md:w-[700px] lg:px-8"
+      >
+        <h2 className="font-anton mb-12 w-full text-center text-5xl leading-[1.3] font-bold tracking-wider text-white md:text-5xl">
+          FORMULARZ <span style={{ color: "#DC252A" }}>KONTAKTOWY</span>
+        </h2>
+        <ContactForm />
+      </section>
 
       {/* FAQ SECTION */}
       <section
@@ -858,20 +868,19 @@ export default function Home() {
                   href="https://www.google.com/maps/dir//Medical+Training+Studio,+Iwona+Odrow%C4%85%C5%BCa+26,+30-009+Krak%C3%B3w/@50.0591081,19.9264005,13.46z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47165bab8a527da7:0x42ecff449136800d!2m2!1d19.9326814!2d50.0774607!3e0?entry=ttu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-anton mt-2 flex w-fit items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black"
+                  className="font-anton mt-2 flex w-fit items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black active:bg-[#DC252A] active:text-black"
                   style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
                 >
                   Prowadź <MdLocationPin />
                 </a>
                 <div className="font-anton m-5 mx-auto flex w-full flex-col items-center justify-around gap-5 sm:flex-row">
                   <a
-                    href="mailto:lukasz.moczkodan@gmail.com"
-                    aria-label="Email"
-                    itemProp="email"
-                    target="_blank"
+                    href="#contact"
+                    aria-label="contact-form"
+                    itemProp="contact-form"
                   >
                     <button
-                      className="mt-2 flex cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black"
+                      className="mt-2 flex cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black active:bg-[#DC252A] active:text-black"
                       style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
                     >
                       Start bez zobowiązań
@@ -889,7 +898,7 @@ export default function Home() {
                     target="_blank"
                   >
                     <button
-                      className="mt-2 flex w-fit cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black"
+                      className="mt-2 flex w-fit cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black active:bg-[#DC252A] active:text-black"
                       style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
                     >
                       Zadzwoń
@@ -973,18 +982,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
-
-      <section
-        id="contact"
-        role="region"
-        aria-label="Formularz kontaktowy"
-        className="mx-auto mt-20 mb-10 w-full max-w-[800px] px-6 py-10 sm:px-6 md:mx-6 md:w-[700px] lg:px-8"
-      >
-        <h2 className="font-anton mb-12 w-full text-center text-5xl leading-[1.3] font-bold tracking-wider text-white md:text-5xl">
-          FORMULARZ <span style={{ color: "#DC252A" }}>KONTAKTOWY</span>
-        </h2>
-        <ContactForm />
       </section>
 
       <section
