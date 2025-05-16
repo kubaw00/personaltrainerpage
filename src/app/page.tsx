@@ -1189,8 +1189,16 @@ export default function Home() {
               <FaPhone className="text-2xl text-[#000000] transition-colors hover:text-[#DC252A]" />
             </Link>
           </div>
+          <div className="mt-4 mb-2 flex justify-center gap-4">
+            <Link
+              href="/privacy-policy"
+              className="text-grey-300 pt-5 text-center text-sm font-light transition-colors hover:text-[#DC252A] active:text-[#DC252A]"
+            >
+              Polityka Prywatności
+            </Link>
+          </div>
         </div>
-        <p className="text-grey-300 pt-5 text-center text-sm font-light">
+        <p className="text-grey-300 pt-4 text-center text-sm font-light">
           © 2025 Łukasz Moczkodan. All rights reserved. | Designed by Jakub
           Widurek
         </p>
