@@ -82,7 +82,7 @@ export default function Nav() {
               { text: "O\u00A0mnie", href: "#about" },
               { text: "Co oferuję", href: "#trainings" },
               { text: "Najczęstsze pytania (FAQ)", href: "#questions" },
-              { text: "Start bez zobowiązań", href: "#contact" },
+              { text: "Kontakt", href: "#contact" },
             ].map((item, index) => (
               <li key={index} className="pointer-events-auto">
                 <Link

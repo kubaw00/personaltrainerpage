@@ -155,7 +155,7 @@ export default function Home() {
             <div className="relative">
               <h2 className="animate-fade-left animate-duration-[500ms] animate-delay-400 animate-ease-linear p-2 text-lg text-balance text-gray-200 md:text-xl lg:text-3xl">
                 &quot;Pomagam normalnym ludziom osiągać nienormalnie dobre
-                efekty – bez stresu iliczenia kalorii&quot;
+                efekty – bez stresu i&nbsp;liczenia kalorii&quot;
               </h2>
               <span
                 className="absolute top-0 left-0 block h-[3px] w-full"
