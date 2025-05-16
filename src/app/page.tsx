@@ -172,7 +172,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="font-anton landscape absolute bottom-10 left-1/2 z-30 m-5 mx-auto flex w-full -translate-x-1/2 items-center justify-center gap-8 overflow-hidden [@media_(max-height:650px)_and_(orientation:landscape)]:hidden">
+          <div className="font-anton landscape absolute bottom-15 left-1/2 z-30 m-5 mx-auto flex w-full -translate-x-1/2 items-center justify-center gap-8 overflow-hidden [@media_(max-height:650px)_and_(orientation:landscape)]:hidden">
             <a
               href="#contact"
               aria-label="contact-form"
