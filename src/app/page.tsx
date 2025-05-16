@@ -184,7 +184,7 @@ export default function Home() {
                 style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
               >
                 <span className="flex skew-x-[15deg] items-center gap-2">
-                  Napisz do mnie <MdOutlineMailOutline size={18} />
+                  Start bez zobowiązań <MdOutlineMailOutline size={18} />
                 </span>
               </button>
             </a>
@@ -337,7 +337,7 @@ export default function Home() {
                   >
                     <span className="flex skew-x-[15deg] items-center gap-2">
                       {" "}
-                      Napisz do mnie
+                      Start bez zobowiązań
                       <MdOutlineMailOutline size={18} />
                     </span>
                   </button>
@@ -874,7 +874,7 @@ export default function Home() {
                       className="mt-2 flex cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black"
                       style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
                     >
-                      Napisz do mnie
+                      Start bez zobowiązań
                       <span>
                         <MdOutlineMailOutline size={18} />
                       </span>
