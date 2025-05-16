@@ -18,13 +18,13 @@ const SMTP_CONFIG = {
   service: "gmail",
   auth: {
     user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD, // hasło aplikacji Gmail
+    pass: process.env.GMAIL_APP_PASSWORD,
   },
 } as const;
 
 export async function sendEmail(
   prevState: FormState | null,
-  formData: FormData
+  formData: FormData,
 ): Promise<FormState> {
   try {
     const phone = formData.get("phone") as string;
@@ -94,7 +94,7 @@ export async function sendEmail(
     console.log("Próba logowania jako:", process.env.GMAIL_USER);
     console.log(
       "Hasło aplikacji:",
-      process.env.GMAIL_APP_PASSWORD?.slice(0, 2) + "..."
+      process.env.GMAIL_APP_PASSWORD?.slice(0, 2) + "...",
     );
 
     transporter.verify((error) => {
