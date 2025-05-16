@@ -1133,7 +1133,7 @@ export default function Home() {
           <nav className="mb-8 flex w-full flex-col items-center justify-center gap-4 md:flex-row md:gap-10">
             {[
               { label: "O MNIE", section: "#about" },
-              { label: "TRENINGI PERSONALNE", section: "#trainings" },
+              { label: "CO OFERUJĘ", section: "#trainings" },
               { label: "NAJCZĘSTSZE PYTANIA (FAQ)", section: "#questions" },
               { label: "KONTAKT", section: "#contact" },
             ].map(({ label, section }) => (
