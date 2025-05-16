@@ -213,7 +213,7 @@ export default function Home() {
         id="trainings"
         role="region"
         aria-label="Treningi personalne"
-        className="relative mx-auto mt-20 mb-12 flex w-full max-w-6xl flex-col overflow-hidden bg-black px-4 py-10 md:py-15"
+        className="relative mx-auto mt-20 mb-15 flex w-full max-w-6xl flex-col overflow-hidden bg-black px-4 py-10 md:py-15"
       >
         <h2 className="font-anton mb-20 text-center text-5xl font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
           CO <span style={{ color: "#DC252A" }}>OFERUJĘ?</span>
@@ -298,12 +298,12 @@ export default function Home() {
           id="about"
           role="region"
           aria-label="Czym się wyróżniam"
-          className="text-montserrat z-20 container mx-auto mt-40 max-w-6xl rounded-2xl bg-black pt-20 text-lg text-white shadow-2xl transition-transform duration-700 md:flex-row lg:flex-row"
+          className="text-montserrat z-20 container mx-auto mt-5 max-w-6xl rounded-2xl bg-black pt-15 text-lg text-white shadow-2xl transition-transform duration-700 md:flex-row lg:flex-row"
           style={{
             boxShadow: "0px -30px 100px 60px #DC252A",
           }}
         >
-          <h2 className="font-anton m-10 mt-20 mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
+          <h2 className="font-anton mx-5 mb-8 pt-10 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
             CZYM SIĘ <span style={{ color: "#DC252A" }}>WYRÓŻNIAM?</span>
           </h2>
 
