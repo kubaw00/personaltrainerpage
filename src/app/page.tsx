@@ -1188,6 +1188,13 @@ export default function Home() {
             >
               <FaPhone className="text-2xl text-[#000000] transition-colors hover:text-[#DC252A]" />
             </Link>
+            <Link
+              href="mailto:lukasz.moczkodan@gmail.com"
+              aria-label="Email"
+              itemProp="email"
+            >
+              <MdOutlineMailOutline className="text-3xl text-[#000000] transition-colors hover:text-[#DC252A] active:text-[#DC252A]" />
+            </Link>
           </div>
           <div className="mt-4 mb-2 flex justify-center gap-4">
             <Link
