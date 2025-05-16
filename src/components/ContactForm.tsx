@@ -22,17 +22,11 @@ function SubmitButton({ ariaLabel }: { ariaLabel: string }) {
       aria-disabled={pending}
       disabled={pending}
       aria-label={ariaLabel}
-      className={`w-full py-2 px-4 rounded-md font-bold transition duration-300 border-2
-        bg-transparent
-        border-white text-white
-        hover:bg-white hover:text-black hover:border-black
-        active:bg-white active:text-black active:border-black
-        ${
-          pending
-            ? "border-gray-400 text-gray-400 cursor-not-allowed"
-            : "cursor-pointer"
-        }
-      `}
+      className={`w-full rounded-md border-2 border-white bg-transparent px-4 py-2 font-bold text-white transition duration-300 hover:border-black hover:bg-white hover:text-black active:border-black active:bg-white active:text-black ${
+        pending
+          ? "cursor-not-allowed border-gray-400 text-gray-400"
+          : "cursor-pointer"
+      } `}
     >
       {pending ? "Wysyłanie..." : "Wyślij wiadomość"}
     </button>
@@ -54,7 +48,7 @@ export default function ContactForm() {
   }, [state.message, state.success]);
 
   return (
-    <form action={formAction} className="w-full mx-auto space-y-4 text-white">
+    <form action={formAction} className="mx-auto w-full space-y-4 text-white">
       {/* Komunikaty o stanie wysyłki */}
       <div aria-live="polite" className="sr-only">
         {state.message}
@@ -67,10 +61,10 @@ export default function ContactForm() {
           name="name"
           required
           placeholder="Imię"
-          className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
+          className="peer w-full rounded-md border border-white bg-[#181818] p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none"
         />
 
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
+        <span className="pointer-events-none absolute top-1/2 right-4 flex h-6 -translate-y-1/2 items-center text-white">
           <FaUser />
         </span>
       </div>
@@ -82,10 +76,10 @@ export default function ContactForm() {
           name="email"
           required
           placeholder="Twój adres e-mail"
-          className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
+          className="peer w-full rounded-md border border-white bg-[#181818] p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none"
         />
 
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
+        <span className="pointer-events-none absolute top-1/2 right-4 flex h-6 -translate-y-1/2 items-center text-white">
           <MdAlternateEmail />
         </span>
       </div>
@@ -97,10 +91,10 @@ export default function ContactForm() {
           name="phone"
           required
           placeholder="Telefon"
-          className="w-full rounded-md bg-[#181818] border border-white p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none peer"
+          className="peer w-full rounded-md border border-white bg-[#181818] p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none"
         />
 
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center h-6 text-white pointer-events-none">
+        <span className="pointer-events-none absolute top-1/2 right-4 flex h-6 -translate-y-1/2 items-center text-white">
           <FaPhone />
         </span>
       </div>
@@ -112,10 +106,10 @@ export default function ContactForm() {
           required
           rows={4}
           placeholder="Jaki efekt byłby dla Ciebie naprawdę satysfakcjonujący?"
-          className="w-full p-5 rounded-md bg-[#181818] border border-white pr-12 focus:ring-2 focus:ring-white focus:outline-none peer resize-none"
+          className="peer w-full resize-none rounded-md border border-white bg-[#181818] p-5 pr-12 focus:ring-2 focus:ring-white focus:outline-none"
         />
 
-        <span className="absolute right-4 top-6 flex items-center h-6 border-white text-white pointer-events-none">
+        <span className="pointer-events-none absolute top-6 right-4 flex h-6 items-center border-white text-white">
           <FaEnvelope />
         </span>
       </div>
@@ -138,7 +132,7 @@ export default function ContactForm() {
           <a
             href="/privacy-policy"
             target="_blank"
-            className="underline text-red-800"
+            className="text-red-800 underline"
           >
             polityką prywatności
           </a>

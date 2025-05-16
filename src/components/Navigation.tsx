@@ -23,7 +23,7 @@ export default function Nav() {
     <>
       {/* MOBILE NAV */}
       <nav
-        className=" md:hidden w-full flex items-center h-[90px] z-[1000] fixed p-3 transition-opacity duration-500 opacity-100 bg-transparent"
+        className="fixed z-[1000] flex h-[90px] w-full items-center bg-transparent p-3 opacity-100 transition-opacity duration-500 md:hidden"
         style={{
           borderBottom: "1px solid",
           borderImageSource:
@@ -31,18 +31,18 @@ export default function Nav() {
           borderImageSlice: 1,
         }}
       >
-        <div className="container h-auto max-w-6xl mx-auto text-white flex justify-between items-center">
+        <div className="container mx-auto flex h-auto max-w-6xl items-center justify-between text-white">
           <Image
             src="/logo.png"
             alt="Logo Trener Personalny Kraków - Łukasz Moczkodan"
             width={100}
             height={100}
-            className="object-cover ml-3 "
+            className="ml-3 object-cover"
             aria-label="Strona główna - Trener Personalny Kraków"
           />
-          <div className="hidden sm:flex md:hidden ml-4 w-100px sm:flex-col items-center justify-center">
+          <div className="w-100px ml-4 hidden items-center justify-center sm:flex sm:flex-col md:hidden">
             <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
-            <p className="text-[12px] font-medium ">TRENER PERSONALNY</p>
+            <p className="text-[12px] font-medium">TRENER PERSONALNY</p>
           </div>
           <HamburgerButton ariaLabel="Otwórz menu nawigacji" />
         </div>
@@ -50,14 +50,11 @@ export default function Nav() {
 
       {/* DESKTOP NAV */}
       <nav
-        className={`hidden md:flex w-full  items-center h-[120px] z-[1000] fixed p-5 transition-all duration-700
-          bg-transparent
-          ${
-            desktopVisible
-              ? "translate-x-0 opacity-100"
-              : "translate-x-full opacity-0"
-          }
-        `}
+        className={`fixed z-[1000] hidden h-[120px] w-full items-center bg-transparent p-5 transition-all duration-700 md:flex ${
+          desktopVisible
+            ? "translate-x-0 opacity-100"
+            : "translate-x-full opacity-0"
+        } `}
         style={{
           borderBottom: "1px solid",
           borderImageSource:
@@ -65,42 +62,42 @@ export default function Nav() {
           borderImageSlice: 1,
         }}
       >
-        <div className="container h-auto max-w-6xl mx-auto text-black flex justify-between items-center">
+        <div className="container mx-auto flex h-auto max-w-6xl items-center justify-between text-black">
           <Image
             src="/logo.png"
             alt="Logo Trener Personalny Kraków - Łukasz Moczkodan"
             width={100}
             height={100}
-            className="object-cover ml-3 "
+            className="ml-3 object-cover"
             aria-label="Strona główna - Trener Personalny Kraków"
           />
-          <div className="ml-4 w-[140px] text-white flex flex-col items-left justify-center">
+          <div className="items-left ml-4 flex w-[140px] flex-col justify-center text-white">
             <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
-            <p className="text-[12px] whitespace-nowrap  font-medium">
+            <p className="text-[12px] font-medium whitespace-nowrap">
               TRENER PERSONALNY
             </p>
           </div>
-          <ul className="ml-10 flex justify-around grow-1 gap-7 items-center">
+          <ul className="ml-10 flex grow-1 items-center justify-around gap-7">
             {[
               { text: "O\u00A0mnie", href: "#about" },
               { text: "Co oferuję", href: "#trainings" },
               { text: "Najczęstsze pytania (FAQ)", href: "#questions" },
-              { text: "Kontakt", href: "#contact" },
+              { text: "Start bez zobowiązań", href: "#contact" },
             ].map((item, index) => (
               <li key={index} className="pointer-events-auto">
                 <Link
                   href={item.href}
                   scroll={false}
-                  className="group relative inline-flex items-center justify-center text-black text-base font-bold tracking-wide transition-all duration-200 hover:text-[#DC252A] active:[#DC252A] cursor-pointer"
+                  className="group active:[#DC252A] relative inline-flex cursor-pointer items-center justify-center text-base font-bold tracking-wide text-black transition-all duration-200 hover:text-[#DC252A]"
                   aria-label={item.text}
                   onClick={(e) => {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
                 >
-                  <span className="px-2 uppercase text-white">{item.text}</span>
-                  <span className="absolute bottom-0 left-1/2 h-[2px] w-0 bg-[#DC252A] transition-all duration-300 group-hover:w-1/2 group-hover:left-0 animate-fade-in"></span>
-                  <span className="absolute bottom-0 right-1/2 h-[2px] w-0 bg-[#DC252A] transition-all duration-300 group-hover:w-1/2 group-hover:right-0 animate-fade-in"></span>
+                  <span className="px-2 text-white uppercase">{item.text}</span>
+                  <span className="animate-fade-in absolute bottom-0 left-1/2 h-[2px] w-0 bg-[#DC252A] transition-all duration-300 group-hover:left-0 group-hover:w-1/2"></span>
+                  <span className="animate-fade-in absolute right-1/2 bottom-0 h-[2px] w-0 bg-[#DC252A] transition-all duration-300 group-hover:right-0 group-hover:w-1/2"></span>
                 </Link>
               </li>
             ))}

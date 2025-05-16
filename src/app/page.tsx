@@ -190,7 +190,8 @@ export default function Home() {
             </a>
 
             <a
-              href="tel:511274140"
+              href="tel:
+              +48511274140"
               aria-label="Telefon"
               itemProp="telephone"
               rel="noopener noreferrer"
@@ -881,7 +882,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="tel:511274140"
+                    href="tel:+48511274140"
                     aria-label="Telefon"
                     itemProp="telephone"
                     rel="noopener noreferrer"
@@ -1184,7 +1185,7 @@ export default function Home() {
               <FaInstagram className="text-2xl text-[#000000] transition-colors hover:text-[#DC252A]" />
             </Link>
             <Link
-              href="tel:511274140"
+              href="tel:+48511274140"
               aria-label="Telefon"
               itemProp="telephone"
             >

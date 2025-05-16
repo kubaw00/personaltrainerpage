@@ -89,7 +89,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
                   className: "text-white",
                 },
                 {
-                  text: "Umów się na trening",
+                  text: "Start bez zobowiązań",
                   href: "#contact",
                   className:
                     "relative font-bold uppercase text-white px-6 py-2 bg-[#DC152A] skew-x-[-15deg] shadow-lg transition-all duration-200 hover:bg-[#8F0000] active:bg-[#8F0000] hover:text-white active:text-white border-none overflow-hidden group",
