@@ -70,12 +70,12 @@ export const metadata: Metadata = {
     site: "@lukaszmoczkodan",
   },
   icons: {
-    icon: "/icon.png",
+    icon: "/favicon.ico",
     shortcut: "/apple-icon.png",
     apple: "/apple-icon.png",
     other: [
       { rel: "mask-icon", url: "/icon.png" },
-      { rel: "favicon", url: "/favicon.ico" },
+      { rel: "icon", url: "/icon.png" },
     ],
   },
   robots: {
