@@ -5,7 +5,8 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import "@/styles/animations.css";
 import "@/styles/swiper-overrides.css";
-import { GoogleTagManager } from "@next/third-parties/google";
+
+import Script from "next/script";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -106,6 +107,24 @@ export default function RootLayout({
       className={`${workSans.variable} ${montserrat.variable} ${anton.variable}`}
     >
       <head>
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),
+                dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}');
+            `,
+          }}
+        />
         {/* Structured data JSON-LD for LocalBusiness */}
         <script
           type="application/ld+json"
@@ -179,12 +198,14 @@ export default function RootLayout({
         />
       </head>
       <body className={`antialiased`}>
-        {process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID &&
-          process.env.NODE_ENV === "production" && (
-            <GoogleTagManager
-              gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID!}
-            />
-          )}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Toaster
           position="top-right"
           toastOptions={{ duration: 2000, className: "toast-slide-up" }}
