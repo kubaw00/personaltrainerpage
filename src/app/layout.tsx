@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Work_Sans, Montserrat, Anton } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import "@/styles/animations.css";
 import "@/styles/swiper-overrides.css";
@@ -105,18 +105,6 @@ export default function RootLayout({
       className={`${workSans.variable} ${montserrat.variable} ${anton.variable}`}
     >
       <head>
-        {/* Google Tag Manager */}
-        <Script id="gtm-init" strategy="afterInteractive">
-          {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-W6C9K4XB');
-        `}
-        </Script>
-        {/* End Google Tag Manager */}
-
         {/* Structured data JSON-LD for LocalBusiness */}
         <script
           type="application/ld+json"
@@ -190,16 +178,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`antialiased`}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-W6C9K4XB"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        {/* End Google Tag Manager (noscript) */}
+        <GoogleTagManager gtmId="GTM-W6C9K4XB" />
         <Toaster
           position="top-right"
           toastOptions={{ duration: 2000, className: "toast-slide-up" }}
