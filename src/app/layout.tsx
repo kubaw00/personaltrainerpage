@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Work_Sans, Montserrat, Anton } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import { GoogleTagManager } from "@next/third-parties/google";
+
 import "./globals.css";
 import "@/styles/animations.css";
 import "@/styles/swiper-overrides.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -178,7 +179,12 @@ export default function RootLayout({
         />
       </head>
       <body className={`antialiased`}>
-        <GoogleTagManager gtmId="GTM-W6C9K4XB" />
+        {process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID &&
+          process.env.NODE_ENV === "production" && (
+            <GoogleTagManager
+              gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID!}
+            />
+          )}
         <Toaster
           position="top-right"
           toastOptions={{ duration: 2000, className: "toast-slide-up" }}

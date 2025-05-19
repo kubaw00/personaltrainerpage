@@ -38,6 +38,7 @@ export default function Nav() {
             width={100}
             height={100}
             className="ml-3 object-cover"
+            style={{ width: "auto", height: "60px" }}
             aria-label="Strona główna - Trener Personalny Kraków"
           />
           <div className="w-100px ml-4 hidden items-center justify-center sm:flex sm:flex-col md:hidden">
@@ -69,6 +70,7 @@ export default function Nav() {
             width={100}
             height={100}
             className="ml-3 object-cover"
+            style={{ width: "auto", height: "80px" }}
             aria-label="Strona główna - Trener Personalny Kraków"
           />
           <div className="items-left ml-4 flex w-[140px] flex-col justify-center text-white">
