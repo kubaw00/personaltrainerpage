@@ -181,6 +181,10 @@ export default function Home() {
               <button
                 className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
                 style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#contact");
+                }}
               >
                 <span className="flex skew-x-[15deg] items-center gap-2">
                   Start bez zobowiązań <MdOutlineMailOutline size={18} />
@@ -332,6 +336,10 @@ export default function Home() {
                   <button
                     className="flex skew-x-[-15deg] cursor-pointer items-center gap-2 border-none bg-[#DC252A] p-3 text-sm text-gray-300 shadow-lg transition duration-200 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
                     style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection("#contact");
+                    }}
                   >
                     <span className="flex skew-x-[15deg] items-center gap-2">
                       {" "}
@@ -882,6 +890,10 @@ export default function Home() {
                     <button
                       className="mt-2 flex cursor-pointer items-center gap-2 rounded-full border border-[#DC252A] bg-transparent px-6 py-2 text-[#DC252A] transition-colors hover:bg-[#DC252A] hover:text-black active:bg-[#DC252A] active:text-black"
                       style={{ boxShadow: "0 2px 12px 0 #DC252A" }}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection("#contact");
+                      }}
                     >
                       Start bez zobowiązań
                       <span>

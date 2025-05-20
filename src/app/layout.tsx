@@ -76,10 +76,6 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/apple-icon.png",
     apple: "/apple-icon.png",
-    other: [
-      { rel: "mask-icon", url: "/icon.png" },
-      { rel: "icon", url: "/icon.png" },
-    ],
   },
   robots: {
     index: true,
