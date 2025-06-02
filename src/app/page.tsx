@@ -788,7 +788,7 @@ export default function Home() {
             {
               question: "Czy muszę stosować ścisłą dietę?",
               answer:
-                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a\u00A0nie utrudnieniem. Stawiamy na\u00A0elastyczność i\u00A0realne podejście -&nbsp;bez restrykcji, które odbierają radość z\u00A0życia.",
+                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a\u00A0nie utrudnieniem. Stawiamy na\u00A0elastyczność i\u00A0realne podejście - bez restrykcji, które odbierają radość z\u00A0życia.",
             },
           ]}
         />

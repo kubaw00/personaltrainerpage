@@ -31,7 +31,7 @@ export default function Nav() {
           borderImageSlice: 1,
         }}
       >
-        <div className="container mx-auto flex h-auto max-w-6xl items-center justify-between text-white">
+        <div className="container mx-auto flex h-auto max-w-7xl items-center justify-between text-white">
           <Image
             src="/logo.png"
             alt="Logo Trener Personalny Kraków - Łukasz Moczkodan"
@@ -63,7 +63,7 @@ export default function Nav() {
           borderImageSlice: 1,
         }}
       >
-        <div className="container mx-auto flex h-auto max-w-6xl items-center justify-between text-black">
+        <div className="container mx-auto flex h-auto max-w-7xl items-center justify-between text-black">
           <Image
             src="/logo.png"
             alt="Logo Trener Personalny Kraków - Łukasz Moczkodan"
