@@ -73,7 +73,7 @@ export default function Nav() {
             style={{ width: "auto", height: "80px" }}
             aria-label="Strona główna - Trener Personalny Kraków"
           />
-          <div className="items-left ml-4 flex w-[140px] flex-col justify-center text-white">
+          <div className="items-left ml-4 hidden w-[140px] flex-col justify-center text-white lg:flex">
             <h2 className="text-xl font-bold">ŁUKASZ MOCZKODAN </h2>
             <p className="text-[12px] font-medium whitespace-nowrap">
               TRENER PERSONALNY
@@ -85,12 +85,13 @@ export default function Nav() {
               { text: "Co oferuję", href: "#trainings" },
               { text: "Najczęstsze pytania (FAQ)", href: "#questions" },
               { text: "Kontakt", href: "#contact" },
+              { text: "Ile to kosztuje?", href: "#price" },
             ].map((item, index) => (
               <li key={index} className="pointer-events-auto">
                 <Link
                   href={item.href}
                   scroll={false}
-                  className="group active:[#DC252A] relative inline-flex cursor-pointer items-center justify-center text-base font-bold tracking-wide text-black transition-all duration-200 hover:text-[#DC252A]"
+                  className="group active:[#DC252A] relative inline-flex cursor-pointer items-center justify-center text-center text-base font-bold tracking-wide text-black transition-all duration-200 hover:text-[#DC252A]"
                   aria-label={item.text}
                   onClick={(e) => {
                     e.preventDefault();

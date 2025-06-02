@@ -8,22 +8,22 @@ export function FaqAccordion({
 }) {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   return (
-    <div className="md:hidden flex flex-col gap-4">
+    <div className="flex flex-col gap-4 md:hidden">
       {faqs.map((faq, idx) => (
         <AnimationOnScroll
           key={idx} // Moved key here
           classNameInView="animate-fade-left opacity-100"
           classNameNotInView="opacity-0"
         >
-          <div className="bg-[#181818] rounded-xl shadow-lg cursor-pointer">
+          <div className="cursor-pointer rounded-xl bg-[#181818] shadow-lg">
             <button
-              className="w-full text-left p-4 font-bold text-gray-200 focus:outline-none flex justify-between items-center cursor-pointer"
+              className="flex w-full cursor-pointer items-center justify-between p-4 text-left font-bold text-gray-200 focus:outline-none"
               onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
               aria-expanded={openIdx === idx}
               aria-controls={`faq-answer-${idx}`}
             >
               {faq.question}
-              <span className="ml-2 text-[#DC252A] text-xl">
+              <span className="ml-2 text-xl text-[#DC252A]">
                 {openIdx === idx ? "-" : "+"}
               </span>
             </button>
@@ -32,7 +32,7 @@ export function FaqAccordion({
                 id={`faq-answer-${idx}`}
                 role="region"
                 aria-labelledby={`faq-question-${idx}`}
-                className=" break-words hyphens-auto text-justify p-4 pt-0 text-gray-200 animate-fade-in cursor-pointer"
+                className="animate-fade-in cursor-pointer p-4 pt-0 text-left break-words hyphens-auto text-gray-200"
               >
                 {faq.answer}
               </div>

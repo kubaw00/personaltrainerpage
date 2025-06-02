@@ -89,6 +89,11 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
                   className: "text-white",
                 },
                 {
+                  text: "Ile to kosztuje?",
+                  href: "#price",
+                  className: "text-white",
+                },
+                {
                   text: "Skontaktuj się ze mną",
                   href: "#contact",
                   className:

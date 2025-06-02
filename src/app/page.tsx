@@ -239,7 +239,7 @@ export default function Home() {
               W&nbsp;90 dni poprowadzę Cię przez kompleksową zmianę w&nbsp;skład
               której wchodzą:
             </p>
-            <ul className="mx-auto mb-8 max-w-2xl space-y-4 text-justify break-words hyphens-auto">
+            <ul className="mx-auto mb-8 max-w-2xl space-y-4 text-left break-words hyphens-auto">
               <li className="flex items-start gap-3 text-lg md:text-xl">
                 <IoMdCheckmark
                   size="2em"
@@ -291,7 +291,7 @@ export default function Home() {
                 </span>
               </li>
             </ul>
-            <p className="mx-auto max-w-2xl text-justify text-lg break-words hyphens-auto text-gray-200 md:text-xl">
+            <p className="mx-auto max-w-2xl text-left text-lg break-words hyphens-auto text-gray-200 md:text-xl">
               Nie ważne, czy&nbsp;Twoim marzeniem jest lepsza sylwetka, większa
               siła, sprawniejsze ciało czy po&nbsp;prostu codzienne lepsze
               samopoczucie - tutaj masz wszystko, czego potrzebujesz, żeby
@@ -320,7 +320,7 @@ export default function Home() {
 
           <div className="flex w-full flex-col md:flex-row md:justify-between">
             <div className="w-full p-10 md:w-1/2 md:max-w-[50%] md:flex-shrink-0">
-              <p className="text-justify leading-relaxed break-words hyphens-auto text-gray-200 lg:text-xl">
+              <p className="text-left leading-relaxed break-words hyphens-auto text-gray-200 lg:text-xl">
                 Nie jestem tu po&nbsp;to, żeby tylko rzeźbić sylwetki. Moją
                 misją jest budowanie się ciała i&nbsp;głowy jednocześnie. Wiem,
                 że&nbsp;wygląd to tylko część układanki - najważniejsze jest to,
@@ -600,21 +600,21 @@ export default function Home() {
           <div className="relative skew-y-[-3deg] overflow-hidden rounded-2xl border-2 border-[#DC252A] bg-black/90 bg-[url('/hantle.jpg')] bg-cover bg-center p-8 shadow-xl md:p-12">
             <div className="absolute inset-0 -z-10 bg-black/80"></div>
             <div className="relative z-10 skew-y-[3deg]">
-              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+              <p className="mx-auto mb-8 max-w-3xl text-left text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
                 Jeśli szukasz trenera personalnego, na&nbsp;pewno zastanawiasz
                 się, ile to&nbsp;kosztuje. To&nbsp;jedno z najczęściej
                 zadawanych pytań – i bardzo dobrze, bo&nbsp;inwestycja
                 w&nbsp;zdrowie i&nbsp;formę to decyzja, którą warto dobrze
                 przemyśleć, i&nbsp;zaplanować.
               </p>
-              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+              <p className="mx-auto mb-8 max-w-3xl text-left text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
                 Ale od razu uprzedzę:{" "}
                 <span className="font-bold">
                   nie znajdziesz tu konkretnego cennika.
                 </span>{" "}
               </p>
 
-              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+              <p className="mx-auto mb-8 max-w-3xl text-left text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
                 Dlaczego? Bo wierzę, że zanim porozmawiamy o&nbsp;cenie, warto
                 najpierw porozmawiać o&nbsp; Tobie. O&nbsp;Twoim celu,
                 możliwościach, stylu życia i&nbsp;oczekiwaniach. Podanie jednej,
@@ -622,7 +622,7 @@ export default function Home() {
                 recepty przez lekarza, zanim jeszcze zapyta, co Ci dolega. A ja
                 nie chcę działać w&nbsp;ciemno.
               </p>
-              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+              <p className="mx-auto mb-8 max-w-3xl text-left text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
                 Każda współpraca wygląda u mnie inaczej – bo każdy klient ma
                 inne potrzeby. Dla jednej osoby idealna będzie spokojna praca
                 raz w&nbsp;tygodniu, dla innej – intensywniejszy plan
@@ -632,7 +632,7 @@ export default function Home() {
                   ustalamy podczas pierwszej rozmowy.
                 </span>
               </p>
-              <p className="mx-auto mb-10 max-w-3xl text-justify text-lg leading-relaxed font-bold break-words hyphens-auto text-white md:text-xl">
+              <p className="mx-auto mb-10 max-w-3xl text-left text-lg leading-relaxed font-bold break-words hyphens-auto text-white md:text-xl">
                 Chcesz dowiedzieć się, jak mogłaby wyglądać współpraca
                 w&nbsp;Twoim przypadku i&nbsp;ile kosztuje?
               </p>
@@ -652,7 +652,7 @@ export default function Home() {
                 </button>
               </div>
 
-              <p className="mx-auto mt-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+              <p className="mx-auto mt-8 max-w-3xl text-left text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
                 – to pierwszy krok, by sprawdzić, czy i jak mogę Ci pomóc.
                 Podczas rozmowy poznasz wszystkie opcje oraz dokładną ofertę
                 dopasowaną do Ciebie.
@@ -793,7 +793,7 @@ export default function Home() {
           ]}
         />
         <div className="hidden md:block">
-          <div className="space-y-6 text-justify break-words hyphens-auto">
+          <div className="space-y-6 text-left break-words hyphens-auto">
             <AnimationOnScroll
               classNameInView="animate-fade-up opacity-100"
               classNameNotInView="opacity-0"
@@ -1058,7 +1058,7 @@ export default function Home() {
               loading="lazy"
             />
           </div>
-          <div className="flex max-w-xl flex-1 flex-col items-start gap-4 text-justify">
+          <div className="flex max-w-xl flex-1 flex-col items-start gap-4 text-left">
             <h2 className="font-anton mb-2 text-3xl font-extrabold tracking-wider text-white md:text-4xl">
               Zapraszam do&nbsp;kontaktu!
             </h2>
