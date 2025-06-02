@@ -42,6 +42,12 @@ export const metadata: Metadata = {
     "odchudzanie Kraków",
     "zdrowie",
     "siłownia Kraków",
+    "trener personalny Kraków cena",
+    "koszt trenera personalnego",
+    "cennik treningów personalnych",
+    "ile kosztuje trener personalny",
+    "ceny treningów w Krakowie",
+    "indywidualne plany treningowe koszt",
   ],
   metadataBase: new URL("https://lukaszmoczkodan.pl"),
   alternates: {
@@ -161,18 +167,37 @@ export default function RootLayout({
                   name: "3-miesięczna przemiana sylwetki",
                   description:
                     "Kompleksowy program treningowy i dietetyczny na 90 dni",
+                  priceSpecification: {
+                    "@type": "PriceSpecification",
+                    price:
+                      "Cena zależy od indywidualnych potrzeb i częstotliwości treningów",
+                    priceCurrency: "PLN",
+                  },
+                  availability: "https://schema.org/InStock",
                 },
                 {
                   "@type": "Offer",
                   name: "Treningi personalne",
                   description:
                     "Indywidualne treningi dostosowane do Twoich potrzeb",
+                  priceSpecification: {
+                    "@type": "PriceSpecification",
+                    price: "Cena zależy od ilości treningów",
+                    priceCurrency: "PLN",
+                  },
+                  availability: "https://schema.org/InStock",
                 },
                 {
                   "@type": "Offer",
                   name: "Konsultacje dietetyczne",
                   description:
                     "Spersonalizowane plany żywieniowe wspierające Twoje cele",
+                  priceSpecification: {
+                    "@type": "PriceSpecification",
+                    price: "Cena ustalana indywidualnie",
+                    priceCurrency: "PLN",
+                  },
+                  availability: "https://schema.org/InStock",
                 },
               ],
               review: {

@@ -35,7 +35,6 @@ function SubmitButton({ ariaLabel }: { ariaLabel: string }) {
 
 export default function ContactForm() {
   const [state, formAction] = useActionState(sendEmail, initialState);
-
   useEffect(() => {
     if (state.message) {
       toast.dismiss(); // Zamknij poprzedni toast

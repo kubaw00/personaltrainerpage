@@ -116,7 +116,13 @@ export default function Home() {
           style={{ height: "calc(var(--vh) - 90px)" }}
         >
           <div className="top-[40%] right-[-400px] z-20 hidden lg:absolute lg:top-[15%] lg:block xl:right-[-10%]">
-            <Image alt="arrow" src="/arrow.png" height={300} width={900} />
+            <Image
+              alt="arrow"
+              src="/arrow.png"
+              height={300}
+              width={900}
+              loading="lazy"
+            />
           </div>
           <div className="z-20 hidden lg:absolute lg:bottom-[5%] lg:left-[-45%] lg:block xl:left-[-30%]">
             <Image
@@ -124,6 +130,7 @@ export default function Home() {
               src="/arrow.png"
               height={300}
               width={900}
+              loading="lazy"
             />
           </div>
           <div
@@ -374,6 +381,7 @@ export default function Home() {
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="h-full w-full overflow-hidden rounded-none object-cover object-top"
+                loading="lazy"
               />
             </div>
           </div>
@@ -566,11 +574,93 @@ export default function Home() {
                 className="rounded-2xl object-cover shadow-xl"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 priority={idx === 0}
+                loading={idx === 0 ? undefined : "lazy"}
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <section
+        id="price"
+        className="mx-auto my-20 w-full max-w-5xl px-4"
+        role="region"
+        aria-label="Cennik usług"
+      >
+        <AnimationOnScroll
+          classNameInView="animate-fade-up opacity-100"
+          classNameNotInView="opacity-0"
+        >
+          <h2 className="font-anton mb-12 text-center text-3xl leading-[1.3] font-extrabold tracking-wide text-white uppercase md:text-4xl lg:text-5xl">
+            Ile kosztuje trening personalny w Krakowie?{" "}
+            <span style={{ color: "#DC252A" }}>
+              Sprawdź, zanim zapytasz o cenę
+            </span>
+          </h2>
+          <div className="relative skew-y-[-3deg] overflow-hidden rounded-2xl border-2 border-[#DC252A] bg-black/90 bg-[url('/hantle.jpg')] bg-cover bg-center p-8 shadow-xl md:p-12">
+            <div className="absolute inset-0 -z-10 bg-black/80"></div>
+            <div className="relative z-10 skew-y-[3deg]">
+              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+                Jeśli szukasz trenera personalnego, na&nbsp;pewno zastanawiasz
+                się, ile to&nbsp;kosztuje. To&nbsp;jedno z najczęściej
+                zadawanych pytań – i bardzo dobrze, bo&nbsp;inwestycja
+                w&nbsp;zdrowie i&nbsp;formę to decyzja, którą warto dobrze
+                przemyśleć, i&nbsp;zaplanować.
+              </p>
+              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+                Ale od razu uprzedzę:{" "}
+                <span className="font-bold">
+                  nie znajdziesz tu konkretnego cennika.
+                </span>{" "}
+              </p>
+
+              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+                Dlaczego? Bo wierzę, że zanim porozmawiamy o&nbsp;cenie, warto
+                najpierw porozmawiać o&nbsp; Tobie. O&nbsp;Twoim celu,
+                możliwościach, stylu życia i&nbsp;oczekiwaniach. Podanie jednej,
+                sztywnej kwoty bez żadnego kontekstu byłoby jak wystawienie
+                recepty przez lekarza, zanim jeszcze zapyta, co Ci dolega. A ja
+                nie chcę działać w&nbsp;ciemno.
+              </p>
+              <p className="mx-auto mb-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+                Każda współpraca wygląda u mnie inaczej – bo każdy klient ma
+                inne potrzeby. Dla jednej osoby idealna będzie spokojna praca
+                raz w&nbsp;tygodniu, dla innej – intensywniejszy plan
+                z&nbsp;nawet czterema treningami tygodniowo. Dlatego{" "}
+                <span className="font-bold">
+                  cena zależy od zakresu i&nbsp;formy współpracy, którą wspólnie
+                  ustalamy podczas pierwszej rozmowy.
+                </span>
+              </p>
+              <p className="mx-auto mb-10 max-w-3xl text-justify text-lg leading-relaxed font-bold break-words hyphens-auto text-white md:text-xl">
+                Chcesz dowiedzieć się, jak mogłaby wyglądać współpraca
+                w&nbsp;Twoim przypadku i&nbsp;ile kosztuje?
+              </p>
+
+              <div className="flex justify-center">
+                <button
+                  className="flex skew-x-[-15deg] cursor-pointer items-center gap-3 border-none bg-[#DC252A] p-4 text-lg font-bold text-white shadow-lg transition duration-300 hover:bg-[#8F0000] hover:text-white active:bg-[#8F0000] active:text-white"
+                  style={{ boxShadow: "0 4px 15px 0 rgba(220, 37, 42, 0.7)" }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("#contact");
+                  }}
+                >
+                  <span className="flex skew-x-[15deg] items-center gap-3">
+                    👉 UMÓW SIĘ NA NIEZOBOWIĄZUJĄCĄ KONSULTACJĘ{" "}
+                  </span>
+                </button>
+              </div>
+
+              <p className="mx-auto mt-8 max-w-3xl text-justify text-lg leading-relaxed break-words hyphens-auto text-white md:text-xl">
+                – to pierwszy krok, by sprawdzić, czy i jak mogę Ci pomóc.
+                Podczas rozmowy poznasz wszystkie opcje oraz dokładną ofertę
+                dopasowaną do Ciebie.
+              </p>
+            </div>
+          </div>
+        </AnimationOnScroll>
+      </section>
 
       <section
         id="contact"
@@ -688,7 +778,7 @@ export default function Home() {
             {
               question: "Czy mogę trenować, jeśli mam napięty grafik?",
               answer:
-                "Tak. Wspólnie znajdziemy rozwiązanie -możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do\u00A0Twoich możliwości czasowych.",
+                "Tak. Wspólnie znajdziemy rozwiązanie - możliwe są krótsze sesje, elastyczne godziny lub plan dostosowany do\u00A0Twoich możliwości czasowych.",
             },
             {
               question: "Jak szybko zobaczę efekty?",
@@ -698,7 +788,7 @@ export default function Home() {
             {
               question: "Czy muszę stosować ścisłą dietę?",
               answer:
-                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a\u00A0nie utrudnieniem. Stawiamy na\u00A0elastyczność i\u00A0realne podejście - bez restrykcji, które odbierają radość z\u00A0życia.",
+                "Nie. Otrzymasz plan żywieniowy, który ma być wsparciem, a\u00A0nie utrudnieniem. Stawiamy na\u00A0elastyczność i\u00A0realne podejście -&nbsp;bez restrykcji, które odbierają radość z\u00A0życia.",
             },
           ]}
         />
@@ -965,6 +1055,7 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, 50vw"
               className="rounded-2xl object-cover object-center"
               priority={false}
+              loading="lazy"
             />
           </div>
           <div className="flex max-w-xl flex-1 flex-col items-start gap-4 text-justify">
