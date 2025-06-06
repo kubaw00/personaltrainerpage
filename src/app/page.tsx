@@ -256,8 +256,8 @@ export default function Home() {
                   className="mt-1 shrink-0 text-[#DC252A]"
                 />
                 <span className="text-gray-100">
-                  plan żywieniowy będący wsparciem w&nbsp;osiąganiu Twoich
-                  celów& -&nbsp;bez ciężaru i&nbsp;zbędnych wyrzeczeń
+                  plan żywieniowy będący wsparciem w&nbsp;osiąganiu Twoich celów
+                  -&nbsp;bez ciężaru i&nbsp;zbędnych wyrzeczeń
                 </span>
               </li>
               <li className="flex items-start gap-3 text-lg text-green-400 md:text-xl">
