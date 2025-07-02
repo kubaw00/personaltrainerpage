@@ -64,7 +64,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
           ></div>
           <div
             className={
-              "fixed top-0 left-0 h-full w-4/5 bg-black shadow-lg transition-all duration-500 md:hidden" +
+              "fixed top-0 left-0 h-screen max-h-screen w-4/5 overflow-y-auto bg-black shadow-lg transition-all duration-500 md:hidden" +
               (isOpenMenu ? " animate-slide-in-left" : "")
             }
             style={{
@@ -75,7 +75,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
             aria-hidden={!isOpenMenu}
             role="dialog"
           >
-            <ul className="mt-20 flex h-full flex-col items-center justify-start space-y-12 p-6 text-center text-xl">
+            <ul className="mt-20 flex flex-col items-start justify-start space-y-8 p-4 text-center text-lg">
               {[
                 { text: "O mnie", href: "#about", className: "text-white" },
                 {
@@ -97,7 +97,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
                   text: "Skontaktuj się ze mną",
                   href: "#contact",
                   className:
-                    "relative font-bold uppercase text-white px-6 py-2 bg-[#DC152A] skew-x-[-15deg] shadow-lg transition-all duration-200 hover:bg-[#8F0000] active:bg-[#8F0000] hover:text-white active:text-white border-none overflow-hidden group",
+                    "relative font-bold uppercase text-white px-3 py-2 bg-[#DC152A] skew-x-[-15deg] shadow-lg transition-all duration-200 hover:bg-[#8F0000] active:bg-[#8F0000] hover:text-white active:text-white border-none overflow-hidden group",
                   isSpecial: true,
                 },
               ].map((item, index) => (
@@ -108,7 +108,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
                     className={
                       item.isSpecial
                         ? `${item.className}`
-                        : `block py-3 transition-transform duration-150 hover:-translate-y-1 active:-translate-y-1 ${
+                        : `block py-1 transition-transform duration-150 hover:-translate-y-1 active:-translate-y-1 ${
                             item.className || ""
                           } hover:font-extrabold`
                     }
@@ -118,7 +118,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
                             display: "inline-block",
                             borderRadius: 0,
                             fontWeight: 700,
-                            fontSize: "1.1rem",
+                            fontSize: "0.8rem",
                             boxShadow: "0 2px 12px 0 #DC252A",
                           }
                         : {}
@@ -154,7 +154,7 @@ export default function HamburgerButton(props: { ariaLabel: string }) {
                 </li>
               ))}
             </ul>
-            <div className="font-anton f absolute bottom-10 left-1/2 z-30 m-5 mx-auto flex w-full -translate-x-1/2 items-center justify-center gap-10 lg:hidden">
+            <div className="font-anton z-30 m-5 mx-auto flex w-full items-center justify-center gap-10 lg:hidden">
               <a
                 href="mailto:lukasz.moczkodan@gmail.com"
                 aria-label="Email"

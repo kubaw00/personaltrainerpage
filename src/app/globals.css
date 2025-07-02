@@ -9,6 +9,11 @@ body {
   font-family: var(--font-work-sans), sans-serif;
 }
 
+iframe {
+  pointer-events: auto;
+  touch-action: pan-y;
+}
+
 .font-montserrat {
   font-family: var(--font-montserrat), sans-serif;
 }
@@ -35,8 +40,12 @@ html {
 :focus-visible {
   outline: 2px solid #dc252a;
   outline-offset: 2px;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #dc252a;
-  transition: outline 0.2s, box-shadow 0.2s;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #dc252a;
+  transition:
+    outline 0.2s,
+    box-shadow 0.2s;
 }
 
 /* Ensure good contrast for gray text on dark backgrounds */
@@ -51,7 +60,9 @@ button:focus-visible,
 a:focus-visible {
   outline: 2px solid #dc252a;
   outline-offset: 2px;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #dc252a;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #dc252a;
 }
 
 @layer utilities {

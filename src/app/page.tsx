@@ -33,6 +33,8 @@ import { CiBatteryFull } from "react-icons/ci";
 import { CgArrowsExpandUpRight } from "react-icons/cg";
 import { IoMdCheckmark } from "react-icons/io";
 
+import VideoSwiper from "@/components/VideoSwiper";
+
 const sliderImages = [
   "/pic1.jpg",
   "/pic2.jpg",
@@ -512,6 +514,43 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* Recenzje video */}
+
+      <section
+        id="opinions"
+        className="mx-auto my-20 w-full max-w-6xl px-4"
+        aria-label="Recenzje video"
+      >
+        <h2 className="font-anton m-5 mt-20 mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white uppercase lg:text-6xl">
+          Autentyczne opinie osób,
+          <span style={{ color: "#DC252A" }}> które zaczęły współpracę!</span>
+        </h2>
+
+        <main className="">
+          <p className="px-6 pb-10 text-left leading-relaxed break-words hyphens-auto text-gray-200 md:pb-20 lg:text-xl">
+            Zobacz krótkie wideo z opiniami osób, które – tak jak Ty –
+            zastanawiały się, czy warto. Jedni chcieli schudnąć, inni
+            zadbać&nbsp;o zdrowie, sylwetkę albo po prostu poczuć się lepiej.
+            Każdy&nbsp;z nich postawił na współpracę ze mną – jako trenerem
+            personalnym –&nbsp;i dziś dzieli się tym, jak wyglądały treningi
+            oraz jakie efekty osiągnęli. To prawdziwe, szczere wypowiedzi – bez
+            scenariusza, bez udawania. Ty też możesz zacząć. Wystarczy, że
+            zrobisz pierwszy krok{" "}
+            <span
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#contact");
+              }}
+              className="inline-block cursor-pointer text-lg font-bold text-[#DC252A] shadow-lg transition duration-300 hover:text-white active:text-white"
+            >
+              NAPISZ DO MNIE{" "}
+            </span>
+            &nbsp;i sprawdź, co mogę Ci zaproponować.
+          </p>
+          <VideoSwiper />
+        </main>
       </section>
 
       <h2 className="font-anton m-5 mt-20 mb-12 text-center text-5xl leading-[1.3] font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl">
